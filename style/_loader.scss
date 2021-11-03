@@ -106,17 +106,35 @@
     transition: all 1s;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
     .loader{
         padding: 0;
         .loader_wrapper{
             width: 100%;
             .loader_text{
                 .top{
+                    margin-left: 116px;
+                }
+                .bottom{
+                    margin-left: 124px;
+
+                }
+
+            }
+
+        }
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    .loader{
+        .loader_wrapper{
+            .loader_text{
+                .top{
                     margin-left: 57px;
                 }
                 .bottom{
-                    margin-left: 64px;
+                    margin-left: 62px;
 
                 }
 
