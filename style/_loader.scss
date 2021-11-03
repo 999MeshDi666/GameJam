@@ -144,3 +144,22 @@
     }
     
 }
+
+@media screen and (max-width: 360px) {
+    .loader{
+        .loader_wrapper{
+            .loader_text{
+                .top{
+                    margin-left: 37px;
+                }
+                .bottom{
+                    margin-left: 44px;
+
+                }
+
+            }
+
+        }
+    }
+    
+}

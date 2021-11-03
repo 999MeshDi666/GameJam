@@ -162,6 +162,14 @@ ul, ol, li {
     margin-left: 62px;
   }
 }
+@media screen and (max-width: 360px) {
+  .loader .loader_wrapper .loader_text .top {
+    margin-left: 37px;
+  }
+  .loader .loader_wrapper .loader_text .bottom {
+    margin-left: 44px;
+  }
+}
 .header {
   padding: 5px;
   background-color: #3e6eb6;
