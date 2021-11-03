@@ -257,6 +257,7 @@
     transform: translateZ(4vw);
     transform-style: preserve-3d;
     animation: logo-appear-animation 3s cubic-bezier(0.65, 0, 0.35, 1);
+    user-select: none;
   }
   @media (min-width: 991px) {
     .logo {
