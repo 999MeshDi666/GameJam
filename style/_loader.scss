@@ -127,6 +127,21 @@
     }
     
 }
+
+@media screen and (max-width: 420px) {
+    .loader{
+        padding: 0;
+        .loader_wrapper{
+            width: 64%;
+            // .loader_text{
+             
+
+            // }
+
+        }
+    }
+    
+}
 @media screen and (max-width: 360px) {
     .loader{
         .loader_wrapper{
