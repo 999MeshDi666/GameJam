@@ -110,13 +110,14 @@
     .loader{
         padding: 0;
         .loader_wrapper{
-            width: 100%;
+            width: 52%;
+            text-align: center;
             .loader_text{
                 .top{
-                    margin-left: 116px;
+                    margin-left: 0;
                 }
                 .bottom{
-                    margin-left: 124px;
+                    margin-left: 0;
 
                 }
 
@@ -129,35 +130,24 @@
 @media screen and (max-width: 360px) {
     .loader{
         .loader_wrapper{
-            .loader_text{
-                .top{
-                    margin-left: 57px;
-                }
-                .bottom{
-                    margin-left: 62px;
-
-                }
-
-            }
+            width: 70%;
+            // .loader_text{
+                
+            // }
 
         }
     }
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
     .loader{
         .loader_wrapper{
-            .loader_text{
-                .top{
-                    margin-left: 37px;
-                }
-                .bottom{
-                    margin-left: 44px;
+            width: 80%;
+            // .loader_text{
+                
+            // }
 
-                }
-
-            }
 
         }
     }
