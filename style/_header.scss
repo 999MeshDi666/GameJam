@@ -1,4 +1,55 @@
 .header{
-    padding: 5px;
+    position: fixed;
+    // top: 0;
+    bottom: 0;
     background-color: rgb(62, 110, 182);
+    left: 0;
+    right: 0;
+    z-index: 2222;
+    .header_wrapper{
+        .menu_panel{
+            .win_btn{
+                color: $wt;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bolder;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-style: italic;
+                border: 0;
+                padding: 5px;
+                width: 140px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding-left: 8px;
+               
+                -webkit-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+                -moz-box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+                box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+
+                background: -moz-linear-gradient(-45deg, #83c783 0%, #52b152 37%, #008a00 69%, #005700 100%); 
+                background: -webkit-linear-gradient(-45deg, #83c783 0%,#52b152 37%,#008a00 69%,#005700 100%);
+                background: linear-gradient(135deg, #83c783 0%,#52b152 37%,#008a00 69%,#005700 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83c783', endColorstr='#005700',GradientType=1 ); 
+
+                img{
+                    margin: 6px 0;
+                }
+                p{
+                    margin-left: 12px;
+                }
+            }
+            .win_btn:active{
+                -webkit-box-shadow: 0px 0px 22px 9px rgba(34, 60, 80, 0.39) inset;
+                -moz-box-shadow: 0px 0px 22px 9px rgba(34, 60, 80, 0.39) inset;
+                box-shadow: 0px 0px 22px 9px rgba(34, 60, 80, 0.39) inset;
+                
+            }
+           
+            
+            
+
+        }
+
+    }
 }

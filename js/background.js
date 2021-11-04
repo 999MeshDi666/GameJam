@@ -79,7 +79,7 @@ const config = {
     UA: window.navigator.userAgent,
     
     init() {
-      if (/firefox/gi.test(this.UA)) {      document.querySelector('html').classList.add('firefox');
+      if (/firefox/gi.test(this.UA)) { document.querySelector('html').classList.add('firefox');
       }
     }
   };
