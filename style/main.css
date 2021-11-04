@@ -162,15 +162,25 @@ ul, ol, li {
   .loader .loader_wrapper {
     width: 64%;
   }
+  .loader .loader_wrapper .loader_text .top {
+    font-size: 16px;
+  }
+  .loader .loader_wrapper .loader_text .middle {
+    font-size: 3em;
+  }
+  .loader .loader_wrapper .loader_text .bottom {
+    font-size: 1.2em;
+  }
 }
 @media screen and (max-width: 360px) {
   .loader .loader_wrapper {
     width: 70%;
+    margin: 240px auto;
   }
 }
 @media screen and (max-width: 320px) {
   .loader .loader_wrapper {
-    width: 80%;
+    width: 75%;
   }
 }
 .header {
