@@ -285,12 +285,13 @@ ul, ol, li {
   letter-spacing: 2px;
 }
 .menu_windows .menu_windows_wrapper .prog_list {
-  margin-right: 22px;
+  width: 100%;
 }
 .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections {
   list-style-type: none;
 }
 .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
+  padding: 5px;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +315,10 @@ ul, ol, li {
 }
 .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover p {
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .menu_windows_on {

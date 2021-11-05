@@ -100,12 +100,12 @@
 
         }
         .prog_list{
-            margin-right: 22px;
+            width: 100%;
           
             .prog_list_sections{
                 list-style-type: none;
                 li{
-                    
+                    padding: 5px;
                     margin-bottom: 10px;
                     display: flex;
                     align-items: center;
@@ -126,6 +126,8 @@
                  
                     p{
                         color: $wt;
+                        user-select: none;
+                    
                     }
                 }
 
