@@ -270,14 +270,7 @@
                     }
                     .win_btn{
                         width: 70px;
-                        img{
-                            width: 25px;
-                            height: 25px;
-                        }
-                        p{
-                            font-weight: bolder;
-                            letter-spacing: -1px;
-                        }
+                        
                     }
                 }
                 .cloak{
@@ -297,7 +290,7 @@
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) and (min-width: 320px){
     .header{
         .header_wrapper{
             .menu_panel{
@@ -310,7 +303,6 @@
                         
                         p{
                             display: none;
-
                         }
                     
                     }

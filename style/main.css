@@ -434,14 +434,6 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn {
     width: 70px;
   }
-  .header .header_wrapper .menu_panel .windows .win_btn img {
-    width: 25px;
-    height: 25px;
-  }
-  .header .header_wrapper .menu_panel .windows .win_btn p {
-    font-weight: bolder;
-    letter-spacing: -1px;
-  }
   .header .header_wrapper .menu_panel .cloak {
     width: 100px;
   }
@@ -450,7 +442,7 @@ ul, ol, li {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) and (min-width: 320px) {
   .header .header_wrapper .menu_panel .windows .general_win {
     width: 20px;
     overflow: hidden;
