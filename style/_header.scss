@@ -15,37 +15,69 @@
             color: $bk;
             cursor: default;
             .windows{
-                .win_btn{
+                display: flex;
+                .general_win{
                     background-color: $win;
-                    display: flex;
-                    align-items: center;
                     border-width: 2px;
                     border-style: solid;
                     border-color: $wt $bk $bk $wt;
-                    width: 90px;
+                    display: flex;
+                    align-items: center;
                     padding: 0 4px;
-                    
+                    margin-right: 10px;
+                    width: 135px;
+                   
                     img{
                         display: block;
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 8px;
+                    }
+                    p{
+                        font-size: 18px;
+                        margin-bottom: 2px;
+                        letter-spacing: 1px;
+                    }
+                
+                }
+               
+                .win_btn{
+                    width: 90px;
+                    img{
                         width: 30px;
                         height: 30px;
-                        margin-right: 5px;
                     }
-                
                     p{
-                        font-size: 19px;
+                        
                         font-weight: bolder;
                         letter-spacing: -1px;
-                        margin-bottom: 2px;
                     }
-                   
-                
                 }
                 .win_btn_clicked{
                     border-color: $bk $wt $wt $bk;
-
                 }
-
+                
+                .win_about{
+                    display: none;
+                }
+                .win_faq{
+                    display: none;
+                }
+                .win_rules{
+                    display: none;
+                }
+                .win_about_on{
+                    display: flex;
+                    border-color: $bk $wt $wt $bk;
+                }
+                .win_faq_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_rules_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                } 
             }
             .cloak{
                 border-width: 2px;
@@ -96,8 +128,6 @@
                 letter-spacing: 2px;
                 
             }
-
-
         }
         .prog_list{
             width: 100%;
@@ -117,7 +147,7 @@
                     }
                     p{
                         color: $bk;
-                        font-size: 12px;
+                        font-size: 13px;
                     }
                
                 }
@@ -131,17 +161,178 @@
                     }
                 }
 
-              
-
             }
     
         }
 
     }
-
-   
-
 }
 .menu_windows_on{
     display: block;
+}
+
+// responsoves
+
+@media screen and (max-width: 768px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        width: 110px;
+                        margin-right: 5px;
+                        p{
+                            font-size: 13px;
+                        }
+                    }
+                    .win_btn{
+                        width: 90px;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+            
+                }
+                .cloak{
+                    width: 130px;
+                    .time{
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        padding: 0 2px;
+                        width: 100px;
+                        img{
+                            
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 6px;
+                        }
+                        p{
+                            font-size: 11px;
+                            font-weight: bolder;
+                        }
+                    
+                    }
+                    .win_btn{
+                        width: 80px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: bolder;
+                            letter-spacing: -1px;
+                        }
+                    }
+                }
+                .cloak{
+                    width: 110px;
+                    .time{
+                        font-size: 16px;
+                        
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
+    .menu_windows{
+        bottom: 35px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        // width: 50px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        // width: 100%;
+                    
+                    }
+                    .win_btn{
+                        width: 70px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                        p{
+                            font-weight: bolder;
+                            letter-spacing: -1px;
+                        }
+                    }
+                }
+                .cloak{
+                    width: 100px;
+                    .time{
+                        margin-top: 5px;
+                        font-size: 16px;
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
+
+    
+}
+
+@media screen and (max-width: 360px) {
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .windows{
+                    .general_win{
+                        width: 20px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        margin-right: 8px;
+                        
+                        p{
+                            display: none;
+
+                        }
+                    
+                    }
+                    .win_btn{
+                        p{
+                            display: block;
+                        }
+                    }
+                }
+                .cloak{
+                    width: 80px;
+                    .time{
+                        margin-top: 2px;
+                        font-size: 14px;
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
+
+    
 }

@@ -203,34 +203,77 @@ ul, ol, li {
   color: #000;
   cursor: default;
 }
-.header .header_wrapper .menu_panel .windows .win_btn {
+.header .header_wrapper .menu_panel .windows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .general_win {
   background-color: #bdbebd;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #fff #000 #000 #fff;
-  width: 90px;
   padding: 0 4px;
+  margin-right: 10px;
+  width: 135px;
+}
+.header .header_wrapper .menu_panel .windows .general_win img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.header .header_wrapper .menu_panel .windows .general_win p {
+  font-size: 18px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn {
+  width: 90px;
 }
 .header .header_wrapper .menu_panel .windows .win_btn img {
-  display: block;
   width: 30px;
   height: 30px;
-  margin-right: 5px;
 }
 .header .header_wrapper .menu_panel .windows .win_btn p {
-  font-size: 19px;
   font-weight: bolder;
   letter-spacing: -1px;
-  margin-bottom: 2px;
 }
 .header .header_wrapper .menu_panel .windows .win_btn_clicked {
   border-color: #000 #fff #fff #000;
+}
+.header .header_wrapper .menu_panel .windows .win_about {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_faq {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_rules {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_about_on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-color: #000 #fff #fff #000;
+}
+.header .header_wrapper .menu_panel .windows .win_faq_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_rules_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .header .header_wrapper .menu_panel .cloak {
   border-width: 2px;
@@ -308,7 +351,7 @@ ul, ol, li {
 }
 .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li p {
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
 }
 .menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover {
   background-color: #ba0b0b;
@@ -323,6 +366,110 @@ ul, ol, li {
 
 .menu_windows_on {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    width: 110px;
+    margin-right: 5px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win p {
+    font-size: 13px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 90px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    font-size: 16px;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 130px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    padding: 0 2px;
+    width: 100px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win p {
+    font-size: 11px;
+    font-weight: bolder;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 80px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn img {
+    width: 25px;
+    height: 25px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 110px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    font-size: 16px;
+  }
+
+  .menu_windows {
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 70px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn img {
+    width: 25px;
+    height: 25px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    font-weight: bolder;
+    letter-spacing: -1px;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 100px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    width: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 8px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win p {
+    display: none;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    display: block;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 80px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    margin-top: 2px;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
