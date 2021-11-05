@@ -460,6 +460,9 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .general_win p {
     display: none;
   }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 70px;
+  }
   .header .header_wrapper .menu_panel .windows .win_btn p {
     display: block;
   }
