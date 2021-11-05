@@ -186,17 +186,112 @@ ul, ol, li {
 .header {
   position: fixed;
   bottom: 0;
-  background: linear-gradient(166deg, #5583c9 32%, #3d69ac 69%);
-  -webkit-box-shadow: inset -2px -2px 3px 0 rgba(0, 0, 0, 0.5), inset 3px 3px 3px 0 rgba(255, 255, 255, 0.5);
-          box-shadow: inset -2px -2px 3px 0 rgba(0, 0, 0, 0.5), inset 3px 3px 3px 0 rgba(255, 255, 255, 0.5);
+  background-color: #bdbebd;
   left: 0;
   right: 0;
   z-index: 2;
+  padding: 4px;
 }
-.header .header_wrapper .menu_panel .win_btn {
-  border: 0;
-  padding: 5px;
-  width: 130px;
+.header .header_wrapper .menu_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "DotGothic16", sans-serif;
+  color: #000;
+  cursor: default;
+}
+.header .header_wrapper .menu_panel .windows .win_btn {
+  background-color: #bdbebd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  width: 90px;
+  padding: 0 4px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn p {
+  font-size: 19px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  margin-bottom: 2px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn_clicked {
+  border-color: #000 #fff #fff #000;
+}
+.header .header_wrapper .menu_panel .cloak {
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey white white grey;
+  width: 152px;
+  text-align: center;
+}
+.header .header_wrapper .menu_panel .cloak .time {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.menu_windows {
+  padding: 2px;
+  background-color: #bdbebd;
+  z-index: 1;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  margin-left: 3px;
+  display: none;
+  font-family: "DotGothic16", sans-serif;
+}
+.menu_windows .menu_windows_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu_windows .menu_windows_wrapper .name_line {
+  width: 35px;
+  height: 150px;
+  background-color: #ba0b0b;
+  background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
+  text-align: start;
+}
+.menu_windows .menu_windows_wrapper .name_line p {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 82px;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.menu_windows .menu_windows_wrapper .prog_list {
+  margin-right: 22px;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections {
+  list-style-type: none;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,31 +299,25 @@ ul, ol, li {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  padding-left: 8px;
-  border-radius: 0px 10px 10px 0px;
-  border-right: 1px groove rgba(34, 33, 33, 0.616);
-  border-bottom: 1px groove rgba(31, 30, 30, 0.411);
-  background: linear-gradient(166deg, black 0%, #227927 0%, #1c9422 0%, #2fad35 10%, #3faf46 46%, #29942f 80%);
 }
-.header .header_wrapper .menu_panel .win_btn img {
-  margin: 6px 0;
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li .prog_list_icons {
   width: 25px;
   height: 25px;
+  margin-right: 5px;
 }
-.header .header_wrapper .menu_panel .win_btn p {
-  margin-left: 6px;
-  letter-spacing: 2px;
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li p {
+  color: #000;
+  font-size: 12px;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover {
+  background-color: #ba0b0b;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover p {
   color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-style: italic;
 }
-.header .header_wrapper .menu_panel .win_btn:active {
-  -webkit-box-shadow: inset -3px -3px 3px 0 rgba(73, 50, 50, 0.2), inset 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: inset -3px -3px 3px 0 rgba(73, 50, 50, 0.2), inset 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
-  background: linear-gradient(166deg, black 0%, #227927 0%, #1b8c21 0%, #1d8323 59%, #29812e 74%, #2c9e32 95%);
+
+.menu_windows_on {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

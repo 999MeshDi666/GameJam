@@ -2,60 +2,144 @@
     position: fixed;
     // top: 0;
     bottom: 0;
-    background: linear-gradient(166deg, rgba(85,131,201,1) 32%, rgba(61,105,172,1) 69%);
-    box-shadow: inset -2px -2px 3px 0 rgba(0,0,0,.5), 
-                inset 3px 3px 3px 0 rgba(255,255,255,0.5);
+    background-color: $win;
     left: 0;
     right: 0;
     z-index: 2;
+    padding: 4px;
     .header_wrapper{
         .menu_panel{
-            .win_btn{
-                
-                border: 0;
-                padding: 5px;
-                width: 130px;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                padding-left: 8px;
-                border-radius: 0px 10px 10px 0px;
-                border-right: 1px groove rgba(34, 33, 33, 0.616);
-                border-bottom: 1px groove rgba(31, 30, 30, 0.411);
-                background: linear-gradient(166deg, rgba(0,0,0,1) 0%, rgba(34,121,39,1) 0%, rgb(28, 148, 34) 0%, rgb(47, 173, 53) 10%, rgba(63,175,70,1) 46%, rgba(41,148,47,1) 80%);
-                img{
-                    margin: 6px 0;
-                    width: 25px;
-                    height: 25px;
-                }
-                p{
-                    margin-left: 6px;
-                    letter-spacing: 2px;
-                    color: $wt;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    font-weight: bolder;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    font-style: italic;
-                }
-            }
-            .win_btn:active{
+            display: flex;
+            justify-content: space-between;
+            font-family: $pix;
+            color: $bk;
+            cursor: default;
+            .windows{
+                .win_btn{
+                    background-color: $win;
+                    display: flex;
+                    align-items: center;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: $wt $bk $bk $wt;
+                    width: 90px;
+                    padding: 0 4px;
                     
-                box-shadow: inset -3px -3px 3px 0 rgba(73, 50, 50, 0.2),
-                           inset 2px 2px 2px 0 rgba(0,0,0,0.5);
-                background: linear-gradient(166deg, rgba(0,0,0,1) 0%, rgba(34,121,39,1) 0%, rgba(27,140,33,1) 0%, rgba(29,131,35,1) 59%, rgba(41,129,46,1) 74%, rgba(44,158,50,1) 95%);
+                    img{
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 5px;
+                    }
                 
+                    p{
+                        font-size: 19px;
+                        font-weight: bolder;
+                        letter-spacing: -1px;
+                        margin-bottom: 2px;
+                    }
+                   
                 
-            }
+                }
+                .win_btn_clicked{
+                    border-color: $bk $wt $wt $bk;
 
+                }
+
+            }
             .cloak{
-                
-            }
-           
-            
-            
+                border-width: 2px;
+                border-style: solid;
+                border-color: grey white white grey;
+                width: 152px;
+                text-align: center;
+                .time{
+                    font-size: 20px;
+                    font-weight: lighter;
+                }
 
+            }
         }
 
     }
+}
+.menu_windows{
+    padding: 2px;
+    background-color: $win;
+    z-index: 1;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $wt $bk $bk $wt;
+    margin-left: 3px;
+    display: none;
+    font-family: $pix;
+    .menu_windows_wrapper{
+        display: flex;
+        justify-content: space-between;
+        .name_line{
+            width: 35px;
+            height: 150px;
+            background-color: rgb(186,11,11);
+            background: linear-gradient(135deg, rgba(133,7,7,1) 14%, rgba(149,13,13,1) 29%, rgba(213,11,11,1) 90%);
+            text-align:start;
+            p{
+                transform: rotate(-90deg);
+                margin-top: 82px;
+                font-size: 18px;
+                font-weight: bolder;
+                letter-spacing: 2px;
+                
+            }
+
+
+        }
+        .prog_list{
+            margin-right: 22px;
+          
+            .prog_list_sections{
+                list-style-type: none;
+                li{
+                    
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    .prog_list_icons{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 5px;
+                    }
+                    p{
+                        color: $bk;
+                        font-size: 12px;
+                    }
+               
+                }
+                li:hover{
+                    background-color: rgb(186,11,11);
+                 
+                    p{
+                        color: $wt;
+                    }
+                }
+
+              
+
+            }
+    
+        }
+
+    }
+
+   
+
+}
+.menu_windows_on{
+    display: block;
 }
