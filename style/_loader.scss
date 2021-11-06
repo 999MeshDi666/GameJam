@@ -1,103 +1,131 @@
 .loader{
-    background-color: $bk;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    background-image: url(../img/win59clouds.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding: 10px;
     font-family: $roboto;
     user-select: none;
     z-index: 9999;
-    margin: 0 auto;
-    
-
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    // margin: 0 auto;
     .loader_wrapper{
-        width: 500px;
-        margin: 200px auto; 
-        text-align: center;
-        color: $wt;
-
-        .loader_text{
-            .top{
-                font-weight: 300;
-                line-height: 6px;
-                text-align: left;
-                margin-left: 126px;
-               
-            }
-            .top::after{
-                content: "\00a9";
-                display: block;
-                position: relative;
-                top: -8px;
-                bottom: 0;
-                left: 66px;
-                right: 0;
-                height: 1px;
-                font-size: 10px;
-            }
-            .middle{
-                font-weight: bolder;
-                font-size: 3.1em;
-                line-height: 18px;
-                margin-top: 18px;
-                span{
-                    color: #ea7f39;
-                    font-size: 23px;
-                    position: relative;
-                    top: -18px;
-                    bottom: 0;
-                    left: -13px;
-                    right: 0;
-                }
-            }
-            .bottom{
-                font-size: 1.8em;
-                font-weight: 300;
-                margin-left: 134px;
-                text-align: left;
-            }
-
+        color: $bk;
+        font-family: $wsans;
+        .load_pseudo_icon{
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 40px;
+            letter-spacing: -2px;
+            text-align: right;
+            margin-right: 10px;
+            
         }
-        .loader_animation{
-            margin-top: 60px;
-            .load_border{
-                border: 2px solid rgb(199, 194, 194);
-                max-width: 180px;
-                height: 14px;
-                border-radius: 10px;
+        .load_pseudo_icon:after{
+            content: "\00a9";
+            font-size: 10px;
+            position: fixed;
+            top: 24px;
+            bottom: 0;
+            left: 0;
+            right: 10px;
+        }
+        .load_text_content{
+            margin: 70px 0;
+            text-align: center;
+            .win_95_ico{
+                width: 380px;
+                height: 285px;
+                transform: rotate(18deg);
+            }
+            .load_text{
+                width: 470px;
                 margin: 0 auto;
-                padding: 2px 1px;
+                p{
+                    color: $wt;
+                    letter-spacing: 1px;
+                    font-size: 25px;
+                    text-align: left;
+                    
+                }
+                h1{
+                    
+                    font-size: 80px;
+                    font-weight: bolder;
+                    letter-spacing: -2px;
+                    line-height: 60px;
+                   
+                    span{
+                        color: $wt;
+                        font-weight: lighter;
+                        font-size: 80px;
+                        margin-left: -20px;
+                    }
+                }
+                h3{
+                    font-size: 28px;
+                    letter-spacing: -1px;
+                    line-height: 25px;
+                    text-align: right;
+                    margin-right: 15px;
+                    font-weight: bolder;
+                }
+                
+            }
+        }
+        .load_animation_content{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            
+            .load_bar{
+                height: 25px;
+                background-color: #b0bac3;
+                display: flex;
                 overflow: hidden;
-                .load_box{
-                    background: linear-gradient(to bottom, #2838c7 0%,#5979ef 17%,#869ef3 32%,#869ef3 45%,#5979ef 59%,#2838c7 100%);
-                    width: 9px;
-                    height: 100%;
-                    margin-bottom: 2px;
-                    display: inline-block;
-                    transform: translateX(-100px);
-                    animation-name: loader_anim;
-                    animation-duration: 2s;
+                .loading_line{
+                    display: block;
+                    width: 400px;
+                    height: 150px;
+                    animation-name: load_anim;
                     animation-timing-function: linear;
+                    animation-duration: 3s;
                     animation-fill-mode: forwards;
                     animation-iteration-count: infinite;
+                    transform: translate(-1300px);
                 }
-                @keyframes loader_anim {
+                .loading_left{
+                    background: rgb(176,186,195);
+                    background: linear-gradient(99deg, rgba(176,186,195,1) 7%, rgba(161,174,196,1) 19%, rgba(135,153,197,1) 39%, rgba(90,138,186,1) 58%, rgba(77,128,185,1) 71%, rgba(80,130,189,1) 100%);
+                }
+                .loading_right{
+                    background: rgb(176,186,195);
+                    background: linear-gradient(277deg, rgba(176,186,195,1) 7%, rgba(161,174,196,1) 19%, rgba(135,153,197,1) 39%, rgba(90,138,186,1) 58%, rgba(77,128,185,1) 71%, rgba(80,130,189,1) 100%);
+                }
+                @keyframes load_anim{
                     0%{
-                        transform: translateX(-100px);
+                        transform: translate(-1300px);
+
+
                     }
                     100%{
-                        transform: translateX(100px);
+                        transform: translate(1300px);
+
                     }
                     
                 }
-            
             }
         }
-
     }
+    
+
+    
+
+    
 }
 .off_loader{
     visibility: hidden;
@@ -107,76 +135,20 @@
 }
 
 @media screen and (max-width: 480px) {
-    .loader{
-        padding: 0;
-        .loader_wrapper{
-            width: 52%;
-            text-align: center;
-            .loader_text{
-                .top{
-                    margin-left: 0;
-                }
-                .bottom{
-                    margin-left: 0;
-
-                }
-
-            }
-
-        }
-    }
+    
     
 }
 
 @media screen and (max-width: 420px) {
-    .loader{
-        padding: 0;
-        .loader_wrapper{
-            width: 64%;
-            .loader_text{
-                .top{
-                    font-size: 16px;
-                }
-                .middle{
-                    font-size: 3em;
-
-                }
-                .bottom{
-                    font-size: 1.2em;
-
-                }
-             
-
-            }
-
-        }
-    }
+   
     
 }
 @media screen and (max-width: 360px) {
-    .loader{
-        .loader_wrapper{
-            width: 70%;
-            margin: 240px auto;
-            // .loader_text{
-                
-            // }
-
-        }
-    }
+    
     
 }
 
 @media screen and (max-width: 320px) {
-    .loader{
-        .loader_wrapper{
-            width: 75%;
-            // .loader_text{
-                
-            // }
-
-
-        }
-    }
+   
     
 }

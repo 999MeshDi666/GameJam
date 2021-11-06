@@ -33,11 +33,11 @@ RulesIcon.addEventListener('click',()=>{
 
 
 
-
+let CurTime = document.querySelector(".time");
+let curDate = new Date();
 //timer
 function SetCurTime(){
-    let CurTime = document.querySelector(".time");
-    let curDate = new Date();
+   
     if(curDate.getHours() > 11){
         if(curDate.getMinutes() > 9){
             CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
@@ -55,6 +55,5 @@ function SetCurTime(){
         }
     };
 };
-SetCurTime();
-
+setInterval(SetCurTime(), 1000);
 

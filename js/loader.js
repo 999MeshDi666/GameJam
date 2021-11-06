@@ -4,5 +4,5 @@ document.body.onload = function(){
         if(!loader.classList.contains('off_loader')){
             loader.classList.add('off_loader');
         };
-    }, 5000);
+    }, 9000);
 };
