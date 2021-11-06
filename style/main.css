@@ -164,6 +164,130 @@ ul, ol, li {
   transition: all 1s;
 }
 
+@media screen and (max-width: 480px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 70px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 340px;
+    height: 250px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 400px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 70px;
+    line-height: 54px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 70px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 320px;
+    height: 220px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 360px;
+    margin-top: 10px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text p {
+    font-size: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 60px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 70px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 300px;
+    height: 200px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 320px;
+    margin-top: 30px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text p {
+    font-size: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 50px;
+    line-height: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 span {
+    margin-left: -15px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h3 {
+    margin-right: 20px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 90px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 260px;
+    height: 160px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 280px;
+    margin-top: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text p {
+    font-size: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 span {
+    margin-left: -10px;
+    font-size: 50px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h3 {
+    margin-right: 20px;
+    line-height: 22px;
+    font-size: 25px;
+  }
+}
 .header {
   position: fixed;
   bottom: 0;
