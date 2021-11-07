@@ -10,9 +10,24 @@ WinBtn.addEventListener('click', ()=>{
 let AboutIcon = document.getElementById('about');
 let FAQIcon = document.getElementById('faq');
 let RulesIcon = document.getElementById('rules');
+
 let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
 let WinRules = document.querySelector('.win_rules');
+
+// hide windows action
+WinAbout.addEventListener('click', ()=>{
+    WinAbout.classList.toggle('win_hide');
+    AboutWindows.classList.toggle('desktop_win_about_on');
+})
+WinFAQ.addEventListener('click', ()=>{
+    WinFAQ.classList.toggle('win_hide');
+    FAQWindows.classList.toggle('desktop_win_faq_on');
+})
+WinRules.addEventListener('click', ()=>{
+    WinRules.classList.toggle('win_hide');
+    RulesWindows.classList.toggle('desktop_win_rules_on');
+})
 
 // values of desktop action
 let AboutWindows = document.querySelector('.desktop_win_about');
@@ -64,17 +79,36 @@ let CloseAbout = document.querySelector('.close_windows_about');
 CloseAbout.addEventListener('click',()=>{
     AboutWindows.classList.remove('desktop_win_about_on');
     WinAbout.classList.remove('win_about_on');
-})
+});
 let CloseFAQ = document.querySelector('.close_windows_faq');
 CloseFAQ.addEventListener('click',()=>{
     FAQWindows.classList.remove('desktop_win_faq_on');
     WinFAQ.classList.remove('win_faq_on');
-})
+});
 let CloseRules = document.querySelector('.close_windows_rules');
 CloseRules.addEventListener('click',()=>{
     RulesWindows.classList.remove('desktop_win_rules_on');
     WinRules.classList.remove('win_rules_on');
-})
+});
+
+
+//minimize windows
+let MinAbout = document.querySelector('.min_windows_about');
+MinAbout.addEventListener('click',()=>{
+    AboutWindows.classList.remove('desktop_win_about_on');
+    WinAbout.classList.add('win_hide');
+});
+let MinFAQ = document.querySelector('.min_windows_faq');
+MinFAQ.addEventListener('click',()=>{
+    FAQWindows.classList.remove('desktop_win_faq_on');
+    WinFAQ.classList.add('win_hide');
+});
+let MinRules = document.querySelector('.min_windows_rules');
+MinFAQ.addEventListener('click',()=>{
+    RulesWindows.classList.remove('desktop_win_rules_on');
+    WinRules.classList.add('win_hide');
+});
+
 
 
 

@@ -78,6 +78,9 @@
                     border-color: $bk $wt $wt $bk;
                     display: flex;
                 } 
+                .win_hide{
+                    border-color:  $wt $bk $bk $wt;
+                }
             }
             .cloak{
                 border-width: 2px;
