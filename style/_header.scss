@@ -5,7 +5,7 @@
     background-color: $win;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 22222;
     padding: 4px;
     .header_wrapper{
         .menu_panel{
@@ -98,7 +98,7 @@
 .menu_windows{
     padding: 2px;
     background-color: $win;
-    z-index: 1;
+    z-index: 3;
     position: fixed;
     bottom: 40px;
     right: 0;

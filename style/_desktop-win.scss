@@ -1,0 +1,120 @@
+.desktop_win_about{
+    display: none;
+}
+.desktop_win_faq{
+    display: none;
+}
+.desktop_wins{
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 500px;
+    height: 400px;
+    background-color: $win;
+    padding: 2px;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff #000 #000 #fff;
+   
+    .win_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(6, 21, 127);
+        padding: 2px;
+        border-width: 2px;
+        border-style: solid;
+        border-color:  #000 #fff #fff #000 ;
+    
+        .win_icon_text{
+            display: flex;
+            align-items: center;
+            .win_header_icon{
+                width: 12px;
+                height: 12px;
+                margin: 5px;
+            }
+            .win_header_way{
+                font-family: $pix2;
+                font-size: 20px;
+            }
+        }
+        .win_control_btns{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            img{
+                margin: 0 2px;
+            }
+        }
+    }
+    .win_content{
+        margin-top: 5px;
+        font-size: 14px;
+        overflow-y: scroll;
+        color: #56d7e4;
+        font-family: $inco;
+        padding: 10px;
+        border-width: 2px;
+        border-style: solid;
+        background-color: $bk;
+        text-align: justify;
+        line-height: 20px;
+        border-color:  #000 #fff #fff #000;
+        width: 466px;
+        height: 312px;
+        .win_content_text{
+            margin: 5px 0;
+        }
+        .win_content_list{
+            margin-left: 15px;
+            list-style-type: disc;
+            li{
+                color: #3ea6af;
+            }
+            li span{
+                color: #56d7e4;
+            }
+        }
+        .text_question{
+            margin: 10px 0;
+            cursor: pointer;
+            
+        }
+        
+        .text_answer{
+            display: none;
+            cursor: pointer;
+        }
+        .text_answer_on{
+            display: block;
+
+        }
+
+        
+    }
+    .win_footer{
+        display: flex;
+        justify-content: space-between;
+    
+
+        .win_footer_line{
+            width: 50px;
+            height: 15px;
+            border-width: 2px;
+            border-style: solid;
+            border-color:  #000 #fff #fff #000 ;
+        }
+        .long_line{
+            width: 378px;
+
+        }
+        .short_lines{
+            display: flex;
+        }
+    }
+}

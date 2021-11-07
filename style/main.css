@@ -294,7 +294,7 @@ ul, ol, li {
   background-color: #bdbebd;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 22222;
   padding: 4px;
 }
 .header .header_wrapper .menu_panel {
@@ -395,7 +395,7 @@ ul, ol, li {
 .menu_windows {
   padding: 2px;
   background-color: #bdbebd;
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   bottom: 40px;
   right: 0;
@@ -570,6 +570,179 @@ ul, ol, li {
     margin-top: 2px;
     font-size: 14px;
   }
+}
+.shortcut_icons {
+  margin: 15px 0;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  padding: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+.shortcut_icons .shortcut_img {
+  width: 50px;
+  height: 50px;
+}
+.shortcut_icons .shortcut_names {
+  font-size: 14px;
+}
+
+.shortcut_about {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_faq {
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_rules {
+  top: 200px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.desktop_win_about {
+  display: none;
+}
+
+.desktop_win_faq {
+  display: none;
+}
+
+.desktop_wins {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 500px;
+  height: 400px;
+  background-color: #bdbebd;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+}
+.desktop_wins .win_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #06157f;
+  padding: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+.desktop_wins .win_header .win_icon_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.desktop_wins .win_header .win_icon_text .win_header_icon {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+}
+.desktop_wins .win_header .win_icon_text .win_header_way {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+.desktop_wins .win_header .win_control_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.desktop_wins .win_header .win_control_btns img {
+  margin: 0 2px;
+}
+.desktop_wins .win_content {
+  margin-top: 5px;
+  font-size: 14px;
+  overflow-y: scroll;
+  color: #56d7e4;
+  font-family: "Inconsolata", monospace;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #000;
+  text-align: justify;
+  line-height: 20px;
+  border-color: #000 #fff #fff #000;
+  width: 466px;
+  height: 312px;
+}
+.desktop_wins .win_content .win_content_text {
+  margin: 5px 0;
+}
+.desktop_wins .win_content .win_content_list {
+  margin-left: 15px;
+  list-style-type: disc;
+}
+.desktop_wins .win_content .win_content_list li {
+  color: #3ea6af;
+}
+.desktop_wins .win_content .win_content_list li span {
+  color: #56d7e4;
+}
+.desktop_wins .win_content .text_question {
+  margin: 10px 0;
+  cursor: pointer;
+}
+.desktop_wins .win_content .text_answer {
+  display: none;
+  cursor: pointer;
+}
+.desktop_wins .win_content .text_answer_on {
+  display: block;
+}
+.desktop_wins .win_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.desktop_wins .win_footer .win_footer_line {
+  width: 50px;
+  height: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+.desktop_wins .win_footer .long_line {
+  width: 378px;
+}
+.desktop_wins .win_footer .short_lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */
