@@ -611,14 +611,6 @@ ul, ol, li {
   left: 0;
 }
 
-.desktop_win_about {
-  display: none;
-}
-
-.desktop_win_faq {
-  display: none;
-}
-
 .desktop_wins {
   position: absolute;
   top: 200px;
@@ -635,6 +627,7 @@ ul, ol, li {
   border-width: 2px;
   border-style: solid;
   border-color: #fff #000 #000 #fff;
+  display: none;
 }
 .desktop_wins .win_header {
   display: -webkit-box;
@@ -743,6 +736,18 @@ ul, ol, li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.desktop_win_about_on {
+  display: block;
+}
+
+.desktop_win_faq_on {
+  display: block;
+}
+
+.desktop_win_rules_on {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

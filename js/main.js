@@ -14,21 +14,30 @@ let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
 let WinRules = document.querySelector('.win_rules');
 
+// values of desktop action
+let AboutWindows = document.querySelector('.desktop_win_about');
+let FAQWindows = document.querySelector('.desktop_win_faq');
+let RulesWindows = document.querySelector('.desktop_win_rules');
+
+
 AboutIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinAbout.classList.add('win_about_on');
+    AboutWindows.classList.add('desktop_win_about_on');
 });
 FAQIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinFAQ.classList.add('win_faq_on');
+    FAQWindows.classList.add('desktop_win_faq_on');
 });
 
 RulesIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinRules.classList.add('win_rules_on');
+    RulesWindows.classList.add('desktop_win_rules_on');
 });
 
 // shortcuts action
@@ -38,13 +47,32 @@ let RulesShortcut = document.getElementById('rules_sh');
 
 AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.add('win_about_on');
+    AboutWindows.classList.add('desktop_win_about_on');
 });
 FAQShortcut.addEventListener('dblclick', ()=>{
     WinFAQ.classList.add('win_faq_on');
+    FAQWindows.classList.add('desktop_win_faq_on');
 });
 RulesShortcut.addEventListener('dblclick',()=>{
     WinRules.classList.add('win_rules_on');
+    RulesWindows.classList.add('desktop_win_rules_on');
 });
+
+
+// close windows
+let CloseAbout = document.querySelector('.close_windows_about');
+CloseAbout.addEventListener('click',()=>{
+    AboutWindows.classList.remove('desktop_win_about_on');
+})
+let CloseFAQ = document.querySelector('.close_windows_faq');
+CloseFAQ.addEventListener('click',()=>{
+    FAQWindows.classList.remove('desktop_win_faq_on');
+})
+let CloseRules = document.querySelector('.close_windows_rules');
+CloseRules.addEventListener('click',()=>{
+    RulesWindows.classList.remove('desktop_win_rules_on');
+})
+
 
 
 // show faq questions
