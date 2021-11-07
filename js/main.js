@@ -10,10 +10,16 @@ WinBtn.addEventListener('click', ()=>{
 let AboutIcon = document.getElementById('about');
 let FAQIcon = document.getElementById('faq');
 let RulesIcon = document.getElementById('rules');
+let ScheduleIcon = document.getElementById('schedule');
+let RegIcon = document.getElementById('reg');
+let AwardsIcon = document.getElementById('awards');
 
 let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
 let WinRules = document.querySelector('.win_rules');
+let WinSchedule = document.querySelector('.win_schedule');
+let WinReg = document.querySelector('.win_reg');
+let WinAwards = document.querySelector('.win_awards');
 
 // hide windows action
 WinAbout.addEventListener('click', ()=>{
@@ -27,6 +33,18 @@ WinFAQ.addEventListener('click', ()=>{
 WinRules.addEventListener('click', ()=>{
     WinRules.classList.toggle('win_hide');
     RulesWindows.classList.toggle('desktop_win_rules_on');
+})
+WinSchedule.addEventListener('click', ()=>{
+    WinSchedule.classList.toggle('win_hide');
+    // AboutWindows.classList.toggle('desktop_win_about_on');
+})
+WinReg.addEventListener('click', ()=>{
+    WinReg.classList.toggle('win_hide');
+    // FAQWindows.classList.toggle('desktop_win_faq_on');
+})
+WinAwards.addEventListener('click', ()=>{
+    WinAwards.classList.toggle('win_hide');
+    // RulesWindows.classList.toggle('desktop_win_rules_on');
 })
 
 // values of desktop action
@@ -47,18 +65,40 @@ FAQIcon.addEventListener('click',()=>{
     WinFAQ.classList.add('win_faq_on');
     FAQWindows.classList.add('desktop_win_faq_on');
 });
-
 RulesIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinRules.classList.add('win_rules_on');
     RulesWindows.classList.add('desktop_win_rules_on');
 });
+ScheduleIcon.addEventListener('click',()=>{
+    WinBtn.classList.remove('win_btn_clicked');
+    menuWindows.classList.remove('menu_windows_on');
+    WinSchedule.classList.add('win_schedule_on');
+    // RulesWindows.classList.add('desktop_win_rules_on');
+});
+RegIcon.addEventListener('click',()=>{
+    WinBtn.classList.remove('win_btn_clicked');
+    menuWindows.classList.remove('menu_windows_on');
+    WinReg.classList.add('win_reg_on');
+    // RulesWindows.classList.add('desktop_win_rules_on');
+});
+AwardsIcon.addEventListener('click',()=>{
+    WinBtn.classList.remove('win_btn_clicked');
+    menuWindows.classList.remove('menu_windows_on');
+    WinAwards.classList.add('win_awards_on');
+    // RulesWindows.classList.add('desktop_win_rules_on');
+});
+
+
 
 // shortcuts action
 let AboutShortcut = document.getElementById('about_sh');
 let FAQShortcut = document.getElementById('faq_sh');
 let RulesShortcut = document.getElementById('rules_sh');
+let ScheduleShortcut = document.getElementById('schedule_sh');
+let RegShortcut = document.getElementById('reg_sh');
+let AwardsShortcut = document.getElementById('awards_sh');
 
 AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.add('win_about_on');
@@ -71,6 +111,18 @@ FAQShortcut.addEventListener('dblclick', ()=>{
 RulesShortcut.addEventListener('dblclick',()=>{
     WinRules.classList.add('win_rules_on');
     RulesWindows.classList.add('desktop_win_rules_on');
+});
+ScheduleShortcut.addEventListener('dblclick', ()=>{
+    WinSchedule.classList.add('win_schedule_on');
+    // AboutWindows.classList.add('desktop_win_about_on');
+});
+RegShortcut.addEventListener('dblclick', ()=>{
+    WinReg.classList.add('win_reg_on');
+    // FAQWindows.classList.add('desktop_win_faq_on');
+});
+AwardsShortcut.addEventListener('dblclick',()=>{
+    WinAwards.classList.add('win_awards_on');
+    // RulesWindows.classList.add('desktop_win_rules_on');
 });
 
 
@@ -104,7 +156,7 @@ MinFAQ.addEventListener('click',()=>{
     WinFAQ.classList.add('win_hide');
 });
 let MinRules = document.querySelector('.min_windows_rules');
-MinFAQ.addEventListener('click',()=>{
+MinRules.addEventListener('click',()=>{
     RulesWindows.classList.remove('desktop_win_rules_on');
     WinRules.classList.add('win_hide');
 });

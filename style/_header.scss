@@ -15,6 +15,7 @@
             color: $bk;
             cursor: default;
             .windows{
+                white-space: nowrap;
                 display: flex;
                 .general_win{
                     background-color: $win;
@@ -26,6 +27,7 @@
                     padding: 0 4px;
                     margin-right: 10px;
                     width: 135px;
+                    
                    
                     img{
                         display: block;
@@ -37,8 +39,16 @@
                         font-size: 18px;
                         margin-bottom: 2px;
                         letter-spacing: 1px;
+                    
                     }
                 
+                }
+                .win_reg {
+                    p{
+                        font-size: 15px;
+                    
+                    }
+
                 }
                
                 .win_btn{
@@ -66,6 +76,15 @@
                 .win_rules{
                     display: none;
                 }
+                .win_schedule{
+                    display: none;
+                }
+                .win_reg{
+                    display: none;
+                }
+                .win_awards{
+                    display: none;
+                }
                 .win_about_on{
                     display: flex;
                     border-color: $bk $wt $wt $bk;
@@ -78,6 +97,18 @@
                     border-color: $bk $wt $wt $bk;
                     display: flex;
                 } 
+                .win_schedule_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_reg_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
+                .win_awards_on{
+                    border-color: $bk $wt $wt $bk;
+                    display: flex;
+                }
                 .win_hide{
                     border-color:  $wt $bk $bk $wt;
                 }
@@ -106,8 +137,8 @@
     bottom: 40px;
     right: 0;
     left: 0;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 265px;
     border-width: 2px;
     border-style: solid;
     border-color: $wt $bk $bk $wt;
@@ -119,13 +150,13 @@
         justify-content: space-between;
         .name_line{
             width: 35px;
-            height: 150px;
+            height: 265px;
             background-color: rgb(186,11,11);
             background: linear-gradient(135deg, rgba(133,7,7,1) 14%, rgba(149,13,13,1) 29%, rgba(213,11,11,1) 90%);
             text-align:start;
             p{
                 transform: rotate(-90deg);
-                margin-top: 82px;
+                margin-top: 165px;
                 font-size: 18px;
                 font-weight: bolder;
                 letter-spacing: 2px;
@@ -188,6 +219,13 @@
                             font-size: 13px;
                         }
                     }
+                    .win_reg {
+                        p{
+                            font-size: 11px;
+                        
+                        }
+    
+                    }
                     .win_btn{
                         width: 90px;
                         p{
@@ -226,6 +264,11 @@
                             font-weight: bolder;
                         }
                     
+                    }
+                    .win_reg {
+                        p{
+                            font-size: 10px;
+                        }
                     }
                     .win_btn{
                         width: 80px;
@@ -272,8 +315,7 @@
                     
                     }
                     .win_btn{
-                        width: 70px;
-                        
+                        width: 70px;  
                     }
                 }
                 .cloak{

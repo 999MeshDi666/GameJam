@@ -309,6 +309,7 @@ ul, ol, li {
   cursor: default;
 }
 .header .header_wrapper .menu_panel .windows {
+  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,6 +340,9 @@ ul, ol, li {
   margin-bottom: 2px;
   letter-spacing: 1px;
 }
+.header .header_wrapper .menu_panel .windows .win_reg p {
+  font-size: 15px;
+}
 .header .header_wrapper .menu_panel .windows .win_btn {
   width: 90px;
 }
@@ -362,6 +366,15 @@ ul, ol, li {
 .header .header_wrapper .menu_panel .windows .win_rules {
   display: none;
 }
+.header .header_wrapper .menu_panel .windows .win_schedule {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_reg {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_awards {
+  display: none;
+}
 .header .header_wrapper .menu_panel .windows .win_about_on {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,6 +388,24 @@ ul, ol, li {
   display: flex;
 }
 .header .header_wrapper .menu_panel .windows .win_rules_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_schedule_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_reg_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_awards_on {
   border-color: #000 #fff #fff #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,8 +434,8 @@ ul, ol, li {
   bottom: 40px;
   right: 0;
   left: 0;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 265px;
   border-width: 2px;
   border-style: solid;
   border-color: #fff #000 #000 #fff;
@@ -422,7 +453,7 @@ ul, ol, li {
 }
 .menu_windows .menu_windows_wrapper .name_line {
   width: 35px;
-  height: 150px;
+  height: 265px;
   background-color: #ba0b0b;
   background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
   text-align: start;
@@ -430,7 +461,7 @@ ul, ol, li {
 .menu_windows .menu_windows_wrapper .name_line p {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  margin-top: 82px;
+  margin-top: 165px;
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: 2px;
@@ -484,6 +515,9 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .general_win p {
     font-size: 13px;
   }
+  .header .header_wrapper .menu_panel .windows .win_reg p {
+    font-size: 11px;
+  }
   .header .header_wrapper .menu_panel .windows .win_btn {
     width: 90px;
   }
@@ -510,6 +544,9 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .general_win p {
     font-size: 11px;
     font-weight: bolder;
+  }
+  .header .header_wrapper .menu_panel .windows .win_reg p {
+    font-size: 10px;
   }
   .header .header_wrapper .menu_panel .windows .win_btn {
     width: 80px;
@@ -613,6 +650,27 @@ ul, ol, li {
 
 .shortcut_rules {
   top: 200px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_schedule {
+  top: 300px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_reg {
+  top: 400px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_awards {
+  top: 500px;
   bottom: 0;
   right: 0;
   left: 0;
