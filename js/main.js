@@ -63,14 +63,17 @@ RulesShortcut.addEventListener('dblclick',()=>{
 let CloseAbout = document.querySelector('.close_windows_about');
 CloseAbout.addEventListener('click',()=>{
     AboutWindows.classList.remove('desktop_win_about_on');
+    WinAbout.classList.remove('win_about_on');
 })
 let CloseFAQ = document.querySelector('.close_windows_faq');
 CloseFAQ.addEventListener('click',()=>{
     FAQWindows.classList.remove('desktop_win_faq_on');
+    WinFAQ.classList.remove('win_faq_on');
 })
 let CloseRules = document.querySelector('.close_windows_rules');
 CloseRules.addEventListener('click',()=>{
     RulesWindows.classList.remove('desktop_win_rules_on');
+    WinRules.classList.remove('win_rules_on');
 })
 
 
@@ -94,7 +97,6 @@ questionThird.addEventListener('click', ()=>{
     questionThirdA.classList.toggle('text_answer_on');
     
 });
-
 let questionFourth = document.getElementById('question_4');
 let questionFourthA = document.getElementById('question_4_answer');
 questionFourth.addEventListener('click', ()=>{
