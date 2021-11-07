@@ -36,7 +36,7 @@ WinRules.addEventListener('click', ()=>{
 })
 WinSchedule.addEventListener('click', ()=>{
     WinSchedule.classList.toggle('win_hide');
-    // AboutWindows.classList.toggle('desktop_win_about_on');
+    ScheduleWindows.classList.toggle('desktop_win_schedule_on');
 })
 WinReg.addEventListener('click', ()=>{
     WinReg.classList.toggle('win_hide');
@@ -51,6 +51,7 @@ WinAwards.addEventListener('click', ()=>{
 let AboutWindows = document.querySelector('.desktop_win_about');
 let FAQWindows = document.querySelector('.desktop_win_faq');
 let RulesWindows = document.querySelector('.desktop_win_rules');
+let ScheduleWindows = document.querySelector('.desktop_win_schedule');
 
 
 AboutIcon.addEventListener('click',()=>{
@@ -75,7 +76,7 @@ ScheduleIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinSchedule.classList.add('win_schedule_on');
-    // RulesWindows.classList.add('desktop_win_rules_on');
+    ScheduleWindows.classList.add('desktop_win_schedule_on');
 });
 RegIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
@@ -114,7 +115,7 @@ RulesShortcut.addEventListener('dblclick',()=>{
 });
 ScheduleShortcut.addEventListener('dblclick', ()=>{
     WinSchedule.classList.add('win_schedule_on');
-    // AboutWindows.classList.add('desktop_win_about_on');
+    ScheduleWindows.classList.add('desktop_win_schedule_on');
 });
 RegShortcut.addEventListener('dblclick', ()=>{
     WinReg.classList.add('win_reg_on');
@@ -142,6 +143,11 @@ CloseRules.addEventListener('click',()=>{
     RulesWindows.classList.remove('desktop_win_rules_on');
     WinRules.classList.remove('win_rules_on');
 });
+let CloseSchedule = document.querySelector('.close_windows_schedule');
+CloseSchedule.addEventListener('click',()=>{
+    ScheduleWindows.classList.remove('desktop_win_schedule_on');
+    WinSchedule.classList.remove('win_schedule_on');
+});
 
 
 //minimize windows
@@ -160,8 +166,11 @@ MinRules.addEventListener('click',()=>{
     RulesWindows.classList.remove('desktop_win_rules_on');
     WinRules.classList.add('win_hide');
 });
-
-
+let MinSchedule = document.querySelector('.min_windows_schedule');
+MinSchedule.addEventListener('click',()=>{
+    ScheduleWindows.classList.remove('desktop_win_schedule_on');
+    WinSchedule.classList.add('win_hide');
+});
 
 
 // show faq questions
@@ -197,45 +206,27 @@ questionFifth.addEventListener('click', ()=>{
 });
 
 
+// show schedule tables
+let dateFirst = document.getElementById('date_1');
+let dateFirstA = document.getElementById('date_1_table');
+dateFirst.addEventListener('click', ()=>{
+    dateFirstA.classList.toggle('show_date_table_on');
+    
+});
+let dateSecond = document.getElementById('date_2');
+let dateSecondA = document.getElementById('date_2_table');
+dateSecond.addEventListener('click', ()=>{
+    dateSecondA.classList.toggle('show_date_table_on');
+    
+});
+let dateThird = document.getElementById('date_3');
+let dateThirdA = document.getElementById('date_3_table');
+dateThird.addEventListener('click', ()=>{
+    dateThirdA.classList.toggle('show_date_table_on');
+});
 
-// shortcuts moveing
-// AboutShortcut.addEventListener('mousedown',(e)=>{
 
-//     var coords = getCoords(AboutShortcut);
-//     var shiftX = e.pageX - coords.left;
-//     var shiftY = e.pageY - coords.top;
 
-//     AboutShortcut.style.position = 'absolute';
-//     moveAt(e);
-
-//     AboutShortcut.style.zIndex = 1000;
-
-//     function moveAt(e){
-//         AboutShortcut.style.left = e.pageX - shiftX + 'px';
-//         AboutShortcut.style.top = e.pageY - shiftY  + 'px';
-//     }
-
-//     document.onmousemove = function(){
-//         moveAt(e);
-//     };
-
-//     AboutShortcut.addEventListener('mouseup', ()=>{
-//         document.onmousemove = null;
-//         AboutShortcut.onmouseup = null;
-//     });
-
-//     AboutShortcut.addEventListener('dragstart', ()=>{
-//         return false;
-//     });
-//     function getCoords(elem){
-//         var box = elem.getBoundingClientRect();
-//         return{
-//             top: box.top + pageYOffset,
-//             left: box.left + pageXOffset
-//         };
-//     }
-
-// });
 
 
 //timer

@@ -79,18 +79,32 @@
         .text_question{
             margin: 10px 0;
             cursor: pointer;
-            
         }
-        
         .text_answer{
             display: none;
-            cursor: pointer;
         }
         .text_answer_on{
             display: block;
+        }
+        .text_date{
+            cursor: pointer;
+        }
+        .date_table{
+            text-align: center;
+            tr,
+            th,
+            td{
+                border: 1px #3ea6af solid;
+                padding: 5px;
+            }
 
         }
-
+        .show_date_table{
+            display: none;
+        }
+        .show_date_table_on{
+            display: block;
+        }
         
     }
     .win_footer{
@@ -121,5 +135,8 @@
     display: block;
 }
 .desktop_win_rules_on{
+    display: block;
+}
+.desktop_win_schedule_on{
     display: block;
 }

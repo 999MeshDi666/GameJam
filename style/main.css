@@ -774,9 +774,26 @@ ul, ol, li {
 }
 .desktop_wins .win_content .text_answer {
   display: none;
-  cursor: pointer;
 }
 .desktop_wins .win_content .text_answer_on {
+  display: block;
+}
+.desktop_wins .win_content .text_date {
+  cursor: pointer;
+}
+.desktop_wins .win_content .date_table {
+  text-align: center;
+}
+.desktop_wins .win_content .date_table tr,
+.desktop_wins .win_content .date_table th,
+.desktop_wins .win_content .date_table td {
+  border: 1px #3ea6af solid;
+  padding: 5px;
+}
+.desktop_wins .win_content .show_date_table {
+  display: none;
+}
+.desktop_wins .win_content .show_date_table_on {
   display: block;
 }
 .desktop_wins .win_footer {
@@ -812,6 +829,10 @@ ul, ol, li {
 }
 
 .desktop_win_rules_on {
+  display: block;
+}
+
+.desktop_win_schedule_on {
   display: block;
 }
 
