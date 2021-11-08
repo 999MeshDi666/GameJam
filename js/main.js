@@ -40,7 +40,7 @@ WinSchedule.addEventListener('click', ()=>{
 })
 WinReg.addEventListener('click', ()=>{
     WinReg.classList.toggle('win_hide');
-    // FAQWindows.classList.toggle('desktop_win_faq_on');
+    RegWindows.classList.toggle('desktop_win_registration_on');
 })
 WinAwards.addEventListener('click', ()=>{
     WinAwards.classList.toggle('win_hide');
@@ -52,6 +52,7 @@ let AboutWindows = document.querySelector('.desktop_win_about');
 let FAQWindows = document.querySelector('.desktop_win_faq');
 let RulesWindows = document.querySelector('.desktop_win_rules');
 let ScheduleWindows = document.querySelector('.desktop_win_schedule');
+let RegWindows = document.querySelector('.desktop_win_registration');
 
 
 AboutIcon.addEventListener('click',()=>{
@@ -82,7 +83,7 @@ RegIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinReg.classList.add('win_reg_on');
-    // RulesWindows.classList.add('desktop_win_rules_on');
+    RegWindows.classList.add('desktop_win_registration_on');
 });
 AwardsIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
@@ -119,7 +120,7 @@ ScheduleShortcut.addEventListener('dblclick', ()=>{
 });
 RegShortcut.addEventListener('dblclick', ()=>{
     WinReg.classList.add('win_reg_on');
-    // FAQWindows.classList.add('desktop_win_faq_on');
+    RegWindows.classList.add('desktop_win_registration_on');
 });
 AwardsShortcut.addEventListener('dblclick',()=>{
     WinAwards.classList.add('win_awards_on');
@@ -148,6 +149,11 @@ CloseSchedule.addEventListener('click',()=>{
     ScheduleWindows.classList.remove('desktop_win_schedule_on');
     WinSchedule.classList.remove('win_schedule_on');
 });
+let CloseReg = document.querySelector('.close_windows_reg');
+CloseReg.addEventListener('click',()=>{
+    RegWindows.classList.remove('desktop_win_registration_on');
+    WinReg.classList.remove('win_reg_on');
+});
 
 
 //minimize windows
@@ -170,6 +176,11 @@ let MinSchedule = document.querySelector('.min_windows_schedule');
 MinSchedule.addEventListener('click',()=>{
     ScheduleWindows.classList.remove('desktop_win_schedule_on');
     WinSchedule.classList.add('win_hide');
+});
+let MinReg = document.querySelector('.min_windows_reg');
+MinReg.addEventListener('click',()=>{
+    RegWindows.classList.remove('desktop_win_registration_on');
+    WinReg.classList.add('win_hide');
 });
 
 

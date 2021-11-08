@@ -294,7 +294,7 @@ ul, ol, li {
   background-color: #bdbebd;
   left: 0;
   right: 0;
-  z-index: 22222;
+  z-index: 5;
   padding: 4px;
 }
 .header .header_wrapper .menu_panel {
@@ -820,6 +820,60 @@ ul, ol, li {
   display: flex;
 }
 
+.desktop_win_registration {
+  height: 422px;
+  top: 150px;
+  left: 400px;
+}
+.desktop_win_registration .win_form_content {
+  background-color: #bdbebd;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  color: #000;
+  overflow: hidden;
+  height: 350px;
+}
+.desktop_win_registration .win_form_content .win_reg_text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_inform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
+  margin-right: 5px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
+  display: block;
+  padding: 2px;
+  width: 250px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
+  text-align: right;
+  margin-top: 20px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn {
+  background-color: #bdbebd;
+  border-width: 2px;
+  border-style: solid;
+  width: 100px;
+  height: 30px;
+  border-color: #fff #000 #000 #fff;
+  font-size: 17px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn:active {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+
 .desktop_win_about_on {
   display: block;
 }
@@ -833,6 +887,10 @@ ul, ol, li {
 }
 
 .desktop_win_schedule_on {
+  display: block;
+}
+
+.desktop_win_registration_on {
   display: block;
 }
 
