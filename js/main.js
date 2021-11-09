@@ -111,26 +111,32 @@ let AwardsShortcut = document.getElementById('awards_sh');
 
 AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.add('win_about_on');
+    WinAbout.classList.remove('win_hide');
     AboutWindows.classList.add('desktop_win_about_on');
 });
 FAQShortcut.addEventListener('dblclick', ()=>{
     WinFAQ.classList.add('win_faq_on');
+    WinFAQ.classList.remove('win_hide');
     FAQWindows.classList.add('desktop_win_faq_on');
 });
 RulesShortcut.addEventListener('dblclick',()=>{
     WinRules.classList.add('win_rules_on');
+    WinRules.classList.remove('win_hide');
     RulesWindows.classList.add('desktop_win_rules_on');
 });
 ScheduleShortcut.addEventListener('dblclick', ()=>{
     WinSchedule.classList.add('win_schedule_on');
+    WinSchedule.classList.remove('win_hide');
     ScheduleWindows.classList.add('desktop_win_schedule_on');
 });
 RegShortcut.addEventListener('dblclick', ()=>{
     WinReg.classList.add('win_reg_on');
+    WinReg.classList.remove('win_hide');
     RegWindows.classList.add('desktop_win_registration_on');
 });
 AwardsShortcut.addEventListener('dblclick',()=>{
     WinAwards.classList.add('win_awards_on');
+    WinAwards.classList.remove('win_hide');
     AwardsWindows.classList.add('desktop_win_awards_on');
 });
 
@@ -260,7 +266,7 @@ dateThird.addEventListener('click', ()=>{
 //timer
 let CurTime = document.querySelector(".time");
 let curDate = new Date();
-
+setInterval(SetCurTime(), 1000);
 function SetCurTime(){
    
     if(curDate.getHours() > 11){
@@ -280,5 +286,5 @@ function SetCurTime(){
         }
     };
 };
-setInterval(SetCurTime(), 1000);
+
 
