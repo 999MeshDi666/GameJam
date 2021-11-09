@@ -1,6 +1,6 @@
 
 .desktop_wins{
-    position: absolute;
+    position: fixed;
     top: 130px;
     left: 350px;
     right: 0;
@@ -47,6 +47,9 @@
                 margin: 0 2px;
             }
         }
+    }
+    .win_header:hover{
+        cursor: move;
     }
     .win_content{
         margin-top: 5px;

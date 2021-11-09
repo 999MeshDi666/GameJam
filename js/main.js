@@ -262,7 +262,6 @@ dateThird.addEventListener('click', ()=>{
 
 
 
-
 //timer
 let CurTime = document.querySelector(".time");
 let curDate = new Date();

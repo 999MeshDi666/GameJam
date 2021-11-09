@@ -677,7 +677,7 @@ ul, ol, li {
 }
 
 .desktop_wins {
-  position: absolute;
+  position: fixed;
   top: 130px;
   left: 350px;
   right: 0;
@@ -738,6 +738,9 @@ ul, ol, li {
 }
 .desktop_wins .win_header .win_control_btns img {
   margin: 0 2px;
+}
+.desktop_wins .win_header:hover {
+  cursor: move;
 }
 .desktop_wins .win_content {
   margin-top: 5px;
