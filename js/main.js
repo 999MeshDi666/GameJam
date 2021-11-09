@@ -44,7 +44,7 @@ WinReg.addEventListener('click', ()=>{
 })
 WinAwards.addEventListener('click', ()=>{
     WinAwards.classList.toggle('win_hide');
-    // RulesWindows.classList.toggle('desktop_win_rules_on');
+    AwardsWindows.classList.toggle('desktop_win_awards_on');
 })
 
 // values of desktop action
@@ -53,43 +53,50 @@ let FAQWindows = document.querySelector('.desktop_win_faq');
 let RulesWindows = document.querySelector('.desktop_win_rules');
 let ScheduleWindows = document.querySelector('.desktop_win_schedule');
 let RegWindows = document.querySelector('.desktop_win_registration');
+let AwardsWindows = document.querySelector('.desktop_win_awards')
 
 
 AboutIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinAbout.classList.add('win_about_on');
+    WinAbout.classList.remove('win_hide');
     AboutWindows.classList.add('desktop_win_about_on');
 });
 FAQIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinFAQ.classList.add('win_faq_on');
+    WinFAQ.classList.remove('win_hide');
     FAQWindows.classList.add('desktop_win_faq_on');
 });
 RulesIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinRules.classList.add('win_rules_on');
+    WinRules.classList.remove('win_hide');
     RulesWindows.classList.add('desktop_win_rules_on');
 });
 ScheduleIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinSchedule.classList.add('win_schedule_on');
+    WinSchedule.classList.remove('win_hide');
     ScheduleWindows.classList.add('desktop_win_schedule_on');
 });
 RegIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinReg.classList.add('win_reg_on');
+    WinReg.classList.remove('win_hide');
     RegWindows.classList.add('desktop_win_registration_on');
 });
 AwardsIcon.addEventListener('click',()=>{
     WinBtn.classList.remove('win_btn_clicked');
     menuWindows.classList.remove('menu_windows_on');
     WinAwards.classList.add('win_awards_on');
-    // RulesWindows.classList.add('desktop_win_rules_on');
+    WinAwards.classList.remove('win_hide');
+    AwardsWindows.classList.add('desktop_win_awards_on');
 });
 
 
@@ -124,7 +131,7 @@ RegShortcut.addEventListener('dblclick', ()=>{
 });
 AwardsShortcut.addEventListener('dblclick',()=>{
     WinAwards.classList.add('win_awards_on');
-    // RulesWindows.classList.add('desktop_win_rules_on');
+    AwardsWindows.classList.add('desktop_win_awards_on');
 });
 
 
@@ -154,6 +161,11 @@ CloseReg.addEventListener('click',()=>{
     RegWindows.classList.remove('desktop_win_registration_on');
     WinReg.classList.remove('win_reg_on');
 });
+let CloseAwards = document.querySelector('.close_windows_awards');
+CloseAwards.addEventListener('click',()=>{
+    AwardsWindows.classList.remove('desktop_win_awards_on');
+    WinAwards.classList.remove('win_awards_on');
+});
 
 
 //minimize windows
@@ -181,6 +193,11 @@ let MinReg = document.querySelector('.min_windows_reg');
 MinReg.addEventListener('click',()=>{
     RegWindows.classList.remove('desktop_win_registration_on');
     WinReg.classList.add('win_hide');
+});
+let MinAwards = document.querySelector('.min_windows_awards');
+MinAwards.addEventListener('click',()=>{
+    AwardsWindows.classList.remove('desktop_win_awards_on');
+    WinAwards.classList.add('win_hide');
 });
 
 
