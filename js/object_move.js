@@ -121,7 +121,6 @@ DragShortcutElem(MoveScheduleSh);
 DragShortcutElem(MoveRegSh);
 DragShortcutElem(MoveAwardsSh);
 
-
 function DragShortcutElem(elem){
     elem.ondragstart = () => false;
     let rect = elem.getBoundingClientRect();

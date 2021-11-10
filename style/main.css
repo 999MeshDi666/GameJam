@@ -777,6 +777,8 @@ ul, ol, li {
 }
 .desktop_wins .win_content .text_answer_on {
   display: block;
+  color: #e4d656;
+  margin-left: 10px;
 }
 .desktop_wins .win_content .text_date {
   cursor: pointer;
