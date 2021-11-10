@@ -709,6 +709,7 @@ ul, ol, li {
   border-width: 2px;
   border-style: solid;
   border-color: #000 #fff #fff #000;
+  cursor: move;
 }
 .desktop_wins .win_header .win_icon_text {
   display: -webkit-box;
@@ -738,9 +739,6 @@ ul, ol, li {
 }
 .desktop_wins .win_header .win_control_btns img {
   margin: 0 2px;
-}
-.desktop_wins .win_header:hover {
-  cursor: move;
 }
 .desktop_wins .win_content {
   margin-top: 5px;

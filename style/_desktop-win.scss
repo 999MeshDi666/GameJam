@@ -25,6 +25,7 @@
         border-width: 2px;
         border-style: solid;
         border-color: $bk $wt $wt $bk;
+        cursor: move;
     
         .win_icon_text{
             display: flex;
@@ -47,9 +48,6 @@
                 margin: 0 2px;
             }
         }
-    }
-    .win_header:hover{
-        cursor: move;
     }
     .win_content{
         margin-top: 5px;
