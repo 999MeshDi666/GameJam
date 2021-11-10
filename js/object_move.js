@@ -9,7 +9,7 @@ let MoveRules = document.getElementById('move_rules');
 let MoveWinRules = document.querySelector('.desktop_win_rules');
 
 let MoveSchedule = document.getElementById('move_schedule');
-let MoveWinSchedule = document.querySelector('.desktop_win_schdule');
+let MoveWinSchedule = document.querySelector('.desktop_win_schedule');
 
 let MoveReg = document.getElementById('move_reg');
 let MoveWinReg = document.querySelector('.desktop_win_registration');
@@ -24,35 +24,26 @@ DragWindows(MoveReg, MoveWinReg);
 DragWindows(MoveAwards, MoveWinAwards);
 
 
-// let MoveAboutSh = document.getElementById('about_sh');
-// let MoveFAQSh = document.getElementById('faq_sh');
-// let MoveRulesSh = document.getElementById('rules_sh');
-// let MoveScheduleSh = document.getElementById('schedule_sh');
-// let MoveRegSh = document.getElementById('reg_sh');
-// let MoveAwardsSh = document.getElementById('awards_sh');
-// DragElem(MoveAboutSh);
-// DragElem(MoveFAQSh);
-// DragElem(MoveRulesSh);
-// DragElem(MoveScheduleSh);
-// DragElem(MoveRegSh);
-// DragElem(MoveAwardsSh);
-
 function DragWindows(header, windows){
     header.addEventListener('mousedown', ()=>{
-        DragElem(windows);
+        DragWinElem(windows);
     });
 };
 
-function DragElem(elem){
+function DragWinElem(elem){
     elem.onmousedown = function(e){
-        let shiftX = e.clientX - elem.getBoundingClientRect().left;
-        let shiftY = e.clientY - elem.getBoundingClientRect().top;
+        let coords = getCoords(elem)
+        let shiftX = e.clientX - coords.left;
+        let shiftY = e.clientY - coords.top;
+
         document.body.style.overflow = 'hidden';
+
         moveAt(e.pageX, e.pageY);
         function moveAt(pageX, pageY) {
             elem.style.left = pageX - shiftX + 'px';
             elem.style.top = pageY - shiftY + 'px';
         }
+
         function onMouseMove(e) {
             moveAt(e.pageX, e.pageY);
         }
@@ -64,46 +55,92 @@ function DragElem(elem){
             document.removeEventListener('mousemove', onMouseMove);
             elem.onmouseup = null;
         };
-        let WinBodyAbout = document.getElementById('about_content');
-        let WinBodyFAQ = document.getElementById('faq_content');
-        let WinBodyRules = document.getElementById('rules_content');
-        let WinBodySchedule = document.getElementById('schedule_content');
-        let WinBodyReg = document.getElementById('reg_content');
-        let WinBodyAwards = document.getElementById('awards_content');
-        OffDrag(WinBodyAbout);
-        OffDrag(WinBodyFAQ);
-        OffDrag(WinBodyRules);
-        OffDrag(WinBodySchedule);
-        OffDrag(WinBodyReg);
-        OffDrag(WinBodyAwards);
-
-        let WinFooterAbout = document.getElementById('about_footer');
-        let WinFooterFAQ = document.getElementById('faq_footer');
-        let WinFooterRules = document.getElementById('rules_footer');
-        let WinFooterSchedule = document.getElementById('schedule_footer');
-        let WinFooterAwards = document.getElementById('awards_footer');
-        OffDrag(WinFooterAbout);
-        OffDrag(WinFooterFAQ);
-        OffDrag(WinFooterRules);
-        OffDrag(WinFooterSchedule);
-        OffDrag(WinFooterAwards);
-
-        function OffDrag(win){
-            win.style.userSelect = 'text';
-            win.onmousedown = function(){
-                elem.onmousedown = function(){
-                    console.log('false');
-                    elem.preventDefault();
-                };
-            };
-        };
-        
+       
        
     };
+    let WinBodyAbout = document.getElementById('about_content');
+    let WinBodyFAQ = document.getElementById('faq_content');
+    let WinBodyRules = document.getElementById('rules_content');
+    let WinBodySchedule = document.getElementById('schedule_content');
+    let WinBodyReg = document.getElementById('reg_content');
+    let WinBodyAwards = document.getElementById('awards_content');
+    OffDrag(WinBodyAbout);
+    OffDrag(WinBodyFAQ);
+    OffDrag(WinBodyRules);
+    OffDrag(WinBodySchedule);
+    OffDrag(WinBodyReg);
+    OffDrag(WinBodyAwards);
+
+    let WinFooterAbout = document.getElementById('about_footer');
+    let WinFooterFAQ = document.getElementById('faq_footer');
+    let WinFooterRules = document.getElementById('rules_footer');
+    let WinFooterSchedule = document.getElementById('schedule_footer');
+    let WinFooterAwards = document.getElementById('awards_footer');
+    OffDrag(WinFooterAbout);
+    OffDrag(WinFooterFAQ);
+    OffDrag(WinFooterRules);
+    OffDrag(WinFooterSchedule);
+    OffDrag(WinFooterAwards);
+
+    function OffDrag(win){
+        win.style.userSelect = 'text';
+        win.onmousedown = function(){
+            elem.onmousedown = function(){
+                console.log('false');
+                elem.preventDefault();
+            };
+        };
+    };
+
     elem.ondragstart = function() {
         return false;
     };
-  
-    
-    
+
+    function getCoords(elem) {  
+        var box = elem.getBoundingClientRect();
+        return {
+          top: box.top + pageYOffset,
+          left: box.left + pageXOffset
+        };
+    };
 };
+
+
+
+
+let MoveAboutSh = document.getElementById('about_sh');
+let MoveFAQSh = document.getElementById('faq_sh');
+let MoveRulesSh = document.getElementById('rules_sh');
+let MoveScheduleSh = document.getElementById('schedule_sh');
+let MoveRegSh = document.getElementById('reg_sh');
+let MoveAwardsSh = document.getElementById('awards_sh');
+DragShortcutElem(MoveAboutSh);
+DragShortcutElem(MoveFAQSh);
+DragShortcutElem(MoveRulesSh);
+DragShortcutElem(MoveScheduleSh);
+DragShortcutElem(MoveRegSh);
+DragShortcutElem(MoveAwardsSh);
+
+
+function DragShortcutElem(elem){
+    elem.ondragstart = () => false;
+    let rect = elem.getBoundingClientRect();
+    let css = getComputedStyle(elem);
+
+    elem.onmousedown = e => {
+        elem.style.position = 'absolute';
+        let saveX = e.offsetX;
+        let saveY = e.offsetY; 
+
+        document.onmousemove = e => {
+            elem.style.position = 'absolute';
+            elem.style.top = e.pageY-parseInt(css.margin)-saveY+'px';
+            elem.style.left = e.pageX-parseInt(css.margin)-saveX+'px';
+        };
+    };
+
+    elem.onmouseup = e => {
+        document.onmousemove = () => false;
+    };
+};
+

@@ -612,14 +612,13 @@ ul, ol, li {
   }
 }
 .shortcut_icons {
-  margin: 15px 0;
+  margin: 15px;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 70px;
   text-align: center;
   z-index: 2;
   position: fixed;
-  padding: 10px;
   font-family: "Work Sans", sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
