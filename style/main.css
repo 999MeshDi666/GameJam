@@ -1095,3 +1095,9 @@ ul, ol, li {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.selected {
+  background-color: #0000ac;
+  border: 1.8px #ffffff; 
+  border-style: dotted;
+}
