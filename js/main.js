@@ -1,10 +1,22 @@
 // header
 let WinBtn = document.querySelector('.win_btn');
 let menuWindows = document.querySelector('.menu_windows');
+let LangBtn = document.querySelector('.win_lang');
+let menuLang = document.querySelector('.menu_lang');
 WinBtn.addEventListener('click', ()=>{
     WinBtn.classList.toggle('win_btn_clicked');
     menuWindows.classList.toggle('menu_windows_on')
+    menuLang.classList.remove('menu_windows_on')
+
 });
+
+//lang menu on
+LangBtn.addEventListener('click', ()=>{
+    LangBtn.classList.toggle('win_btn_clicked');
+    menuLang.classList.toggle('menu_windows_on')
+    menuWindows.classList.remove('menu_windows_on');
+});
+
 
 // menu icons action
 let AboutIcon = document.getElementById('about');
@@ -285,18 +297,3 @@ function SetCurTime(){
         }
     };
 };
-
-//icon onclick blue color
-var icons = document.querySelectorAll(".shortcut_icons")
-for (i = 0; i < icons.length; i++) {
-  icons[i].addEventListener("click", function() {
-    var actives = document.querySelectorAll(".shortcut_icons.selected");
-    var selected = "selected";
-    for(var i = 0; i < actives.length; i++) {
-      if(actives[i] !== this)
-      actives[i].classList.remove(selected)
-    }
-    this.classList.toggle(selected);
-  });
-}
-
