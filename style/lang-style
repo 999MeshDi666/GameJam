@@ -1,0 +1,41 @@
+
+.menu_lang {
+  right: 7%;
+  left: unset;
+  height: 70px;
+  width: 80px;
+}
+.menu_lang_wrapper {
+  width: inherit; 
+  height: inherit;
+}
+.lang_list {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+}
+.lang_list_sections {
+  display: flex;
+  flex-direction: column;
+}
+.lang_list_sections > li{
+  display: flex;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+.lang_list_sections > li > img{
+  width: 30px;
+  height: 30px;
+}
+.lang_list_sections > li > p{
+  text-align: center;
+  color: #000000;
+}
+#rus {
+  width: 20px; 
+  height: 20px;
+}
+.win_lang {
+  width: 70px !important;
+}
