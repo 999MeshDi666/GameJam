@@ -1107,7 +1107,11 @@ ul, ol, li {
   height: 100%;
   position: fixed;
 }
-.background_galaxy .back_planet {
+.background_galaxy .pixel_screen {
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
+  z-index: 100;
+}
+.background_galaxy .pixel_screen .back_planet {
   background-image: url(../img/background/JUPITER1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1118,7 +1122,7 @@ ul, ol, li {
   bottom: 0;
   right: 190px;
 }
-.background_galaxy .back_hills_grid .background_hills {
+.background_galaxy .pixel_screen .back_hills_grid .background_hills {
   width: 100%;
   height: 550px;
   position: fixed;
@@ -1128,11 +1132,11 @@ ul, ol, li {
   left: 0;
   z-index: -1;
 }
-.background_galaxy .back_hills_grid .back_grid {
+.background_galaxy .pixel_screen .back_hills_grid .back_grid {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.background_galaxy .back_hills_grid .back_grid::before {
+.background_galaxy .pixel_screen .back_hills_grid .back_grid::before {
   content: "";
   display: block;
   width: 200vw;
@@ -1143,8 +1147,8 @@ ul, ol, li {
   background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
   -webkit-animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
           animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
-  -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.015, 0, 0, 1, 0, 0, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.015, 0, 0, 1, 0, 0, 0, 0, 1);
+  -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
   -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(35%, transparent), color-stop(60%, black));
   -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
   background-color: #1a1818;
@@ -1158,8 +1162,8 @@ ul, ol, li {
   }
   100% {
     opacity: 1;
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1);
-            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
 }
 @keyframes grid-appear-animation {
@@ -1171,8 +1175,8 @@ ul, ol, li {
   }
   100% {
     opacity: 1;
-    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1);
-            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1);
+    -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
 }
 @-webkit-keyframes grid-background-animation {
@@ -1191,12 +1195,50 @@ ul, ol, li {
     background-position: 0 20px;
   }
 }
-.background_galaxy .background_text {
+.background_galaxy .pixel_screen .background_text_img {
   position: relative;
   top: 0;
   bottom: 0;
   right: 0;
   left: 200px;
+}
+.background_galaxy .pixel_screen .background_text_img .back_logo {
+  display: block;
+  z-index: 0;
+}
+.background_galaxy .pixel_screen .background_text_img .back_text {
+  color: #fff;
+  position: relative;
+  top: -370px;
+  bottom: 0;
+  right: 0;
+  left: -225px;
+  text-align: center;
+}
+.background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week .jam {
+  margin-bottom: 15px;
+  font-size: 60px;
+  font-family: "Las Enter Personal Use Only", sans-serif;
+}
+.background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week .week {
+  font-family: "Syncopate", sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-shadow: 3px 1px 9px #cac030;
+  display: inline;
+}
+.background_galaxy .pixel_screen .background_palma {
+  position: fixed;
+  top: 450px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.background_galaxy .pixel_screen .background_palma .back_palma {
+  width: 100%;
+  height: 320px;
 }
 
 /*# sourceMappingURL=main.css.map */

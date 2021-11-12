@@ -1,87 +1,146 @@
 
 .background_galaxy{
-    background-image: url(../img/background/STARS.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    
+  background-image: url(../img/background/STARS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
+  .pixel_screen{
+    background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
+    z-index: 100;
+
     .back_planet{
-        background-image: url(../img/background/JUPITER1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 5%;
-        height: 8%;
-        position: fixed;
-        top: 60px;
-        bottom: 0;
-        right: 190px;
+      background-image: url(../img/background/JUPITER1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 5%;
+      height: 8%;
+      position: fixed;
+      top: 60px;
+      bottom: 0;
+      right: 190px;
     }
     .back_hills_grid{
-        .background_hills{
-            width: 100%;
-            height: 550px;
-            position: fixed;
-            top: 320px;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            z-index: -1;
-        }
-        .back_grid{
-            transition: all 0.2s linear;
-           
-        }
-        .back_grid::before {
-            content: "";
-            display: block;
-            width: 200vw;
-            height: 50vh;
-            position: absolute;
-            top: 50%;
-            left: -50%;
-            background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), 
-                repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
-            animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
-            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.015, 0, 0, 1, 0, 0, 0, 0, 1);
-            -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
-            background-color: rgb(26, 24, 24);
-        }
-        @keyframes grid-appear-animation {
-            0% {
-              opacity: 0;
-              height: 0;
-              transform: initial;
-            }
-            100% {
-              opacity: 1;
-              transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1);
-            }
-        }
-          @keyframes grid-background-animation {
-            from {
-              background-position: 0 0;
-            }
-            to {
-              background-position: 0 20px;
-            }
-        }
-    }
-    .background_text{
-        position: relative;
-        top: 0;
+      .background_hills{
+        width: 100%;
+        height: 550px;
+        position: fixed;
+        top: 320px;
         bottom: 0;
         right: 0;
-        left: 200px;
-
-        .back_logo{
-            
-           
-            
+        left: 0;
+        z-index: -1;
+      }
+      .back_grid{
+        transition: all 0.2s linear;
+              
+      }
+      .back_grid::before {
+        content: "";
+        display: block;
+        width: 200vw;
+        height: 50vh;
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), 
+          repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
+        animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
+        -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
+        background-color: rgb(26, 24, 24);
+      }
+      @keyframes grid-appear-animation {
+        0% {
+          opacity: 0;
+          height: 0;
+          transform: initial;
         }
+        100% {
+          opacity: 1;
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
+        }
+      }
+      @keyframes grid-background-animation {
+        from {
+        background-position: 0 0;
+        }
+        to {
+          background-position: 0 20px;
+          }
+      }
     }
-   
+    .background_text_img{
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 200px;
 
-   
+      .back_logo{
+        display: block;
+        z-index: 0;    
+      }
+      .back_text{
+        color: $wt;
+        position: relative;
+        top: -370px;
+        bottom: 0;
+        right: 0;
+        left: -225px;
+        text-align: center;
+        .back_jam_week{
+          .jam{
+            margin-bottom: 15px;
+            font-size: 60px;
+            font-family: $las;
+          }
+          .week{
+            font-family: $sync;
+            text-transform: uppercase;
+            font-size: 8px;
+            font-weight:400;
+            letter-spacing: 6px;
+            text-shadow: 3px 1px 9px rgba(202, 192, 48, 1);
+            display: inline;
+          }
+        }
+      }
+    }
+    .background_palma{
+      position: fixed;
+      top: 450px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+     
+      // display: flex;
+      // justify-content: space-between;
+        
+      // .back_palma_left{
+      //   position: relative;
+      //   top: 50px;
+      //   bottom: 0;
+      //   right: 0;
+      //   left: 0;
+      //   width: 350px;
+      //   height: 220px;
+      // }
+      // .back_middle_shadow{
+
+      // }
+      // .back_palma_right{
+      //   width: 450px;
+      //   height: 220px;
+      // }
+      .back_palma{
+        width: 100%;
+        height: 320px;
+
+      }
+    }
+    
+  }  
 }
