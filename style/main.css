@@ -1136,7 +1136,7 @@ ul, ol, li {
   width: 100%;
   height: 550px;
   position: fixed;
-  top: 320px;
+  top: 385px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -1219,7 +1219,7 @@ ul, ol, li {
 .background_galaxy .pixel_screen .background_text_img .back_text {
   color: #fff;
   position: relative;
-  top: -435px;
+  top: -440px;
   bottom: 0;
   right: 0;
   left: 400px;
@@ -1256,6 +1256,8 @@ ul, ol, li {
   letter-spacing: 6px;
   text-shadow: 3px 1px 9px #cac030;
   display: inline;
+  position: relative;
+  top: -20px;
 }
 .background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university {
   font-family: "Caveat", cursive;
@@ -1285,14 +1287,14 @@ ul, ol, li {
 }
 .background_galaxy .pixel_screen .background_palma {
   position: fixed;
-  top: 450px;
+  top: 410px;
   bottom: 0;
   right: 0;
   left: 0;
 }
 .background_galaxy .pixel_screen .background_palma .back_palma {
   width: 100%;
-  height: 320px;
+  height: 350px;
 }
 
 /*# sourceMappingURL=main.css.map */
