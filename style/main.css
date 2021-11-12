@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Abuget";
+  src: url("Abuget.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
 body {
   padding: 0;
   margin: 0;
@@ -1106,6 +1112,10 @@ ul, ol, li {
   width: 100%;
   height: 100%;
   position: fixed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .background_galaxy .pixel_screen {
   background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
@@ -1209,16 +1219,34 @@ ul, ol, li {
 .background_galaxy .pixel_screen .background_text_img .back_text {
   color: #fff;
   position: relative;
-  top: -370px;
+  top: -435px;
   bottom: 0;
   right: 0;
-  left: -225px;
+  left: 400px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week {
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week .jam {
-  margin-bottom: 15px;
-  font-size: 60px;
-  font-family: "Las Enter Personal Use Only", sans-serif;
+  font-size: 120px;
+  font-family: "Italianno", cursive;
+  width: 330px;
+  height: 210px;
 }
 .background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week .week {
   font-family: "Syncopate", sans-serif;
@@ -1228,6 +1256,32 @@ ul, ol, li {
   letter-spacing: 6px;
   text-shadow: 3px 1px 9px #cac030;
   display: inline;
+}
+.background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university {
+  font-family: "Caveat", cursive;
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffd700;
+  margin-top: 25px;
+  text-shadow: 3px 2px 2px #90286f, -1px -1px 8px #cd4dad, 1px -2px 17px #cd4dad;
+  position: relative;
+  right: 120px;
+  top: 50px;
+}
+.background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university .satbayev {
+  margin-right: 10px;
+  -webkit-transform: rotate(351deg);
+          transform: rotate(351deg);
+}
+.background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university .university {
+  -webkit-transform: rotate(337deg);
+          transform: rotate(337deg);
+  position: relative;
+  bottom: 32px;
+  right: 0;
+  left: 0;
 }
 .background_galaxy .pixel_screen .background_palma {
   position: fixed;

@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
   position: fixed;
+  user-select: none;
 
   .pixel_screen{
     background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
@@ -86,16 +87,24 @@
       .back_text{
         color: $wt;
         position: relative;
-        top: -370px;
+        top: -435px;
         bottom: 0;
         right: 0;
-        left: -225px;
+        left: 400px;
         text-align: center;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
         .back_jam_week{
+          margin-right: 15px;
+          display: flex;
+          flex-direction: column;
           .jam{
-            margin-bottom: 15px;
-            font-size: 60px;
-            font-family: $las;
+            // margin-bottom: 15px;
+            font-size: 120px;
+            font-family: $ital;
+            width: 330px;
+            height: 210px;
           }
           .week{
             font-family: $sync;
@@ -105,6 +114,30 @@
             letter-spacing: 6px;
             text-shadow: 3px 1px 9px rgba(202, 192, 48, 1);
             display: inline;
+          }
+        }
+        .satbayev_university{
+          font-family: $cav;
+          font-size: 35px;
+          display: flex;
+          color: #ffd700;
+          margin-top: 25px;
+          text-shadow: 3px 2px 2px rgba(144, 40, 111, 1),-1px -1px 8px rgba(205, 77, 173, 1),1px -2px 17px rgba(205, 77, 173, 1);
+          position: relative;
+          right: 120px;
+          top: 50px;
+          .satbayev{
+            margin-right: 10px;
+            transform: rotate(351deg);
+          }
+          .university{
+            transform: rotate(337deg);
+            position: relative;
+            // top: 0;
+            bottom: 32px;
+            right: 0;
+            left: 0;
+
           }
         }
       }
