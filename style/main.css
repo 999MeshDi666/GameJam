@@ -30,6 +30,11 @@ ul, ol, li {
   margin: 0;
 }
 
+.container .pixel_screen {
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
+  z-index: 10;
+}
+
 .loader {
   background-image: url(../img/win59clouds.jpg);
   background-repeat: no-repeat;
@@ -306,7 +311,7 @@ ul, ol, li {
   background-color: #bdbebd;
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 3;
   padding: 4px;
 }
 .header .header_wrapper .menu_panel {
@@ -441,7 +446,7 @@ ul, ol, li {
 .menu_windows {
   padding: 2px;
   background-color: #bdbebd;
-  z-index: 3;
+  z-index: 2;
   position: fixed;
   bottom: 40px;
   right: 0;
@@ -629,7 +634,7 @@ ul, ol, li {
   width: 80px;
   height: 70px;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   font-family: "Work Sans", sans-serif;
   -webkit-user-select: none;
@@ -693,7 +698,7 @@ ul, ol, li {
   left: 350px;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 2;
   width: 500px;
   height: 400px;
   background-color: #bdbebd;
@@ -1117,11 +1122,7 @@ ul, ol, li {
       -ms-user-select: none;
           user-select: none;
 }
-.background_galaxy .pixel_screen {
-  background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
-  z-index: 100;
-}
-.background_galaxy .pixel_screen .back_planet {
+.background_galaxy .back_planet {
   background-image: url(../img/background/JUPITER1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1132,7 +1133,7 @@ ul, ol, li {
   bottom: 0;
   right: 190px;
 }
-.background_galaxy .pixel_screen .back_hills_grid .background_hills {
+.background_galaxy .back_hills_grid .background_hills {
   width: 100%;
   height: 550px;
   position: fixed;
@@ -1142,11 +1143,11 @@ ul, ol, li {
   left: 0;
   z-index: -1;
 }
-.background_galaxy .pixel_screen .back_hills_grid .back_grid {
+.background_galaxy .back_hills_grid .back_grid {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.background_galaxy .pixel_screen .back_hills_grid .back_grid::before {
+.background_galaxy .back_hills_grid .back_grid::before {
   content: "";
   display: block;
   width: 200vw;
@@ -1205,18 +1206,18 @@ ul, ol, li {
     background-position: 0 20px;
   }
 }
-.background_galaxy .pixel_screen .background_text_img {
+.background_galaxy .background_text_img {
   position: relative;
   top: 0;
   bottom: 0;
   right: 0;
   left: 200px;
 }
-.background_galaxy .pixel_screen .background_text_img .back_logo {
+.background_galaxy .background_text_img .back_logo {
   display: block;
   z-index: 0;
 }
-.background_galaxy .pixel_screen .background_text_img .back_text {
+.background_galaxy .background_text_img .back_text {
   color: #fff;
   position: relative;
   top: -440px;
@@ -1232,7 +1233,7 @@ ul, ol, li {
       -ms-flex-align: center;
           align-items: center;
 }
-.background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week {
+.background_galaxy .background_text_img .back_text .back_jam_week {
   margin-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1242,13 +1243,13 @@ ul, ol, li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week .jam {
+.background_galaxy .background_text_img .back_text .back_jam_week .jam {
   font-size: 120px;
   font-family: "Italianno", cursive;
   width: 330px;
   height: 210px;
 }
-.background_galaxy .pixel_screen .background_text_img .back_text .back_jam_week .week {
+.background_galaxy .background_text_img .back_text .back_jam_week .week {
   font-family: "Syncopate", sans-serif;
   text-transform: uppercase;
   font-size: 8px;
@@ -1259,7 +1260,7 @@ ul, ol, li {
   position: relative;
   top: -20px;
 }
-.background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university {
+.background_galaxy .background_text_img .back_text .satbayev_university {
   font-family: "Caveat", cursive;
   font-size: 35px;
   display: -webkit-box;
@@ -1272,12 +1273,12 @@ ul, ol, li {
   right: 120px;
   top: 50px;
 }
-.background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university .satbayev {
+.background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
   margin-right: 10px;
   -webkit-transform: rotate(351deg);
           transform: rotate(351deg);
 }
-.background_galaxy .pixel_screen .background_text_img .back_text .satbayev_university .university {
+.background_galaxy .background_text_img .back_text .satbayev_university .university {
   -webkit-transform: rotate(337deg);
           transform: rotate(337deg);
   position: relative;
@@ -1285,14 +1286,14 @@ ul, ol, li {
   right: 0;
   left: 0;
 }
-.background_galaxy .pixel_screen .background_palma {
+.background_galaxy .background_palma {
   position: fixed;
   top: 410px;
   bottom: 0;
   right: 0;
   left: 0;
 }
-.background_galaxy .pixel_screen .background_palma .back_palma {
+.background_galaxy .background_palma .back_palma {
   width: 100%;
   height: 350px;
 }

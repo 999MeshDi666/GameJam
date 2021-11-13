@@ -1,0 +1,6 @@
+.container{
+    .pixel_screen{
+        background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
+        z-index: 10;
+    }
+}
