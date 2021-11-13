@@ -30,6 +30,9 @@ ul, ol, li {
   margin: 0;
 }
 
+.container {
+  display: none;
+}
 .container .pixel_screen {
   background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
   z-index: 10;
@@ -1121,6 +1124,7 @@ ul, ol, li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: -1;
 }
 .background_galaxy .back_planet {
   background-image: url(../img/background/JUPITER1.png);
