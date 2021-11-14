@@ -13,6 +13,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,12 +31,17 @@ ul, ol, li {
   margin: 0;
 }
 
-.container {
-  display: none;
-}
-.container .pixel_screen {
-  background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 4px, transparent 4px, transparent 6px);
-  z-index: 10;
+.container .pixel_screen::before {
+  content: "";
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 2px, transparent 2px, transparent 4px);
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
 }
 
 .loader {
@@ -485,6 +491,7 @@ ul, ol, li {
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: 2px;
+  color: #fff;
 }
 .menu_windows .menu_windows_wrapper .prog_list {
   width: 100%;
@@ -644,6 +651,7 @@ ul, ol, li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: #fff;
 }
 .shortcut_icons .shortcut_img {
   width: 50px;
@@ -746,6 +754,7 @@ ul, ol, li {
 .desktop_wins .win_header .win_icon_text .win_header_way {
   font-family: "VT323", monospace;
   font-size: 20px;
+  color: #fff;
 }
 .desktop_wins .win_header .win_control_btns {
   display: -webkit-box;
@@ -1224,7 +1233,7 @@ ul, ol, li {
 .background_galaxy .background_text_img .back_text {
   color: #fff;
   position: relative;
-  top: -440px;
+  top: -435px;
   bottom: 0;
   right: 0;
   left: 400px;

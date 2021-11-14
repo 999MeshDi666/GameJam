@@ -16,6 +16,8 @@
     border-color: $wt $bk $bk $wt;
     display: none;
    
+  
+   
     .win_header{
         display: flex;
         justify-content: space-between;
@@ -38,6 +40,7 @@
             .win_header_way{
                 font-family: $pix2;
                 font-size: 20px;
+                color: $wt;
             }
         }
         .win_control_btns{

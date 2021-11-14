@@ -83,11 +83,11 @@ function DragWinElem(elem){
     OffDrag(WinFooterAwards);
 
     function OffDrag(win){
-        win.style.userSelect = 'text';
         win.onmousedown = function(){
             elem.onmousedown = function(){
                 console.log('false');
-                elem.preventDefault();
+                // elem.preventDefault();
+                return false
             };
         };
     };
