@@ -9,15 +9,19 @@
   user-select: none;
   z-index: -1;
   .back_planet{
-    background-image: url(../img/background/JUPITER1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 5%;
-    height: 8%;
-    position: fixed;
-    top: 60px;
-    bottom: 0;
-    right: 190px;
+    // background-image: url(../img/background/JUPITER1.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    .back_jupiter{
+      width: 80px;
+      height: 68px;
+      position: fixed;
+      top: 60px;
+      bottom: 0;
+      right: 190px;
+
+    }
+    
   }
   .back_hills_grid{
     .background_hills{

@@ -31,9 +31,6 @@ ul, ol, li {
   margin: 0;
 }
 
-.container {
-  display: none;
-}
 .container .pixel_screen::before {
   content: "";
   background: repeating-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 2px, transparent 2px, transparent 4px);
@@ -1008,11 +1005,15 @@ ul, ol, li {
   .desktop_wins {
     top: 60px;
     left: 110px;
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
+  }
+  .desktop_wins .win_header .win_icon_text .win_header_way {
+    font-size: 18px;
   }
   .desktop_wins .win_content {
-    width: 368px;
+    width: 328px;
+    height: 270px;
   }
 
   .desktop_win_faq {
@@ -1035,8 +1036,16 @@ ul, ol, li {
     left: 120px;
   }
 
+  .desktop_win_registration {
+    width: 390px;
+    height: 415px;
+    top: 60px;
+    left: 60px;
+  }
   .desktop_win_registration .win_form_content {
-    height: 330px;
+    width: 350px;
+    height: 340px;
+    margin: 8px auto;
   }
   .desktop_win_registration .win_form_content .win_reg_text {
     font-size: 14px;
@@ -1053,12 +1062,13 @@ ul, ol, li {
   }
   .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
     margin-right: 5px;
-    font-size: 16px;
+    font-size: 14px;
+    text-align: left;
   }
   .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
     display: block;
     padding: 2px;
-    width: 180px;
+    width: 160px;
   }
   .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
     margin-top: 10px;
@@ -1072,7 +1082,7 @@ ul, ol, li {
 @media screen and (max-width: 480px) and (min-width: 360px) {
   .desktop_wins {
     top: 60px;
-    left: 110px;
+    left: 60px;
     width: 300px;
     height: 300px;
   }
@@ -1085,14 +1095,15 @@ ul, ol, li {
   }
 
   .desktop_win_registration {
-    width: 360px;
+    width: 350px;
+    height: 496px;
     top: 60px;
-    left: 100px;
+    left: 20px;
   }
   .desktop_win_registration .win_form_content {
-    overflow-y: scroll;
-    height: 230px;
-    width: 326px;
+    width: 310px;
+    height: 422px;
+    margin: 8px auto;
   }
   .desktop_win_registration .win_form_content .win_reg_text {
     font-size: 14px;
@@ -1109,12 +1120,13 @@ ul, ol, li {
   }
   .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
     margin-right: 5px;
-    font-size: 13px;
+    font-size: 14px;
+    text-align: left;
   }
   .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
     display: block;
     padding: 2px;
-    width: 120px;
+    width: 160px;
   }
   .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
     margin-top: 10px;
@@ -1122,7 +1134,71 @@ ul, ol, li {
   .desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn {
     width: 80px;
     height: 30px;
-    font-size: 12px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 360px) and (min-width: 320px) {
+  .desktop_wins {
+    top: 60px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+  }
+  .desktop_wins .win_header .win_icon_text .win_header_way {
+    font-size: 14px;
+  }
+  .desktop_wins .win_content {
+    width: 268px;
+    height: 212px;
+  }
+
+  .desktop_win_registration {
+    width: 310px;
+    height: 435px;
+    top: 40px;
+    left: 20px;
+  }
+  .desktop_win_registration .win_form_content {
+    width: 270px;
+    height: 353px;
+    overflow: scroll;
+    margin: 8px auto;
+  }
+  .desktop_win_registration .win_form_content .win_reg_text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
+    margin-right: 5px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
+    display: block;
+    padding: 2px;
+    width: 160px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
+    margin-top: 10px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 360px) and (min-width: 320px) {
+  .desktop_wins {
+    left: 10px;
   }
 }
 .background_galaxy {
@@ -1138,12 +1214,9 @@ ul, ol, li {
           user-select: none;
   z-index: -1;
 }
-.background_galaxy .back_planet {
-  background-image: url(../img/background/JUPITER1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 5%;
-  height: 8%;
+.background_galaxy .back_planet .back_jupiter {
+  width: 80px;
+  height: 68px;
   position: fixed;
   top: 60px;
   bottom: 0;
