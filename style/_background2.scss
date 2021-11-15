@@ -1,17 +1,16 @@
 
 .background_galaxy{
   background-image: url(../img/background/STARS.jpg);
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
   position: fixed;
   user-select: none;
   z-index: -1;
   .back_planet{
-    // background-image: url(../img/background/JUPITER1.png);
-    // background-repeat: no-repeat;
-    // background-size: cover;
+  
     .back_jupiter{
       width: 80px;
       height: 68px;
@@ -74,15 +73,17 @@
     }
   }
   .background_text_img{
-    position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 200px;
-
+    width: 1000px;
+    height: 720px;
+    margin: 0 auto;
     .back_logo{
       display: block;
-      z-index: 0;    
+      z-index: 0; 
+      position: relative;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: -30px;   
     }
     .back_text{
       color: $wt;
@@ -90,7 +91,7 @@
       top: -435px;
       bottom: 0;
       right: 0;
-      left: 400px;
+      left: 352px;
       text-align: center;
       display: flex;
       margin: 0 auto;
@@ -157,3 +158,274 @@
   }  
     
 }  
+
+@media screen and (max-width:1200px){
+  .background_galaxy{
+    .background_text_img{
+      .back_logo{
+        left: -40px;   
+      }
+      .back_text{
+        top: -435px;
+        left: 338px;
+      }
+    }
+    .background_palma{
+      top: 450px;
+    }   
+  }  
+}
+@media screen and (max-width:992px){
+  .background_galaxy{
+   
+    .background_text_img{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+  
+      .back_logo{
+        width: 950px;
+        height: 770px;
+        left: 65px;
+      }
+      .back_text{
+        .back_jam_week{
+          
+          .jam{
+            width: 320px;
+            height: 180px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+      }
+    } 
+    .background_palma{
+      top: 460px;
+    }   
+  }   
+}
+@media screen and (max-width: 860px) and (min-width: 786px){
+  .background_galaxy{
+   
+    .background_text_img{
+     
+  
+      .back_logo{
+       
+        left: -8px;
+      }
+      .back_text{
+       
+        left: 266px;
+      
+      }
+    }
+    .background_palma{
+      top: 470px;
+      .back_palma{
+        width: 100%;
+        height: 300px;
+  
+      }
+    }
+  }   
+}
+
+@media screen and (max-width:720px){
+  .background_galaxy{
+    .back_hills_grid{
+      .background_hills{
+        
+        height: 460px;
+      
+    
+        }
+    }
+   
+    .background_text_img{
+      .back_logo{
+        width: 900px;
+        height: 740px;
+        left: -50px;
+        
+      }
+      .back_text{
+        top: -420px;
+        left: 196px;
+        
+        .back_jam_week{
+          
+          .jam{
+            width: 320px;
+            height: 180px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        
+      }
+    } 
+  }   
+}
+
+@media screen and (max-width:678px){
+  .background_galaxy{
+  
+    .background_text_img{
+      .back_logo{
+        width: 820px;
+        height: 700px;    
+        left: -20px;
+        top: 40px    
+      }
+      .back_text{
+        top: -370px;
+        left: 196px;
+        
+        .back_jam_week{
+          
+          .jam{
+            width: 300px;
+            height: 180px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        
+      }
+      
+    } 
+    .background_palma{
+      top: 508px;
+      .back_palma{
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }   
+}
+
+@media screen and (max-width:678px){
+  .background_galaxy{
+  
+    .background_text_img{
+      .back_logo{
+        width: 770px;
+        height: 670px;    
+        left: -40px;
+        top: 55px    
+      }
+      .back_text{
+        top: -345px;
+        left: 196px;
+        
+        .back_jam_week{
+          
+          .jam{
+            width: 250px;
+            height: 160px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        
+      }
+      
+    } 
+    .background_palma{
+      top: 508px;
+      .back_palma{
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }   
+}
+@media screen and (max-width:576px){
+  .background_galaxy{
+  
+    .background_text_img{
+      .back_logo{
+        width: 770px;
+        height: 670px;    
+        left: -45px;
+        top: 55px    
+      }
+      .back_text{
+        top: -340px;
+        left: 176px;
+        
+        .back_jam_week{
+          
+          .jam{
+            width: 250px;
+            height: 160px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        .satbayev_university{
+          font-size: 25px;
+          right: 105px;
+          top: 64px;
+        }
+      }
+      
+    } 
+    .background_palma{
+      top: 508px;
+      .back_palma{
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }   
+}
+
+@media screen and (max-width:480px) {
+  .background_galaxy{
+  
+    .background_text_img{
+      .back_logo{
+        width: 700px;
+        height: 620px;    
+        left: -70px;
+        top: 95px    
+      }
+      .back_text{
+        top: -270px;
+        left: 125px;
+        .back_jam_week{
+          
+          .jam{
+            width: 250px;
+            height: 145px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        .satbayev_university{
+          font-size: 25px;
+          right: 105px;
+          top: 64px;
+        }
+      }
+      
+    } 
+    .background_palma{
+      top: 508px;
+      .back_palma{
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }   
+  
+}

@@ -1206,6 +1206,7 @@ ul, ol, li {
   background-image: url(../img/background/STARS.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1297,15 +1298,18 @@ ul, ol, li {
   }
 }
 .background_galaxy .background_text_img {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 200px;
+  width: 1000px;
+  height: 720px;
+  margin: 0 auto;
 }
 .background_galaxy .background_text_img .back_logo {
   display: block;
   z-index: 0;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -30px;
 }
 .background_galaxy .background_text_img .back_text {
   color: #fff;
@@ -1313,7 +1317,7 @@ ul, ol, li {
   top: -435px;
   bottom: 0;
   right: 0;
-  left: 400px;
+  left: 352px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1386,6 +1390,191 @@ ul, ol, li {
 .background_galaxy .background_palma .back_palma {
   width: 100%;
   height: 350px;
+}
+
+@media screen and (max-width: 1200px) {
+  .background_galaxy .background_text_img .back_logo {
+    left: -40px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -435px;
+    left: 338px;
+  }
+  .background_galaxy .background_palma {
+    top: 450px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .background_galaxy .background_text_img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    width: 950px;
+    height: 770px;
+    left: 65px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    width: 320px;
+    height: 180px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    font-size: 10px;
+  }
+  .background_galaxy .background_palma {
+    top: 460px;
+  }
+}
+@media screen and (max-width: 860px) and (min-width: 786px) {
+  .background_galaxy .background_text_img .back_logo {
+    left: -8px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    left: 266px;
+  }
+  .background_galaxy .background_palma {
+    top: 470px;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .background_galaxy .back_hills_grid .background_hills {
+    height: 460px;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    width: 900px;
+    height: 740px;
+    left: -50px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -420px;
+    left: 196px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    width: 320px;
+    height: 180px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .background_galaxy .background_text_img .back_logo {
+    width: 820px;
+    height: 700px;
+    left: -20px;
+    top: 40px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -370px;
+    left: 196px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    width: 300px;
+    height: 180px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    font-size: 10px;
+  }
+  .background_galaxy .background_palma {
+    top: 508px;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 245px;
+  }
+}
+@media screen and (max-width: 678px) {
+  .background_galaxy .background_text_img .back_logo {
+    width: 770px;
+    height: 670px;
+    left: -40px;
+    top: 55px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -345px;
+    left: 196px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    width: 250px;
+    height: 160px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    font-size: 10px;
+  }
+  .background_galaxy .background_palma {
+    top: 508px;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 245px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .background_galaxy .background_text_img .back_logo {
+    width: 770px;
+    height: 670px;
+    left: -45px;
+    top: 55px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -340px;
+    left: 176px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    width: 250px;
+    height: 160px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    font-size: 10px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    font-size: 25px;
+    right: 105px;
+    top: 64px;
+  }
+  .background_galaxy .background_palma {
+    top: 508px;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 245px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .background_galaxy .background_text_img .back_logo {
+    width: 700px;
+    height: 620px;
+    left: -70px;
+    top: 95px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -270px;
+    left: 125px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    width: 250px;
+    height: 145px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    font-size: 10px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    font-size: 25px;
+    right: 105px;
+    top: 64px;
+  }
+  .background_galaxy .background_palma {
+    top: 508px;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 245px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

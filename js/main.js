@@ -265,12 +265,12 @@ dateThird.addEventListener('click', ()=>{
 //timer
 let CurTime = document.querySelector(".time");
 let curDate = new Date();
-setInterval(SetCurTime(), 1000);
+SetCurTime()
 function SetCurTime(){
-   
+  
     if(curDate.getHours() > 11){
         if(curDate.getMinutes() > 9){
-            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
+            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;   
         }
         else{
             CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
@@ -285,6 +285,9 @@ function SetCurTime(){
         }
     };
 };
+
+
+
 
 //icon onclick blue color
 var icons = document.querySelectorAll(".shortcut_icons")
