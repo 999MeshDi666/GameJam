@@ -391,15 +391,16 @@
     }
     .desktop_win_registration{
         width: 350px;
-        height: 496px;
+        height: 390px;
         top: 60px;
         left: 20px;
         
         
         .win_form_content{
            width: 310px;
-           height: 422px;
+           height: 312px;
            margin: 8px auto;
+           overflow: scroll;
            
             .win_reg_text{
                 font-size: 14px;
@@ -473,8 +474,8 @@
         .win_form_content{
            width: 270px;
            height: 353px;
-           overflow: scroll;
            margin: 8px auto;
+           overflow: scroll;
            
             .win_reg_text{
                 font-size: 14px;
