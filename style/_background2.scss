@@ -430,6 +430,52 @@
   }   
   
 }
+@media screen and (max-width: 380px) {
+  .background_galaxy{
+  
+    .background_text_img{
+      .back_logo{
+        width: 600px;
+        height: 590px;    
+        left: -86px;
+        top: 95px    
+      }
+      .back_text{
+        top: -248px;
+        left: 60px;
+        .back_jam_week{
+          
+          .jam{
+            width: 250px;
+            height: 145px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        .satbayev_university{
+          font-size: 20px;
+          right: 105px;
+          top: 45px;
+          .satbayev{
+            margin-right: 0px;
+            transform: rotate(340deg);
+          }
+        }
+      }
+      
+    } 
+    .background_palma{
+      top: 508px;
+      .back_palma{
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }   
+  
+  
+}
 @media screen and (max-width:360px) {
   .background_galaxy{
   
@@ -454,16 +500,70 @@
           }
         }
         .satbayev_university{
-          font-size: 20px;
-          right: 97px;
-          top: 48px;
-          margin-top: 16px;
+          font-size: 16px;
+          right: 64px;
+          top: 42px;
+          margin-top: 14px;
           .satbayev{
-            margin-right: 10px;
-            transform: rotate(348deg);
+            margin-right: 0px;
+            transform: rotate(328deg);
           }
           .university{
-            transform: rotate(324deg);
+            transform: rotate(336deg);
+            position: relative;
+            bottom: 32px;
+            right: 0;
+            left: 0;
+  
+          }
+        }
+      }
+      
+    } 
+    .background_palma{
+      top: 508px;
+      .back_palma{
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }   
+  
+}
+@media screen and (max-width:320px) {
+  .background_galaxy{
+  
+    .background_text_img{
+      .back_logo{
+        width: 530px;
+        height: 520px;    
+        left: -79px;
+        top: 95px    
+      }
+      .back_text{
+        top: -200px;
+        left: 42px;
+        .back_jam_week{
+          
+          .jam{
+            width: 220px;
+            height: 120px;
+          }
+          .week{
+            font-size: 10px;
+          }
+        }
+        .satbayev_university{
+          font-size: 16px;
+          right: 64px;
+          top: 42px;
+          margin-top: 14px;
+          .satbayev{
+            margin-right: 0px;
+            transform: rotate(328deg);
+          }
+          .university{
+            transform: rotate(336deg);
             position: relative;
             bottom: 32px;
             right: 0;
