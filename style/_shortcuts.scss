@@ -21,39 +21,39 @@
     }
 }    
 .shortcut_about{
-    top: 0;
+    top: 50px;
     bottom: 0;
     right: 0;
     left: 0;
 }   
 .shortcut_faq{
-    top: 100px;
+    top: 150px;
     bottom: 0;
     right: 0;
     left: 0;
 
 }
 .shortcut_rules{
-    top: 200px;
+    top: 250px;
     bottom: 0;
     right: 0;
     left: 0;
 
 }
 .shortcut_schedule{
-    top: 300px;
+    top: 350px;
     bottom: 0;
     right: 0;
     left: 0;
 }   
 .shortcut_reg{
-    top: 400px;
+    top: 450px;
     bottom: 0;
     right: 0;
     left: 0;
 }
 .shortcut_awards{
-    top: 500px;
+    top: 550px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -62,3 +62,20 @@
    
 
 
+@media screen and (max-width: 576px) {
+    .shortcut_icons{
+       
+        width: 70px;
+        height: 60px;
+       
+        .shortcut_img{
+            width: 40px;
+            height: 40px;  
+        }
+        .shortcut_names{
+            font-size: 14px;
+            // user-select: none;         
+        }
+    }    
+    
+}
