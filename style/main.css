@@ -1576,7 +1576,7 @@ ul, ol, li {
     height: 245px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   .background_galaxy .background_text_img .back_logo {
     width: 600px;
     height: 590px;
