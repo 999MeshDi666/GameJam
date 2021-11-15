@@ -139,6 +139,42 @@ AwardsShortcut.addEventListener('dblclick',()=>{
     WinAwards.classList.remove('win_hide');
     AwardsWindows.classList.add('desktop_win_awards_on');
 });
+AboutShortcut.addEventListener('mousedown', () => {
+    AboutShortcut.style.border = '1px dashed grey';
+});
+AboutShortcut.addEventListener('mouseleave', () => {
+    AboutShortcut.style.border = '';
+});
+FAQShortcut.addEventListener('mousedown', () => {
+    FAQShortcut.style.border = '1px dashed grey';
+});
+FAQShortcut.addEventListener('mouseleave', () => {
+    FAQShortcut.style.border = '';
+});
+RulesShortcut.addEventListener('mousedown', () => {
+    RulesShortcut.style.border = '1px dashed grey';
+});
+RulesShortcut.addEventListener('mouseleave', () => {
+    RulesShortcut.style.border = '';
+});
+ScheduleShortcut.addEventListener('mousedown', () => {
+    ScheduleShortcut.style.border = '1px dashed grey';
+});
+ScheduleShortcut.addEventListener('mouseleave', () => {
+    ScheduleShortcut.style.border = '';
+});
+RegShortcut.addEventListener('mousedown', () => {
+    RegShortcut.style.border = '1px dashed grey';
+});
+RegShortcut.addEventListener('mouseleave', () => {
+    RegShortcut.style.border = '';
+});
+AwardsShortcut.addEventListener('mousedown', () => {
+    AwardsShortcut.style.border = '1px dashed grey';
+});
+AwardsShortcut.addEventListener('mouseleave', () => {
+    AwardsShortcut.style.border = '';
+});
 
 
 // close windows
@@ -206,6 +242,133 @@ MinAwards.addEventListener('click',()=>{
     WinAwards.classList.add('win_hide');
 });
 
+//maximize windows
+var aboutmax = false;
+let MaxAbout = document.querySelector('.max_windows_about');
+let MaxAboutContent = document.getElementById('about_content');
+let MaxAboutHeader = document.getElementById('move_about');
+MaxAbout.addEventListener('click', () => {
+    if (aboutmax) {
+        AboutWindows.style.width = '500px';
+        AboutWindows.style.height = '400px';
+        AboutWindows.style.left = '350px';
+        AboutWindows.style.top = '130px';
+        MaxAboutContent.style.width = '466px';
+        MaxAboutContent.style.height = '312px';
+        MaxAboutHeader.id = 'move_about';
+        aboutmax = false;
+    } else {
+        AboutWindows.style.width = '100%';
+        AboutWindows.style.height = '100%';
+        AboutWindows.style.left = '0px';
+        AboutWindows.style.top = '0px';
+        MaxAboutContent.style.width = '98%';
+        MaxAboutContent.style.height = '100%';
+        MaxAboutHeader.id = 'nomove';
+        aboutmax = true;
+    }
+});
+var faqmax = false;
+let MaxFAQ = document.querySelector('.max_windows_faq');
+let MaxFAQContent = document.getElementById('faq_content');
+let MaxFAQHeader = document.getElementById('move_faq');
+MaxFAQ.addEventListener('click', () => {
+    if (faqmax) {
+        FAQWindows.style.width = '500px';
+        FAQWindows.style.height = '400px';
+        FAQWindows.style.left = '400px';
+        FAQWindows.style.top = '180px';
+        MaxFAQContent.style.width = '466px';
+        MaxFAQContent.style.height = '312px';
+        MaxFAQHeader.id = 'move_about';
+        faqmax = false;
+    } else {
+        FAQWindows.style.width = '100%';
+        FAQWindows.style.height = '100%';
+        FAQWindows.style.left = '0px';
+        FAQWindows.style.top = '0px';
+        MaxFAQContent.style.width = '98%';
+        MaxFAQContent.style.height = '100%';
+        MaxFAQHeader.id = 'nomove';
+        faqmax = true;
+    }
+});
+var rulesmax = false;
+let MaxRules = document.querySelector('.max_windows_rules');
+let MaxRulesContent = document.getElementById('rules_content');
+let MaxRulesHeader = document.getElementById('move_rules');
+MaxRules.addEventListener('click', () => {
+    if (rulesmax) {
+        RulesWindows.style.width = '500px';
+        RulesWindows.style.height = '400px';
+        RulesWindows.style.left = '400px';
+        RulesWindows.style.top = '180px';
+        MaxRulesContent.style.width = '466px';
+        MaxRulesContent.style.height = '312px';
+        MaxRulesHeader.id = 'move_about';
+        rulesmax = false;
+    } else {
+        RulesWindows.style.width = '100%';
+        RulesWindows.style.height = '100%';
+        RulesWindows.style.left = '0px';
+        RulesWindows.style.top = '0px';
+        MaxRulesContent.style.width = '98%';
+        MaxRulesContent.style.height = '100%';
+        MaxRulesHeader.id = 'nomove';
+        rulesmax = true;
+    }
+});
+var schedulemax = false;
+let MaxSchedule = document.querySelector('.max_windows_schedule');
+let MaxScheduleContent = document.getElementById('schedule_content');
+let MaxScheduleHeader = document.getElementById('move_schedule');
+MaxSchedule.addEventListener('click', () => {
+    if (schedulemax) {
+        ScheduleWindows.style.width = '500px';
+        ScheduleWindows.style.height = '400px';
+        ScheduleWindows.style.left = '400px';
+        ScheduleWindows.style.top = '180px';
+        MaxScheduleContent.style.width = '466px';
+        MaxScheduleContent.style.height = '312px';
+        MaxScheduleHeader.id = 'move_about';
+        schedulemax = false;
+    } else {
+        ScheduleWindows.style.width = '100%';
+        ScheduleWindows.style.height = '100%';
+        ScheduleWindows.style.left = '0px';
+        ScheduleWindows.style.top = '0px';
+        MaxScheduleContent.style.width = '98%';
+        MaxScheduleContent.style.height = '100%';
+        MaxScheduleHeader.id = 'nomove';
+        schedulemax = true;
+    }
+});
+var awardsmax = false;
+let MaxAwards = document.querySelector('.max_windows_awards');
+let MaxAwardsContent = document.getElementById('awards_content');
+let MaxAwardsHeader = document.getElementById('move_awards');
+MaxAwards.addEventListener('click', () => {
+    if (awardsmax) {
+        AwardsWindows.style.width = '500px';
+        AwardsWindows.style.height = '400px';
+        AwardsWindows.style.left = '400px';
+        AwardsWindows.style.top = '180px';
+        MaxAwardsContent.style.width = '466px';
+        MaxAwardsContent.style.height = '312px';
+        MaxAwardsHeader.id = 'move_about';
+        awardsmax = false;
+    } else {
+        AwardsWindows.style.width = '100%';
+        AwardsWindows.style.height = '100%';
+        AwardsWindows.style.left = '0px';
+        AwardsWindows.style.top = '0px';
+        MaxAwardsContent.style.width = '98%';
+        MaxAwardsContent.style.height = '100%';
+        MaxAwardsHeader.id = 'nomove';
+        awardsmax = true;
+    }
+});
+
 
 // show faq questions
 let questionFirst = document.getElementById('question_1');
@@ -264,13 +427,13 @@ dateThird.addEventListener('click', ()=>{
 
 //timer
 let CurTime = document.querySelector(".time");
-let curDate = new Date();
-SetCurTime()
-function SetCurTime(){
-  
+let timerId = setInterval(() => SetCurTime(), 1000);
+let curDate;
+function SetCurTime() {
+    curDate = new Date();
     if(curDate.getHours() > 11){
         if(curDate.getMinutes() > 9){
-            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;   
+            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
         }
         else{
             CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
@@ -285,9 +448,6 @@ function SetCurTime(){
         }
     };
 };
-
-
-
 
 //icon onclick blue color
 var icons = document.querySelectorAll(".shortcut_icons")

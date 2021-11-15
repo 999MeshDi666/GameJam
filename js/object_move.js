@@ -24,13 +24,13 @@ DragWindows(MoveReg, MoveWinReg);
 DragWindows(MoveAwards, MoveWinAwards);
 
 
-function DragWindows(header, windows){
-    header.addEventListener('mousedown', ()=>{
-        DragWinElem(windows);
+function DragWindows(header, windows) {
+    header.addEventListener('mousedown', () => {
+        DragWinElem(header, windows);
     });
 };
 
-function DragWinElem(elem){
+function DragWinElem(header, elem){
     elem.onmousedown = function(e){
         let coords = getCoords(elem)
         let shiftX = e.clientX - coords.left;
@@ -49,13 +49,20 @@ function DragWinElem(elem){
         }
     
         document.addEventListener('mousemove',onMouseMove);
-        
+
+        if (header.id == 'nomove') {
+            document.removeEventListener('mousemove', onMouseMove);
+            elem.onmouseup = null;
+        }
 
         elem.onmouseup = function() {
             document.removeEventListener('mousemove', onMouseMove);
             elem.onmouseup = null;
         };
-       
+        elem.onmouseleave = function () {
+            document.removeEventListener('mousemove', onMouseMove);
+            elem.onmouseup = null;
+        };
        
     };
     let WinBodyAbout = document.getElementById('about_content');
@@ -125,16 +132,15 @@ function DragShortcutElem(elem){
     elem.ondragstart = () => false;
     let rect = elem.getBoundingClientRect();
     let css = getComputedStyle(elem);
-
     elem.onmousedown = e => {
         elem.style.position = 'absolute';
         let saveX = e.offsetX;
-        let saveY = e.offsetY; 
+        let saveY = e.offsetY;
 
         document.onmousemove = e => {
             elem.style.position = 'absolute';
-            elem.style.top = e.pageY-parseInt(css.margin)-saveY+'px';
-            elem.style.left = e.pageX-parseInt(css.margin)-saveX+'px';
+            elem.style.top = e.pageY - parseInt(css.margin) - saveY + 'px';
+            elem.style.left = e.pageX - parseInt(css.margin) - saveX + 'px';
         };
     };
 
