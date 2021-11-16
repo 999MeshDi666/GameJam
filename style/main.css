@@ -1820,7 +1820,7 @@ ul, ol, li {
     position: fixed;
     top: 60px;
     bottom: 0;
-    right: 70px;
+    right: 30px;
   }
   .background_galaxy .back_hills_grid .background_hills .back_hills {
     width: 100%;
@@ -1860,9 +1860,10 @@ ul, ol, li {
     height: 135px;
   }
   .background_galaxy .background_text_img .back_text .satbayev_university {
-    right: 99px;
-    top: 54px;
-    font-size: 22px;
+    right: 89px;
+    top: 52px;
+    font-size: 18px;
+    margin-top: 10px;
   }
   .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
     margin-right: 10px;
@@ -1873,7 +1874,7 @@ ul, ol, li {
     -webkit-transform: rotate(337deg);
             transform: rotate(337deg);
     position: relative;
-    bottom: 32px;
+    bottom: 26px;
     right: 0;
     left: 0;
   }
