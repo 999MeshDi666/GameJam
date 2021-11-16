@@ -407,186 +407,6 @@
   
   
 }
-//ipad 
-@media screen and(max-width: 820px) and (max-height: 1080px){
-  .background_galaxy{
-    
-    .back_planet{
-    
-      .back_jupiter{
-        top: 60px;
-        bottom: 0;
-        right: 100px;
-  
-      }
-      
-    }
-    .back_hills_grid{
-      .background_hills{
-       
-        .back_hills{
-          width: 100%;
-          height: 70%;
-          top: 420px;
-          bottom: 0;
-  
-        }
-      }
-    }
-    .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      .back_logo{
-        top: 130px;
-        bottom: 0;
-        right: 0;
-        left: -120px;   
-      }
-      .back_text{
-        top: -330px;
-        bottom: 0;
-        right: 0;
-        left: 260px;
-        
-        .back_jam_week{
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column;
-          .jam{
-            // margin-bottom: 15px;
-            font-family: $ital;
-            width: 330px;
-            height: 210px;
-          }
-          
-        }
-        .satbayev_university{
-         
-          right: 120px;
-          top: 75px;
-          .satbayev{
-            margin-right: 10px;
-            transform: rotate(351deg);
-          }
-          .university{
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0;
-  
-          }
-        }
-      }
-    }
-    .background_palma{
-      position: fixed;
-      top: 730px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      .back_palma{
-        width: 100%;
-        height: 350px;
-      }
-    }  
-      
-  }  
-  
-  
-}
-//ipad mini
-@media screen and(max-width: 786px) and (max-height: 1024px){
-  .background_galaxy{
-    
-    .back_planet{
-    
-      .back_jupiter{
-        top: 60px;
-        bottom: 0;
-        right: 100px;
-  
-      }
-      
-    }
-    .back_hills_grid{
-      .background_hills{
-       
-        .back_hills{
-          width: 100%;
-          height: 70%;
-          top: 420px;
-          bottom: 0;
-  
-        }
-      }
-    }
-    .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      .back_logo{
-       
-        top: 130px;
-        bottom: 0;
-        right: 0;
-        left: -160px;   
-      }
-      .back_text{
-       
-        top: -335px;
-        bottom: 0;
-        right: 0;
-        left: 222px;
-        
-        .back_jam_week{
-          margin-right: 15px;
-          display: flex;
-          flex-direction: column;
-          .jam{
-            // margin-bottom: 15px;
-            font-family: $ital;
-            width: 330px;
-            height: 210px;
-          }
-          
-        }
-        .satbayev_university{
-         
-          right: 120px;
-          top: 80px;
-          .satbayev{
-            margin-right: 10px;
-            transform: rotate(351deg);
-          }
-          .university{
-            transform: rotate(337deg);
-            position: relative;
-            bottom: 32px;
-            right: 0;
-            left: 0;
-  
-          }
-        }
-      }
-    }
-    .background_palma{
-      position: fixed;
-      top: 677px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      .back_palma{
-        width: 100%;
-        height: 350px;
-      }
-    }  
-      
-  }  
-  
-  
-}
 //Galaxy Tab S7, Galaxy Tab A 8.0
 @media screen and(max-width: 800px) and (max-height: 1280px){
   .background_galaxy{
@@ -678,16 +498,22 @@
   
   
 }
-//Galaxy Tab S7 Plus876x 1400
-@media screen and(max-width: 876px) and (max-height: 1400px){
+
+
+
+// phones
+@media screen and(max-width:480px) and (max-height: 768px){
   .background_galaxy{
     
     .back_planet{
     
       .back_jupiter{
+        width: 80px;
+        height: 68px;
+        position: fixed;
         top: 60px;
         bottom: 0;
-        right: 100px;
+        right: 80px;
   
       }
       
@@ -697,30 +523,33 @@
        
         .back_hills{
           width: 100%;
-          height: 36%;
-          top: 824px;
+          height: 70%;
+          position: fixed;
+          top: 420px;
           bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
   
         }
       }
+      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
+      width: 1000px;
+      height: 720px;
       margin: 0 auto;
       .back_logo{
-       
-        top: 326px;
-        bottom: 0;
-        right: 0;
-        left: -102px;   
+        width: 800px;
+        height: 670px;
+        left: -120px;   
       }
       .back_text{
-       
-        top: -137px;
+        
+        top: -400px;
         bottom: 0;
         right: 0;
-        left: 280px;
+        left: 104px;
         
         .back_jam_week{
           margin-right: 15px;
@@ -729,15 +558,16 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 330px;
-            height: 210px;
+            width: 280px;
+            height: 170px;
           }
           
         }
         .satbayev_university{
-         
+          
           right: 120px;
-          top: 80px;
+          top: 60px;
+          font-size: 25px;
           .satbayev{
             margin-right: 10px;
             transform: rotate(351deg);
@@ -755,17 +585,211 @@
     }
     .background_palma{
       position: fixed;
-      top: 966px;
+      top: 490px;
       bottom: 0;
       right: 0;
       left: 0;
       .back_palma{
         width: 100%;
-        height: 460px;
+        height: 270px;
+  
       }
     }  
       
   }  
-  
-  
 }
+
+
+@media screen and(max-width:420px) and (max-height: 896px){
+  .background_galaxy{
+    
+    .back_planet{
+    
+      .back_jupiter{
+        width: 80px;
+        height: 68px;
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        right: 80px;
+  
+      }
+      
+    }
+    .back_hills_grid{
+      .background_hills{
+       
+        .back_hills{
+          width: 100%;
+          height: 70%;
+          position: fixed;
+          top: 420px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
+        }
+      }
+      
+    }
+    .background_text_img{
+      width: 1000px;
+      height: 720px;
+      margin: 0 auto;
+      .back_logo{
+        width: 680px;
+        height: 670px;
+        left: -100px;   
+        top: 90px;
+      }
+      .back_text{
+        
+        top: -310px;
+        bottom: 0;
+        right: 0;
+        left: 72px;
+        
+        .back_jam_week{
+          margin-right: 15px;
+          display: flex;
+          flex-direction: column;
+          .jam{
+            // margin-bottom: 15px;
+            font-family: $ital;
+            width: 280px;
+            height: 170px;
+          }
+          
+        }
+        .satbayev_university{
+          right: 120px;
+          top: 60px;
+          font-size: 22px;
+          .satbayev{
+            margin-right: 10px;
+            transform: rotate(351deg);
+          }
+          .university{
+            transform: rotate(337deg);
+            position: relative;
+            bottom: 32px;
+            right: 0;
+            left: 0;
+  
+          }
+        }
+      }
+    }
+    .background_palma{
+      position: fixed;
+      top: 660px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .back_palma{
+        width: 100%;
+        height: 230px;
+  
+      }
+    }  
+      
+  }  
+}
+
+
+@media screen and(max-width:380px) and (max-height: 812px){
+  .background_galaxy{
+    
+    .back_planet{
+    
+      .back_jupiter{
+        width: 80px;
+        height: 68px;
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        right: 80px;
+  
+      }
+      
+    }
+    .back_hills_grid{
+      .background_hills{
+       
+        .back_hills{
+          width: 100%;
+          height: 70%;
+          position: fixed;
+          top: 420px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
+        }
+      }
+      
+    }
+    .background_text_img{
+      margin: 0 auto;
+      .back_logo{
+        width: 640px;
+        height: 640px;
+        left: -100px;   
+        top: 90px;
+      }
+      .back_text{
+        
+        top: -296px;
+        bottom: 0;
+        right: 0;
+        left: 53px;
+        
+        .back_jam_week{
+          margin-right: 15px;
+          display: flex;
+          flex-direction: column;
+          .jam{
+            // margin-bottom: 15px;
+            font-family: $ital;
+            width: 280px;
+            height: 170px;
+          }
+          
+        }
+        .satbayev_university{
+          right: 120px;
+          top: 60px;
+          font-size: 20px;
+          .satbayev{
+            margin-right: 10px;
+            transform: rotate(344deg);
+          }
+          .university{
+            transform: rotate(337deg);
+            position: relative;
+            bottom: 32px;
+            right: 0;
+            left: 0;
+  
+          }
+        }
+      }
+    }
+    .background_palma{
+      position: fixed;
+      top: 660px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      .back_palma{
+        width: 100%;
+        height: 230px;
+  
+      }
+    }  
+      
+  }  
+}
+
