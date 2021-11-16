@@ -1511,5 +1511,370 @@ ul, ol, li {
     height: 100%;
   }
 }
+@media screen and (max-width: 850px) and (max-height: 1180px) {
+  .background_galaxy .back_planet .back_jupiter {
+    top: 60px;
+    bottom: 0;
+    right: 100px;
+  }
+  .background_galaxy .back_hills_grid .background_hills .back_hills {
+    width: 100%;
+    height: 70%;
+    top: 420px;
+    bottom: 0;
+  }
+  .background_galaxy .background_text_img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    top: 190px;
+    bottom: 0;
+    right: 0;
+    left: -120px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -272px;
+    bottom: 0;
+    right: 0;
+    left: 260px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week {
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    font-family: "Italianno", cursive;
+    width: 330px;
+    height: 210px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    right: 120px;
+    top: 75px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
+    margin-right: 10px;
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .university {
+    -webkit-transform: rotate(337deg);
+            transform: rotate(337deg);
+    position: relative;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma {
+    position: fixed;
+    top: 840px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 820px) and (max-height: 1080px) {
+  .background_galaxy .back_planet .back_jupiter {
+    top: 60px;
+    bottom: 0;
+    right: 100px;
+  }
+  .background_galaxy .back_hills_grid .background_hills .back_hills {
+    width: 100%;
+    height: 70%;
+    top: 420px;
+    bottom: 0;
+  }
+  .background_galaxy .background_text_img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    top: 130px;
+    bottom: 0;
+    right: 0;
+    left: -120px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -330px;
+    bottom: 0;
+    right: 0;
+    left: 260px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week {
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    font-family: "Italianno", cursive;
+    width: 330px;
+    height: 210px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    right: 120px;
+    top: 75px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
+    margin-right: 10px;
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .university {
+    -webkit-transform: rotate(337deg);
+            transform: rotate(337deg);
+    position: relative;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma {
+    position: fixed;
+    top: 730px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 786px) and (max-height: 1024px) {
+  .background_galaxy .back_planet .back_jupiter {
+    top: 60px;
+    bottom: 0;
+    right: 100px;
+  }
+  .background_galaxy .back_hills_grid .background_hills .back_hills {
+    width: 100%;
+    height: 70%;
+    top: 420px;
+    bottom: 0;
+  }
+  .background_galaxy .background_text_img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    top: 130px;
+    bottom: 0;
+    right: 0;
+    left: -160px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -335px;
+    bottom: 0;
+    right: 0;
+    left: 222px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week {
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    font-family: "Italianno", cursive;
+    width: 330px;
+    height: 210px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    right: 120px;
+    top: 80px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
+    margin-right: 10px;
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .university {
+    -webkit-transform: rotate(337deg);
+            transform: rotate(337deg);
+    position: relative;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma {
+    position: fixed;
+    top: 677px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 800px) and (max-height: 1280px) {
+  .background_galaxy .back_planet .back_jupiter {
+    top: 60px;
+    bottom: 0;
+    right: 100px;
+  }
+  .background_galaxy .back_hills_grid .background_hills .back_hills {
+    width: 100%;
+    height: 70%;
+    top: 420px;
+    bottom: 0;
+  }
+  .background_galaxy .background_text_img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    top: 240px;
+    bottom: 0;
+    right: 0;
+    left: -140px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -220px;
+    bottom: 0;
+    right: 0;
+    left: 241px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week {
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    font-family: "Italianno", cursive;
+    width: 330px;
+    height: 210px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    right: 120px;
+    top: 80px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
+    margin-right: 10px;
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .university {
+    -webkit-transform: rotate(337deg);
+            transform: rotate(337deg);
+    position: relative;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma {
+    position: fixed;
+    top: 830px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 460px;
+  }
+}
+@media screen and (max-width: 876px) and (max-height: 1400px) {
+  .background_galaxy .back_planet .back_jupiter {
+    top: 60px;
+    bottom: 0;
+    right: 100px;
+  }
+  .background_galaxy .back_hills_grid .background_hills .back_hills {
+    width: 100%;
+    height: 36%;
+    top: 824px;
+    bottom: 0;
+  }
+  .background_galaxy .background_text_img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .background_galaxy .background_text_img .back_logo {
+    top: 326px;
+    bottom: 0;
+    right: 0;
+    left: -102px;
+  }
+  .background_galaxy .background_text_img .back_text {
+    top: -137px;
+    bottom: 0;
+    right: 0;
+    left: 280px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week {
+    margin-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .jam {
+    font-family: "Italianno", cursive;
+    width: 330px;
+    height: 210px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university {
+    right: 120px;
+    top: 80px;
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .satbayev {
+    margin-right: 10px;
+    -webkit-transform: rotate(351deg);
+            transform: rotate(351deg);
+  }
+  .background_galaxy .background_text_img .back_text .satbayev_university .university {
+    -webkit-transform: rotate(337deg);
+            transform: rotate(337deg);
+    position: relative;
+    bottom: 32px;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma {
+    position: fixed;
+    top: 966px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .background_galaxy .background_palma .back_palma {
+    width: 100%;
+    height: 460px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
