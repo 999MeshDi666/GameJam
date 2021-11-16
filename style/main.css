@@ -1322,7 +1322,7 @@ ul, ol, li {
   display: block;
   z-index: 0;
   position: relative;
-  top: -30px;
+  top: 0px;
   bottom: 0;
   right: 0;
   left: -96px;
@@ -1330,7 +1330,7 @@ ul, ol, li {
 .background_galaxy .background_text_img .back_text {
   color: #fff;
   position: relative;
-  top: -487px;
+  top: -460px;
   bottom: 0;
   right: 0;
   left: 286px;
