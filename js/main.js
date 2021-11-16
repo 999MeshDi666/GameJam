@@ -249,12 +249,12 @@ let MaxAboutContent = document.getElementById('about_content');
 let MaxAboutHeader = document.getElementById('move_about');
 MaxAbout.addEventListener('click', () => {
     if (aboutmax) {
-        AboutWindows.style.width = '500px';
-        AboutWindows.style.height = '400px';
-        AboutWindows.style.left = '350px';
-        AboutWindows.style.top = '130px';
-        MaxAboutContent.style.width = '466px';
-        MaxAboutContent.style.height = '312px';
+        AboutWindows.style.width = '400px';
+        AboutWindows.style.height = '360px';
+        AboutWindows.style.left = '5%';
+        AboutWindows.style.top = '5%';
+        MaxAboutContent.style.width = 'auto';
+        MaxAboutContent.style.height = '274px';
         MaxAboutHeader.id = 'move_about';
         aboutmax = false;
     } else {
@@ -262,7 +262,7 @@ MaxAbout.addEventListener('click', () => {
         AboutWindows.style.height = '100%';
         AboutWindows.style.left = '0px';
         AboutWindows.style.top = '0px';
-        MaxAboutContent.style.width = '98%';
+        MaxAboutContent.style.width = 'auto';
         MaxAboutContent.style.height = '100%';
         MaxAboutHeader.id = 'nomove';
         aboutmax = true;
@@ -274,12 +274,12 @@ let MaxFAQContent = document.getElementById('faq_content');
 let MaxFAQHeader = document.getElementById('move_faq');
 MaxFAQ.addEventListener('click', () => {
     if (faqmax) {
-        FAQWindows.style.width = '500px';
-        FAQWindows.style.height = '400px';
-        FAQWindows.style.left = '400px';
-        FAQWindows.style.top = '180px';
-        MaxFAQContent.style.width = '466px';
-        MaxFAQContent.style.height = '312px';
+        FAQWindows.style.width = '400px';
+        FAQWindows.style.height = '360px';
+        FAQWindows.style.left = '5%';
+        FAQWindows.style.top = '10%';
+        MaxFAQContent.style.width = '328px';
+        MaxFAQContent.style.height = '274px';
         MaxFAQHeader.id = 'move_about';
         faqmax = false;
     } else {
@@ -287,7 +287,7 @@ MaxFAQ.addEventListener('click', () => {
         FAQWindows.style.height = '100%';
         FAQWindows.style.left = '0px';
         FAQWindows.style.top = '0px';
-        MaxFAQContent.style.width = '98%';
+        MaxFAQContent.style.width = 'auto';
         MaxFAQContent.style.height = '100%';
         MaxFAQHeader.id = 'nomove';
         faqmax = true;
@@ -299,12 +299,12 @@ let MaxRulesContent = document.getElementById('rules_content');
 let MaxRulesHeader = document.getElementById('move_rules');
 MaxRules.addEventListener('click', () => {
     if (rulesmax) {
-        RulesWindows.style.width = '500px';
-        RulesWindows.style.height = '400px';
-        RulesWindows.style.left = '400px';
-        RulesWindows.style.top = '180px';
-        MaxRulesContent.style.width = '466px';
-        MaxRulesContent.style.height = '312px';
+        RulesWindows.style.width = '400px';
+        RulesWindows.style.height = '360px';
+        RulesWindows.style.left = '5%';
+        RulesWindows.style.top = '15%';
+        MaxRulesContent.style.width = '328px';
+        MaxRulesContent.style.height = '274px';
         MaxRulesHeader.id = 'move_about';
         rulesmax = false;
     } else {
@@ -312,7 +312,7 @@ MaxRules.addEventListener('click', () => {
         RulesWindows.style.height = '100%';
         RulesWindows.style.left = '0px';
         RulesWindows.style.top = '0px';
-        MaxRulesContent.style.width = '98%';
+        MaxRulesContent.style.width = 'auto';
         MaxRulesContent.style.height = '100%';
         MaxRulesHeader.id = 'nomove';
         rulesmax = true;
@@ -324,20 +324,22 @@ let MaxScheduleContent = document.getElementById('schedule_content');
 let MaxScheduleHeader = document.getElementById('move_schedule');
 MaxSchedule.addEventListener('click', () => {
     if (schedulemax) {
-        ScheduleWindows.style.width = '500px';
-        ScheduleWindows.style.height = '400px';
-        ScheduleWindows.style.left = '400px';
-        ScheduleWindows.style.top = '180px';
-        MaxScheduleContent.style.width = '466px';
-        MaxScheduleContent.style.height = '312px';
+        ScheduleWindows.style.width = '400px';
+        ScheduleWindows.style.height = '360px';
+        ScheduleWindows.style.left = '5%';
+        ScheduleWindows.style.top = '20%';
+        MaxScheduleHeader.style.overflow = "scroll";
+        MaxScheduleContent.style.width = '328px';
+        MaxScheduleContent.style.height = '274px';
         MaxScheduleHeader.id = 'move_about';
+        
         schedulemax = false;
     } else {
         ScheduleWindows.style.width = '100%';
         ScheduleWindows.style.height = '100%';
         ScheduleWindows.style.left = '0px';
         ScheduleWindows.style.top = '0px';
-        MaxScheduleContent.style.width = '98%';
+        MaxScheduleContent.style.width = 'auto';
         MaxScheduleContent.style.height = '100%';
         MaxScheduleHeader.id = 'nomove';
         schedulemax = true;
@@ -349,12 +351,12 @@ let MaxAwardsContent = document.getElementById('awards_content');
 let MaxAwardsHeader = document.getElementById('move_awards');
 MaxAwards.addEventListener('click', () => {
     if (awardsmax) {
-        AwardsWindows.style.width = '500px';
-        AwardsWindows.style.height = '400px';
-        AwardsWindows.style.left = '400px';
-        AwardsWindows.style.top = '180px';
-        MaxAwardsContent.style.width = '466px';
-        MaxAwardsContent.style.height = '312px';
+        AwardsWindows.style.width = '400px';
+        AwardsWindows.style.height = '360px';
+        AwardsWindows.style.left = '5%';
+        AwardsWindows.style.top = '25%';
+        MaxAwardsContent.style.width = '328px';
+        MaxAwardsContent.style.height = '274px';
         MaxAwardsHeader.id = 'move_about';
         awardsmax = false;
     } else {
@@ -362,7 +364,7 @@ MaxAwards.addEventListener('click', () => {
         AwardsWindows.style.height = '100%';
         AwardsWindows.style.left = '0px';
         AwardsWindows.style.top = '0px';
-        MaxAwardsContent.style.width = '98%';
+        MaxAwardsContent.style.width = 'auto';
         MaxAwardsContent.style.height = '100%';
         MaxAwardsHeader.id = 'nomove';
         awardsmax = true;
@@ -448,5 +450,4 @@ function SetCurTime() {
         }
     };
 };
-
 
