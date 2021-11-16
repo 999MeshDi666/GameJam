@@ -78,27 +78,18 @@
   }
   .background_text_img{
     width: 1000px;
-    height: 720px;
-    margin: 0 auto;
+    height: 1000px;
+    margin: 110px auto;
+    text-align: center;
     .back_logo{
-      display: block;
-      z-index: 0; 
-      position: relative;
-      top: 0px;
-      bottom: 0;
-      right: 0;
-      left: -96px;   
+     
     }
     .back_text{
       color: $wt;
-      position: relative;
-      top: -460px;
-      bottom: 0;
-      right: 0;
-      left: 286px;
-      text-align: center;
+      justify-content: center;
       display: flex;
-      margin: 0 auto;
+      margin-left: 252px;
+      margin-top: -180px;
       align-items: center;
       .back_jam_week{
         margin-right: 15px;
@@ -149,9 +140,7 @@
   }
     
 }  
-
-
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1100px) {
   .background_galaxy{
    
     width: 100%;
@@ -179,7 +168,51 @@
           width: 100%;
           height: 70%;
           position: fixed;
-          top: 440px;
+          top: 376px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
+        }
+      }
+      
+     
+    }
+    
+      
+  }  
+  
+}
+@media screen and (max-width: 992px) {
+  .background_galaxy{
+   
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    user-select: none;
+    z-index: -1;
+    .back_planet{
+    
+      .back_jupiter{
+        width: 80px;
+        height: 68px;
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        right: 70px;
+  
+      }
+      
+    }
+    .back_hills_grid{
+      .background_hills{
+       
+        .back_hills{
+          width: 100%;
+          height: 70%;
+          position: fixed;
+          top: 394px;
           bottom: 0;
           right: 0;
           left: 0;
@@ -196,22 +229,16 @@
     .background_text_img{
       width: 100%;
       height: 100%;
-      margin: 0 auto;
-      .back_logo{
-        top: -14px;
-        left: -102px;   
+      margin: 170px auto;
+      .back_logo{ 
+        
       }
       .back_text{
         color: $wt;
-        position: relative;
-        top: -472px;
-        bottom: 0;
-        right: 0;
-        left: 276px;
-        text-align: center;
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
+        margin-left: 252px;
+        margin-top: -184px;
+     
+      
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -287,22 +314,15 @@
     .background_text_img{
       width: 100%;
       height: 100%;
-      margin: 0 auto;
+      margin: 170px auto;
       .back_logo{
-        top: 27px;
-        left: -174px;   
+        width: 670px;
+        height: 366px; 
       }
       .back_text{
         color: $wt;
-        position: relative;
-        top: -438px;
-        bottom: 0;
-        right: 0;
-        left: 209px;
-        text-align: center;
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
+        margin-left: 218px;
+        margin-top: -172px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -310,13 +330,14 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 330px;
-            height: 210px;
+            width: 290px;
+            height: 190px;
           }
         }
         .satbayev_university{
-          right: 93px;
-          top: 75px;
+          right: 104px;
+          top: 64px;
+          font-size: 30px;
           .satbayev{
             margin-right: 10px;
             transform: rotate(351deg);
@@ -362,9 +383,9 @@
        
         .back_hills{
           width: 100%;
-          height: 60%;
+          height: 52%;
           position: fixed;
-          top: 456px;
+          top: 446px;
           bottom: 0;
           right: 0;
           left: 0;
@@ -376,19 +397,17 @@
      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      width: 565px;
+      height: 500px;
+      margin: 170px auto;
       .back_logo{
-        width: 950px;
-        top: 100px;
-        left: -136px;   
+        width: 590px;
+        height: 356px;    
       }
       .back_text{
-        top: -270px;
-        bottom: 0;
-        right: 0;
-        left: 161px;
+        color: $wt;
+        margin-left: 224px;
+        margin-top: -165px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -396,17 +415,17 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 280px;
-            height: 175px;
+            width: 260px;
+            height: 180px;
           }
         }
         .satbayev_university{
-          right: 93px;
-          top: 60px;
-          font-size: 26px;
+          right: 104px;
+          top: 64px;
+          font-size: 27px;
           .satbayev{
             margin-right: 10px;
-            transform: rotate(343deg);
+            transform: rotate(351deg);
           }
           .university{
             transform: rotate(337deg);
@@ -439,7 +458,7 @@
         position: fixed;
         top: 60px;
         bottom: 0;
-        right: 70px;
+        right: 30px;
   
       }
       
@@ -449,28 +468,31 @@
        
         .back_hills{
           width: 100%;
-          height: 60%;
+          height: 52%;
           position: fixed;
-          top: 456px;
+          top: 446px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
         }
       }
       
      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      width: 565px;
+      height: 500px;
+      margin: 170px -46px;
       .back_logo{
-        width: 833px;
-        top: 118px;
-        left: -136px;   
+        width: 450px;
+        height: 285px;    
       }
       .back_text{
-        top: -208px;
-        bottom: 0;
-        right: 0;
-        left: 120px;
+        color: $wt;
+        margin-left: 180px;
+        margin-top: -104px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -478,17 +500,18 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 246px;
-            height: 155px;
+            width: 197px;
+            height: 118px;
           }
         }
         .satbayev_university{
-          right: 93px;
-          top: 60px;
-          font-size: 26px;
+          right: 80px;
+          top: 33px;
+          font-size: 20px;
+
           .satbayev{
             margin-right: 10px;
-            transform: rotate(343deg);
+            transform: rotate(340deg);
           }
           .university{
             transform: rotate(337deg);
@@ -521,7 +544,6 @@
         position: fixed;
         top: 60px;
         bottom: 0;
-        right: 70px;
   
       }
       
@@ -531,28 +553,31 @@
        
         .back_hills{
           width: 100%;
-          height: 40%;
+          height: 52%;
           position: fixed;
-          top: 480px;
+          top: 446px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
         }
       }
       
      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      width: 565px;
+      height: 500px;
+      margin: 210px -70px;
       .back_logo{
-        width: 750px;
-        top: 130px;
-        left: -136px;   
+        width: 410px;
+        height: 253px; 
       }
       .back_text{
-        top: -156px;
-        bottom: 0;
-        right: 0;
-        left: 98px;
+        color: $wt;
+        margin-left: 152px;
+        margin-top: -104px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -560,17 +585,18 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 220px;
-            height: 135px;
+            width: 182px;
+            height: 118px;
           }
         }
         .satbayev_university{
-          right: 75px;
-          top: 50px;
-          font-size: 22px;
+          right: 74px;
+          top: 33px;
+          font-size: 20px;
+
           .satbayev{
             margin-right: 10px;
-            transform: rotate(343deg);
+            transform: rotate(340deg);
           }
           .university{
             transform: rotate(337deg);
@@ -585,6 +611,7 @@
     }
       
   }  
+  
   
 }
 @media screen and (max-width: 380px) {
@@ -603,7 +630,6 @@
         position: fixed;
         top: 60px;
         bottom: 0;
-        right: 30px;
   
       }
       
@@ -613,29 +639,31 @@
        
         .back_hills{
           width: 100%;
-          height: 40%;
+          height: 52%;
           position: fixed;
-          top: 480px;
+          top: 446px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
         }
       }
       
      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      width: 565px;
+      height: 500px;
+      margin: 237px -96px;
       .back_logo{
-        width: 640px;
-        height: 450px;
-        top: 130px;
-        left: -100px;   
+        width: 400px;
+        height: 230px;
       }
       .back_text{
-        top: -122px;
-        bottom: 0;
-        right: 0;
-        left: 115px;
+        color: $wt;
+        margin-left: 152px;
+        margin-top: -104px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -643,26 +671,23 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 160px;
-            height: 100px;
-          }
-          .week{
-            top: -16px;
+            width: 182px;
+            height: 118px;
           }
         }
         .satbayev_university{
-          right: 60px;
-          top: 34px;
-          font-size: 17px;
-          margin-top: 10px;
+          right: 74px;
+          top: 33px;
+          font-size: 20px;
+
           .satbayev{
-            margin-right: 10px;
-            transform: rotate(343deg);
+            margin-right: 5px;
+            transform: rotate(340deg);
           }
           .university{
             transform: rotate(337deg);
             position: relative;
-            bottom: 20px;
+            bottom: 32px;
             right: 0;
             left: 0;
   
@@ -671,7 +696,7 @@
       }
     }
       
-  }  
+  } 
   
 }
 @media screen and (max-width: 360px) {
@@ -690,7 +715,7 @@
         position: fixed;
         top: 60px;
         bottom: 0;
-        right: 30px;
+       
   
       }
       
@@ -700,29 +725,31 @@
        
         .back_hills{
           width: 100%;
-          height: 40%;
+          height: 52%;
           position: fixed;
-          top: 480px;
+          top: 446px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
         }
       }
       
      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      width: 565px;
+      height: 500px;
+      margin: 270px -100px;
       .back_logo{
-        width: 660px;
-        height: 456px;
-        top: 130px;
-        left: -120px;   
+        width: 390px;
+        height: 220px;
       }
       .back_text{
-        top: -130px;
-        bottom: 0;
-        right: 0;
-        left: 77px;
+        color: $wt;
+        margin-left: 125px;
+        margin-top: -104px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -730,23 +757,23 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 210px;
-            height: 124px;
+            width: 182px;
+            height: 118px;
           }
         }
         .satbayev_university{
-          right: 78px;
-          top: 26px;
-          font-size: 17px;
-          margin-top: 10px;
+          right: 58px;
+          top: 35px;
+          font-size: 16px;
+
           .satbayev{
-            margin-right: 10px;
-            transform: rotate(343deg);
+            margin-right: 5px;
+            transform: rotate(332deg);
           }
           .university{
             transform: rotate(337deg);
             position: relative;
-            bottom: 20px;
+            bottom: 28px;
             right: 0;
             left: 0;
   
@@ -754,8 +781,8 @@
         }
       }
     }
-      
-  }  
+     
+  } 
   
 }
 @media screen and (max-width: 320px) {
@@ -774,7 +801,7 @@
         position: fixed;
         top: 60px;
         bottom: 0;
-        right: 40px;
+       
   
       }
       
@@ -784,29 +811,31 @@
        
         .back_hills{
           width: 100%;
-          height: 34%;
+          height: 30%;
           position: fixed;
-          top: 440px;
+          top: 446px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+  
         }
       }
       
      
     }
     .background_text_img{
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
+      width: 565px;
+      height: 500px;
+      margin: 234px -120px;
       .back_logo{
-        width: 606px;
-        height: 436px;
-        top: 130px;
-        left: -113px;   
+        width: 340px;
+        height: 220px;
       }
       .back_text{
-        top: -116px;
-        bottom: 0;
-        right: 0;
-        left: 78px;
+        color: $wt;
+        margin-left: 110px;
+        margin-top: -96px;
         .back_jam_week{
           margin-right: 15px;
           display: flex;
@@ -814,23 +843,23 @@
           .jam{
             // margin-bottom: 15px;
             font-family: $ital;
-            width: 173px;
-            height: 102px;
+            width: 168px;
+            height: 110px;
           }
         }
         .satbayev_university{
-          right: 63px;
-          top: 33px;
-          font-size: 15px;
-          margin-top: 10px;
+          right: 54px;
+          top: 32px;
+          font-size: 14px;
+
           .satbayev{
-            margin-right: 10px;
-            transform: rotate(343deg);
+            margin-right: 0px;
+            transform: rotate(332deg);
           }
           .university{
-            transform: rotate(337deg);
+            transform: rotate(330deg);
             position: relative;
-            bottom: 20px;
+            bottom: 28px;
             right: 0;
             left: 0;
   
@@ -838,8 +867,8 @@
         }
       }
     }
-      
-  }  
+     
+  } 
   
 }
 
