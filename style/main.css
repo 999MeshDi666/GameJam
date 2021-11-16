@@ -1508,9 +1508,9 @@ ul, ol, li {
   }
   .background_galaxy .back_hills_grid .background_hills .back_hills {
     width: 100%;
-    height: 70%;
+    height: 60%;
     position: fixed;
-    top: 475px;
+    top: 444px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -1522,13 +1522,13 @@ ul, ol, li {
     margin: 0 auto;
   }
   .background_galaxy .background_text_img .back_logo {
-    top: 60px;
-    left: -172px;
+    top: 27px;
+    left: -174px;
   }
   .background_galaxy .background_text_img .back_text {
     color: #fff;
     position: relative;
-    top: -406px;
+    top: -438px;
     bottom: 0;
     right: 0;
     left: 209px;
@@ -1834,15 +1834,16 @@ ul, ol, li {
     margin: 0 auto;
   }
   .background_galaxy .background_text_img .back_logo {
-    width: 680px;
+    width: 640px;
+    height: 450px;
     top: 130px;
-    left: -120px;
+    left: -100px;
   }
   .background_galaxy .background_text_img .back_text {
-    top: -143px;
+    top: -122px;
     bottom: 0;
     right: 0;
-    left: 81px;
+    left: 115px;
   }
   .background_galaxy .background_text_img .back_text .back_jam_week {
     margin-right: 15px;
@@ -1856,12 +1857,15 @@ ul, ol, li {
   }
   .background_galaxy .background_text_img .back_text .back_jam_week .jam {
     font-family: "Italianno", cursive;
-    width: 220px;
-    height: 135px;
+    width: 160px;
+    height: 100px;
+  }
+  .background_galaxy .background_text_img .back_text .back_jam_week .week {
+    top: -16px;
   }
   .background_galaxy .background_text_img .back_text .satbayev_university {
-    right: 78px;
-    top: 45px;
+    right: 60px;
+    top: 34px;
     font-size: 17px;
     margin-top: 10px;
   }
