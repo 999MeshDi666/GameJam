@@ -1963,7 +1963,7 @@ ul, ol, li {
     width: 100%;
     height: 30%;
     position: fixed;
-    top: 446px;
+    top: 434px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -1972,7 +1972,7 @@ ul, ol, li {
   .background_galaxy .background_text_img {
     width: 565px;
     height: 500px;
-    margin: 234px -120px;
+    margin: 200px -120px;
   }
   .background_galaxy .background_text_img .back_logo {
     width: 340px;
