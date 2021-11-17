@@ -317,49 +317,6 @@ ul, ol, li {
     font-size: 25px;
   }
 }
-.header_top {
-  position: fixed;
-  top: 0;
-  background-color: #bdbebd;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  padding: 5px;
-  display: none;
-}
-.header_top .header_wrapper_top .menu_panel_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: "DotGothic16", sans-serif;
-  color: #000;
-  cursor: default;
-}
-.header_top .header_wrapper_top .menu_panel_top .lang_top {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin-right: 30px;
-}
-.header_top .header_wrapper_top .menu_panel_top .lang_top .ch_lang {
-  width: inherit;
-  height: inherit;
-}
-.header_top .header_wrapper_top .menu_panel_top .cloak {
-  border-width: 2px;
-  border-style: solid;
-  border-color: grey white white grey;
-  text-align: center;
-  width: 130px;
-}
-.header_top .header_wrapper_top .menu_panel_top .cloak .time_top {
-  font-size: 18px;
-  font-weight: lighter;
-}
-
 .header {
   position: fixed;
   bottom: 0;
@@ -647,20 +604,27 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn p {
     font-size: 16px;
   }
-  .header .header_wrapper .menu_panel .time_and_lang {
+  .header .header_wrapper .menu_panel .time_and_lang .lang {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .lang .ch_lang {
+    width: inherit;
+    height: inherit;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .cloak {
     display: none;
   }
 
   .lang_panel {
-    bottom: 0px;
-    top: 40px;
+    bottom: 40px;
     right: 30px;
-    height: 12%;
-    width: 30px;
   }
   .lang_panel .lang_panel_wrapper .langs {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
 
   .header_top {
@@ -696,9 +660,24 @@ ul, ol, li {
     font-weight: bolder;
     letter-spacing: -1px;
   }
+  .header .header_wrapper .menu_panel .time_and_lang .lang {
+    margin-right: 20px;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .cloak {
+    display: none;
+  }
 
   .menu_windows {
     bottom: 35px;
+  }
+
+  .lang_panel {
+    bottom: 40px;
+    right: 22px;
+  }
+  .lang_panel .lang_panel_wrapper .langs {
+    width: 35px;
+    height: 35px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -709,13 +688,28 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn {
     width: 70px;
   }
-
-  .header_top .header_wrapper_top .menu_panel_top .cloak {
-    width: 100px;
+  .header .header_wrapper .menu_panel .time_and_lang .lang {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
   }
-  .header_top .header_wrapper_top .menu_panel_top .cloak .time_top {
-    margin-top: 5px;
-    font-size: 16px;
+  .header .header_wrapper .menu_panel .time_and_lang .lang .ch_lang {
+    width: inherit;
+    height: inherit;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .cloak {
+    display: none;
+  }
+
+  .lang_panel {
+    right: 12px;
+    bottom: 32px;
+    width: 32px;
+  }
+  .lang_panel .lang_panel_wrapper .langs {
+    width: 25px;
+    height: 25px;
   }
 }
 @media screen and (max-width: 420px) and (min-width: 320px) {
@@ -735,47 +729,15 @@ ul, ol, li {
     display: block;
   }
   .header .header_wrapper .menu_panel .time_and_lang .lang {
+    display: none;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
   }
   .header .header_wrapper .menu_panel .time_and_lang .lang .ch_lang {
     width: inherit;
     height: inherit;
   }
   .header .header_wrapper .menu_panel .time_and_lang .cloak {
-    width: 80px;
-  }
-  .header .header_wrapper .menu_panel .time_and_lang .cloak .time {
-    margin-top: 2px;
-    font-size: 14px;
-  }
-
-  .lang_panel {
-    right: 22px;
-    height: 13%;
-  }
-  .lang_panel .lang_panel_wrapper .langs {
-    width: 32px;
-    height: 32px;
-  }
-
-  .header_top .header_wrapper_top .menu_panel_top .lang_top {
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    margin-right: 20px;
-  }
-  .header_top .header_wrapper_top .menu_panel_top .lang_top .ch_lang {
-    width: inherit;
-    height: inherit;
-  }
-  .header_top .header_wrapper_top .menu_panel_top .cloak {
-    width: 80px;
-  }
-  .header_top .header_wrapper_top .menu_panel_top .cloak .time_top {
-    margin-top: 2px;
-    font-size: 14px;
+    display: none;
   }
 }
 .shortcut_icons {
@@ -857,42 +819,42 @@ ul, ol, li {
   }
 
   .shortcut_about {
-    top: 55px;
+    top: 10px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_faq {
-    top: 135px;
+    top: 88px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_rules {
-    top: 220px;
+    top: 184px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_schedule {
-    top: 303px;
+    top: 276px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_reg {
-    top: 385px;
+    top: 366px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_awards {
-    top: 470px;
+    top: 457px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -1967,7 +1929,7 @@ ul, ol, li {
   .background_galaxy .background_text_img {
     width: 565px;
     height: 500px;
-    margin: 210px -73px;
+    margin: 160px -73px;
   }
   .background_galaxy .background_text_img .back_logo {
     width: 377px;
@@ -2043,7 +2005,7 @@ ul, ol, li {
   .background_galaxy .background_text_img {
     width: 565px;
     height: 500px;
-    margin: 237px -96px;
+    margin: 190px -96px;
   }
   .background_galaxy .background_text_img .back_logo {
     width: 400px;
@@ -2109,7 +2071,7 @@ ul, ol, li {
   .background_galaxy .background_text_img {
     width: 565px;
     height: 500px;
-    margin: 270px -100px;
+    margin: 200px -100px;
   }
   .background_galaxy .background_text_img .back_logo {
     width: 390px;
