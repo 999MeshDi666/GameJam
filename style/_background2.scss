@@ -577,7 +577,21 @@
   
         }
       }
-      
+      .back_grid::before {
+        content: "";
+        display: block;
+        width: 200vw;
+        height: 50vh;
+        position: absolute;
+        top: 60%;
+        left: -50%;
+        background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), 
+          repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
+        animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, -0.012, 0, 0, 1, 0, 0, 0, 0, 1.2);
+        -webkit-mask-image: linear-gradient(to bottom, transparent 35%, black 60%);
+        background-color: rgb(26, 24, 24);
+      }
      
     }
     .background_text_img{
