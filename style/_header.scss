@@ -110,18 +110,35 @@
                     border-color:  $wt $bk $bk $wt;
                 }
             }
-            .cloak{
-                border-width: 2px;
-                border-style: solid;
-                border-color: grey white white grey;
-                width: 152px;
-                text-align: center;
-                .time{
-                    font-size: 20px;
-                    font-weight: lighter;
+            .time_and_lang{
+                display: flex;
+                align-items: center;
+                .lang{
+                    cursor: pointer;
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 30px; 
+                    .rus_lang{ 
+                        width: inherit;
+                        height: inherit;
+                    }
+                   
+                }
+                .cloak{
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: grey white white grey;
+                    width: 152px;
+                    text-align: center;
+                    .time{
+                        font-size: 20px;
+                        font-weight: lighter;
+                    }
+    
                 }
 
             }
+            
         }
 
     }
@@ -201,6 +218,34 @@
 .menu_windows_on{
     display: block;
 }
+.lang_panel{
+    cursor: pointer;
+    background-color: $win;
+    width: 34px;
+    padding: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:  $bk $wt $wt $bk  ; 
+    position: fixed;
+    // top: 565px;
+    bottom: 40px;
+    right: 185px;
+    // left: 850px;
+    display: none;
+    .lang_panel_wrapper{
+        display: flex;
+        flex-direction: column;
+        .langs{
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+.lang_panel_on{
+    display: block;
+
+}
+
 
 // responsoves
 

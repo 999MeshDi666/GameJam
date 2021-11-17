@@ -1,3 +1,28 @@
+//timer
+let CurTime = document.querySelector(".time");
+let timerId = setInterval(() => SetCurTime(), 1000);
+let curDate;
+function SetCurTime() {
+    curDate = new Date();
+    if(curDate.getHours() > 11){
+        if(curDate.getMinutes() > 9){
+            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
+        }
+        else{
+            CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
+        }
+    }
+    else{
+        if(curDate.getMinutes() > 9){
+            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} AM`;
+        }
+        else{
+            CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} AM`;
+        }
+    };
+};
+
+
 // header
 let WinBtn = document.querySelector('.win_btn');
 let menuWindows = document.querySelector('.menu_windows');
@@ -425,29 +450,10 @@ dateThird.addEventListener('click', ()=>{
 });
 
 
-
-
-//timer
-let CurTime = document.querySelector(".time");
-let timerId = setInterval(() => SetCurTime(), 1000);
-let curDate;
-function SetCurTime() {
-    curDate = new Date();
-    if(curDate.getHours() > 11){
-        if(curDate.getMinutes() > 9){
-            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
-        }
-        else{
-            CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
-        }
-    }
-    else{
-        if(curDate.getMinutes() > 9){
-            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} AM`;
-        }
-        else{
-            CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} AM`;
-        }
-    };
-};
-
+// language panel
+let Lang = document.querySelector('.lang');
+let LangPanel = document.querySelector('.lang_panel');
+Lang.addEventListener('click', ()=>{
+    
+    LangPanel.classList.toggle('lang_panel_on');
+})

@@ -132,6 +132,7 @@ function DragShortcutElem(elem){
     elem.ondragstart = () => false;
     let rect = elem.getBoundingClientRect();
     let css = getComputedStyle(elem);
+    document.body.style.overflow = 'hidden';
     elem.onmousedown = e => {
         elem.style.position = 'absolute';
         let saveX = e.offsetX;
