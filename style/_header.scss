@@ -438,9 +438,6 @@
         }
         
     }
-   
-   
-
     
 }
 
@@ -469,7 +466,6 @@
                 }
                 .time_and_lang{
                     .lang{
-                        display: none;
                         cursor: pointer;
                         .ch_lang{ 
                             width: inherit;
@@ -490,3 +486,32 @@
 }
 
 
+
+
+@media screen and (max-width: 320px){
+    
+    .header{
+        .header_wrapper{
+            .menu_panel{
+                .time_and_lang{
+                    .lang{
+                        display: none;
+                        cursor: pointer;
+                        .ch_lang{ 
+                            width: inherit;
+                            height: inherit;
+                        }   
+                    }
+                    .cloak{
+                        display: none;
+                        
+        
+                    }
+    
+                }
+                
+            }
+        }
+    }
+
+}

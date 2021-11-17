@@ -32,7 +32,7 @@ ul, ol, li {
 }
 
 .container {
-  display: block;
+  display: none;
 }
 .container .pixel_screen::before {
   content: "";
@@ -728,6 +728,18 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn p {
     display: block;
   }
+  .header .header_wrapper .menu_panel .time_and_lang .lang {
+    cursor: pointer;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .lang .ch_lang {
+    width: inherit;
+    height: inherit;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .cloak {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
   .header .header_wrapper .menu_panel .time_and_lang .lang {
     display: none;
     cursor: pointer;
