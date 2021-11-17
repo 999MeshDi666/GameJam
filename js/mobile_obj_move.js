@@ -1,152 +1,92 @@
-// windows drag
-let TouchMoveAbout = document.getElementById('move_about');
-let TouchMoveWinAbout = document.querySelector('.desktop_win_about');
+// let dragndrop = (function(){
+//     let myX = " ";
+//     let myY = " ";
+//     let whichWin = " ";
 
-let TouchMoveFAQ = document.getElementById('move_faq');
-let TouchMoveWinFAQ = document.querySelector('.desktop_win_faq');
-
-let TouchMoveRules = document.getElementById('move_rules');
-let TouchMoveWinRules = document.querySelector('.desktop_win_rules');
-
-let TouchMoveSchedule = document.getElementById('move_schedule');
-let TouchMoveWinSchedule = document.querySelector('.desktop_win_schedule');
-
-let TouchMoveReg = document.getElementById('move_reg');
-let TouchMoveWinReg = document.querySelector('.desktop_win_registration');
-
-let TouchMoveAwards = document.getElementById('move_awards');
-let TouchMoveWinAwards = document.querySelector('.desktop_win_awards');
-TouchDragWindows(TouchMoveAbout, TouchMoveWinAbout);
-TouchDragWindows(TouchMoveFAQ, TouchMoveWinFAQ);
-TouchDragWindows(TouchMoveRules, TouchMoveWinRules);
-TouchDragWindows(TouchMoveSchedule, TouchMoveWinSchedule);
-TouchDragWindows(TouchMoveReg, TouchMoveWinReg);
-TouchDragWindows(TouchMoveAwards, TouchMoveWinAwards);
-
-
-function TouchDragWindows(header, windows) {
-    header.addEventListener('mousedown', () => {
-        TouchDragWinElem(header, windows);
-    });
-};
-
-function TouchDragWinElem(header, elem){
-    elem.ontouchstart = function(e){
-        let coords = getCoords(elem)
-        let shiftX = e.clientX - coords.left;
-        let shiftY = e.clientY - coords.top;
-
-        document.body.style.overflow = 'hidden';
-
-        TouchMoveAt(e.pageX, e.pageY);
-        function TouchMoveAt(pageX, pageY) {
-            elem.style.left = pageX - shiftX + 'px';
-            elem.style.top = pageY - shiftY + 'px';
-        }
-
-        function onTouchMove(e) {
-            TouchMoveAt(e.pageX, e.pageY);
-        }
-    
-        document.addEventListener('touchmove',onTouchMove);
-
-        if (header.id == 'nomove') {
-            document.removeEventListener('touchmove',onTouchMove);
-            elem.ontouchend = null;
-        }
-
-        elem.ontouchend = function() {
-            document.removeEventListener('touchmove',onTouchMove);
-            elem.ontouchend = null;
-        };
-        elem.ontouchcancle = function () {
-            document.removeEventListener('touchmove',onTouchMove);
-            elem.ontouchend = null;
-        };
-       
-    };
-    let TouchWinBodyAbout = document.getElementById('about_content');
-    let TouchWinBodyFAQ = document.getElementById('faq_content');
-    let TouchWinBodyRules = document.getElementById('rules_content');
-    let TouchWinBodySchedule = document.getElementById('schedule_content');
-    let TouchWinBodyReg = document.getElementById('reg_content');
-    let TouchWinBodyAwards = document.getElementById('awards_content');
-    TouchOffDrag(TouchWinBodyAbout);
-    TouchOffDrag(TouchWinBodyFAQ);
-    TouchOffDrag(TouchWinBodyRules);
-    TouchOffDrag(TouchWinBodySchedule);
-    TouchOffDrag(TouchWinBodyReg);
-    TouchOffDrag(TouchWinBodyAwards);
-
-    let TouchWinFooterAbout = document.getElementById('about_footer');
-    let TouchWinFooterFAQ = document.getElementById('faq_footer');
-    let TouchWinFooterRules = document.getElementById('rules_footer');
-    let TouchWinFooterSchedule = document.getElementById('schedule_footer');
-    let TouchWinFooterAwards = document.getElementById('awards_footer');
-    TouchOffDrag(TouchWinFooterAbout);
-    TouchOffDrag(TouchWinFooterFAQ);
-    TouchOffDrag(TouchWinFooterRules);
-    TouchOffDrag(TouchWinFooterSchedule);
-    TouchOffDrag(TouchWinFooterAwards);
-
-    function TouchOffDrag(win){
-        win.ontouchstart = function(){
-            elem.ontouchstart = function(){
-                console.log('false');
-                // elem.preventDefault();
-                return false
-            };
-        };
-    };
-
-    elem.ondragstart = function() {
-        return false;
-    };
-
-    function getCoords(elem) {  
-        var box = elem.getBoundingClientRect();
-        return {
-          top: box.top + pageYOffset,
-          left: box.left + pageXOffset
-        };
-    };
-};
-
-
-
-
-// let MoveAboutSh = document.getElementById('about_sh');
-// let MoveFAQSh = document.getElementById('faq_sh');
-// let MoveRulesSh = document.getElementById('rules_sh');
-// let MoveScheduleSh = document.getElementById('schedule_sh');
-// let MoveRegSh = document.getElementById('reg_sh');
-// let MoveAwardsSh = document.getElementById('awards_sh');
-// DragShortcutElem(MoveAboutSh);
-// DragShortcutElem(MoveFAQSh);
-// DragShortcutElem(MoveRulesSh);
-// DragShortcutElem(MoveScheduleSh);
-// DragShortcutElem(MoveRegSh);
-// DragShortcutElem(MoveAwardsSh);
-
-// function DragShortcutElem(elem){
-//     elem.ondragstart = () => false;
-//     let rect = elem.getBoundingClientRect();
-//     let css = getComputedStyle(elem);
-//     document.body.style.overflow = 'hidden';
-//     elem.onmousedown = e => {
-//         elem.style.position = 'absolute';
-//         let saveX = e.offsetX;
-//         let saveY = e.offsetY;
-
-//         document.onmousemove = e => {
-//             elem.style.position = 'absolute';
-//             elem.style.top = e.pageY - parseInt(css.margin) - saveY + 'px';
-//             elem.style.left = e.pageX - parseInt(css.margin) - saveX + 'px';
+//     function resetZ(){
+//         let winObjects = document.querySelectorAll('.desktop_wins');
+//         for (let i = winObjects.length - 1; i>=0; i--){
+//             winObjects[i].style.zIndex = 5;
 //         };
-//     };
+//     }
 
-//     elem.onmouseup = e => {
-//         document.onmousemove = () => false;
-//     };
-// };
+//     function moveStart(e){
+//         whichWin = e.target;
+//         myX = e.offsetX === undefined ? e.layerX : e.offsetX;
+//         myY = e.offsetY === undefined ? e.layerY : e.offsetY;
+//         resetZ();
+//         whichWin.style.zIndex = 10;
+//     }
+//     function moveDragOver(e){
+//         e.preventDefault();
+//     }
+
+//     function moveDrop(e){
+//         e.preventDefault();
+//         whichWin.style.left = e.pageX - myX + 'px';
+//         whichWin.style.top = e.pageY - myY + 'px';
+//     }
+
+//     function touchStart(e){
+//         e.preventDefault();
+//         console.log("ssss")
+//         let whichWin = e.target;
+//         let touch = e.touches[0];
+//         let moveOffsetX = whichWin.offsetLeft - touch.pageX;
+//         let moveOffsetY = whichWin.offsetTop - touch.pageY;
+//         resetZ();
+//         whichWin.style.zIndex = 10;
+
+//         whichWin.addEventListener('touchmove', function(){
+//             let positionX = touch.pageX + moveOffsetX;
+//             let positionY = touch.pageY + moveOffsetY;
+//             whichWin.style.left = positionX + 'px';
+//             whichWin.style.top = positionY + 'px'
+//         }, false);
+
+//     }
+
+//     document.querySelector('body').addEventListener('dragstart', moveStart, false);
+//     document.querySelector('body').addEventListener('dragover', moveDragOver, false);
+//     document.querySelector('body').addEventListener('drop', moveDrop, false);
+
+//     document.querySelector('body').addEventListener('touchstart', touchStart, false);
+
+// });
+
+let TouchMoveAboutSh = document.getElementById('about_sh');
+let TouchMoveFAQSh = document.getElementById('faq_sh');
+let TouchMoveRulesSh = document.getElementById('rules_sh');
+let TouchMoveScheduleSh = document.getElementById('schedule_sh');
+let TouchMoveRegSh = document.getElementById('reg_sh');
+let TouchMoveAwardsSh = document.getElementById('awards_sh');
+TouchShortcutElem(TouchMoveAboutSh);
+TouchShortcutElem(TouchMoveFAQSh);
+TouchShortcutElem(TouchMoveRulesSh);
+TouchShortcutElem(TouchMoveScheduleSh);
+TouchShortcutElem(TouchMoveRegSh);
+TouchShortcutElem(TouchMoveAwardsSh);
+
+function TouchShortcutElem(elem){
+    elem.ondragstart = () => false;
+    let rect = elem.getBoundingClientRect();
+    let css = getComputedStyle(elem);
+    document.body.style.overflow = 'hidden';
+    elem.ontouchstart = e => {
+        elem.style.position = 'absolute';
+        let saveX = e.offsetX;
+        let saveY = e.offsetY;
+        console.log("moooove")
+
+        document.ontouchmove = e => {
+            elem.style.position = 'absolute';
+            elem.style.top = e.pageY - parseInt(css.margin) - saveY + 'px';
+            elem.style.left = e.pageX - parseInt(css.margin) - saveX + 'px';
+        };
+    };
+
+    elem.ontoucend = e => {
+        document.ontouchmove = () => false;
+    };
+};
 
