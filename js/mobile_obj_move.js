@@ -76,7 +76,7 @@ function TouchShortcutElem(elem){
         elem.style.position = 'absolute';
         let saveX = e.offsetX;
         let saveY = e.offsetY;
-        console.log("moooove")
+        alert("moove");
 
         document.ontouchmove = e => {
             elem.style.position = 'absolute';
