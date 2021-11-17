@@ -1,5 +1,6 @@
 //timer
 let CurTime = document.querySelector(".time");
+let CurTimeTop = document.querySelector(".time_top");
 let timerId = setInterval(() => SetCurTime(), 1000);
 let curDate;
 function SetCurTime() {
@@ -7,17 +8,21 @@ function SetCurTime() {
     if(curDate.getHours() > 11){
         if(curDate.getMinutes() > 9){
             CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
+            CurTimeTop.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
         }
         else{
             CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
+            CurTimeTop.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
         }
     }
     else{
         if(curDate.getMinutes() > 9){
             CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} AM`;
+            CurTimeTop.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
         }
         else{
             CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} AM`;
+            CurTimeTop.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
         }
     };
 };
@@ -397,7 +402,6 @@ MaxAwards.addEventListener('click', () => {
     }
 });
 
-
 // show faq questions
 let questionFirst = document.getElementById('question_1');
 let questionFirstA = document.getElementById('question_1_answer');
@@ -430,7 +434,6 @@ questionFifth.addEventListener('click', ()=>{
  
 });
 
-
 // show schedule tables
 let dateFirst = document.getElementById('date_1');
 let dateFirstA = document.getElementById('date_1_table');
@@ -453,7 +456,12 @@ dateThird.addEventListener('click', ()=>{
 
 // language panel
 let Lang = document.querySelector('.lang');
+let LangTop = document.querySelector('.lang_top');
 let LangPanel = document.querySelector('.lang_panel');
+LangTop.addEventListener('click', ()=>{
+    
+    LangPanel.classList.toggle('lang_panel_on');
+})
 Lang.addEventListener('click', ()=>{
     
     LangPanel.classList.toggle('lang_panel_on');

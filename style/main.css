@@ -317,6 +317,49 @@ ul, ol, li {
     font-size: 25px;
   }
 }
+.header_top {
+  position: fixed;
+  top: 0;
+  background-color: #bdbebd;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 5px;
+  display: none;
+}
+.header_top .header_wrapper_top .menu_panel_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "DotGothic16", sans-serif;
+  color: #000;
+  cursor: default;
+}
+.header_top .header_wrapper_top .menu_panel_top .lang_top {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+.header_top .header_wrapper_top .menu_panel_top .lang_top .ch_lang {
+  width: inherit;
+  height: inherit;
+}
+.header_top .header_wrapper_top .menu_panel_top .cloak {
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey white white grey;
+  text-align: center;
+  width: 130px;
+}
+.header_top .header_wrapper_top .menu_panel_top .cloak .time_top {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
 .header {
   position: fixed;
   bottom: 0;
@@ -567,6 +610,7 @@ ul, ol, li {
   bottom: 40px;
   right: 185px;
   display: none;
+  text-align: center;
 }
 .lang_panel .lang_panel_wrapper {
   display: -webkit-box;
@@ -603,11 +647,24 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn p {
     font-size: 16px;
   }
-  .header .header_wrapper .menu_panel .cloak {
-    width: 130px;
+  .header .header_wrapper .menu_panel .time_and_lang {
+    display: none;
   }
-  .header .header_wrapper .menu_panel .cloak .time {
-    font-size: 18px;
+
+  .lang_panel {
+    bottom: 0px;
+    top: 40px;
+    right: 30px;
+    height: 12%;
+    width: 30px;
+  }
+  .lang_panel .lang_panel_wrapper .langs {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header_top {
+    display: block;
   }
 }
 @media screen and (max-width: 576px) {
@@ -639,12 +696,6 @@ ul, ol, li {
     font-weight: bolder;
     letter-spacing: -1px;
   }
-  .header .header_wrapper .menu_panel .cloak {
-    width: 110px;
-  }
-  .header .header_wrapper .menu_panel .cloak .time {
-    font-size: 16px;
-  }
 
   .menu_windows {
     bottom: 35px;
@@ -658,10 +709,11 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn {
     width: 70px;
   }
-  .header .header_wrapper .menu_panel .cloak {
+
+  .header_top .header_wrapper_top .menu_panel_top .cloak {
     width: 100px;
   }
-  .header .header_wrapper .menu_panel .cloak .time {
+  .header_top .header_wrapper_top .menu_panel_top .cloak .time_top {
     margin-top: 5px;
     font-size: 16px;
   }
@@ -682,10 +734,45 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .windows .win_btn p {
     display: block;
   }
-  .header .header_wrapper .menu_panel .cloak {
+  .header .header_wrapper .menu_panel .time_and_lang .lang {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .lang .ch_lang {
+    width: inherit;
+    height: inherit;
+  }
+  .header .header_wrapper .menu_panel .time_and_lang .cloak {
     width: 80px;
   }
-  .header .header_wrapper .menu_panel .cloak .time {
+  .header .header_wrapper .menu_panel .time_and_lang .cloak .time {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+
+  .lang_panel {
+    right: 22px;
+  }
+  .lang_panel .lang_panel_wrapper .langs {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header_top .header_wrapper_top .menu_panel_top .lang_top {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+  }
+  .header_top .header_wrapper_top .menu_panel_top .lang_top .ch_lang {
+    width: inherit;
+    height: inherit;
+  }
+  .header_top .header_wrapper_top .menu_panel_top .cloak {
+    width: 80px;
+  }
+  .header_top .header_wrapper_top .menu_panel_top .cloak .time_top {
     margin-top: 2px;
     font-size: 14px;
   }
@@ -755,7 +842,7 @@ ul, ol, li {
   left: 0;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 720px) {
   .shortcut_icons {
     width: 80px;
     height: 70px;
@@ -769,42 +856,42 @@ ul, ol, li {
   }
 
   .shortcut_about {
-    top: 10px;
+    top: 55px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_faq {
-    top: 88px;
+    top: 135px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_rules {
-    top: 170px;
+    top: 220px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_schedule {
-    top: 260px;
+    top: 303px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_reg {
-    top: 343px;
+    top: 385px;
     bottom: 0;
     right: 0;
     left: 0;
   }
 
   .shortcut_awards {
-    top: 435px;
+    top: 470px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -1865,7 +1952,7 @@ ul, ol, li {
     width: 200vw;
     height: 50vh;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: -50%;
     background-image: repeating-linear-gradient(to top, #3017ce, #3017ce 1px, transparent 1px, transparent 10px), repeating-linear-gradient(90deg, #3017ce, #3017ce 3px, transparent 3px, transparent 100px);
     -webkit-animation: grid-appear-animation 4s cubic-bezier(0, 0.5, 0.5, 1), grid-background-animation 1s linear infinite;
