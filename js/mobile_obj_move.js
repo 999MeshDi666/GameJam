@@ -1,6 +1,4 @@
 
-
-
 let TouchMoveAboutSh = document.getElementById('about_sh');
 let TouchMoveFAQSh = document.getElementById('faq_sh');
 let TouchMoveRulesSh = document.getElementById('rules_sh');
@@ -15,11 +13,20 @@ Drag(TouchMoveRulesSh);
 Drag(TouchMoveScheduleSh);
 Drag(TouchMoveRegSh);
 Drag(TouchMoveAwardsSh);
+
+
+let TouchMoveWinAbout = document.querySelector('.desktop_win_about');
+Drag(TouchMoveWinAbout);
+let TouchWinContent = document.querySelector('.win_content');
+
+
 /*Ловим касание*/
 function Drag(e){
     e.addEventListener('touchstart', function(event) {
         if (event.targetTouches.length == 1) {
-            var touch = event.targetTouches[0];
+            document.body.style.overflow = 'hidden';
+            TouchWinContent.style.overflow = "hidden";
+            let touch = event.targetTouches[0];
             touchOffsetX = touch.pageX - touch.target.offsetLeft;
             touchOffsetY = touch.pageY - touch.target.offsetTop;
         }
@@ -27,9 +34,10 @@ function Drag(e){
     /*Передвигаем объект*/
     e.addEventListener('touchmove', function(event) {
         if (event.targetTouches.length == 1) {
-            var touch = event.targetTouches[0];
-            e.style.left = touch.pageX-touchOffsetX + 'px';
-            e.style.top = touch.pageY-touchOffsetY + 'px';
+
+            let touch = event.targetTouches[0];
+            
+            e.style.WebkitTransform="translate("+(touch.pageX-touchOffsetX)+"px,"+(touch.pageY-touchOffsetY)+"px)";
         }
     }, false);
 }
@@ -43,15 +51,15 @@ Drop(TouchMoveAwardsSh);
 function Drop(e){
     e.addEventListener('touchend', function(event) {
         if (event.changedTouches.length == 1) {
-            var tarWidth = e.offsetWidth;
-            var tarHeight = e.offsetHeight;
-            var tarX = e.offsetLeft;
-            var tarY = e.offsetTop;
+            let objWidth = e.offsetWidth;
+            let objHeight = e.offsetHeight;
+            let objX = e.offsetLeft;
+            let objY = e.offsetTop;
             if(
-                (event.changedTouches[0].pageX > tarX) &&
-                (event.changedTouches[0].pageX < (tarX + tarWidth)) &&
-                (event.changedTouches[0].pageY > tarY) &&
-                (event.changedTouches[0].pageY < (tarY + tarHeight))){
+                (event.changedTouches[0].pageX > objX) &&
+                (event.changedTouches[0].pageX < (objX + objWidth)) &&
+                (event.changedTouches[0].pageY > objY) &&
+                (event.changedTouches[0].pageY < (objY + objHeight))){
                 /*Мы над объектом tarobj*/
             }
         }
@@ -64,36 +72,4 @@ function Drop(e){
 
 
 
-
-
-
-// TouchShortcutElem(TouchMoveAboutSh);
-// TouchShortcutElem(TouchMoveFAQSh);
-// TouchShortcutElem(TouchMoveRulesSh);
-// TouchShortcutElem(TouchMoveScheduleSh);
-// TouchShortcutElem(TouchMoveRegSh);
-// TouchShortcutElem(TouchMoveAwardsSh);
-
-// function TouchShortcutElem(elem){
-//     elem.ondragstart = () => false;
-//     let rect = elem.getBoundingClientRect();
-//     let css = getComputedStyle(elem);
-//     document.body.style.overflow = 'hidden';
-//     elem.ontouchstart = e => {
-//         elem.style.position = 'absolute';
-//         let saveX = e.offsetX;
-//         let saveY = e.offsetY;
-        
-
-//         document.ontouchmove = e => {
-//             elem.style.position = 'absolute';
-//             elem.style.top = e.pageY - parseInt(css.margin) - saveY + 'px';
-//             elem.style.left = e.pageX - parseInt(css.margin) - saveX + 'px';
-//         };
-//     };
-
-//     elem.ontoucend = e => {
-//         document.ontouchmove = () => false;
-//     };
-// };
 
