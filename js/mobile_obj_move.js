@@ -1,79 +1,72 @@
 
+
+
 let TouchMoveAboutSh = document.getElementById('about_sh');
 let TouchMoveFAQSh = document.getElementById('faq_sh');
 let TouchMoveRulesSh = document.getElementById('rules_sh');
 let TouchMoveScheduleSh = document.getElementById('schedule_sh');
 let TouchMoveRegSh = document.getElementById('reg_sh');
 let TouchMoveAwardsSh = document.getElementById('awards_sh');
-DragnDrop(TouchMoveAboutSh);
-DragnDrop(TouchMoveFAQSh);
-DragnDrop(TouchMoveRulesSh);
-DragnDrop(TouchMoveScheduleSh);
-DragnDrop(TouchMoveRegSh);
-DragnDrop(TouchMoveAwardsSh);
 
-function DragnDrop(){
-    let myX = " ";
-    let myY = " ";
-    let whichWin = " ";
 
-    function resetZ(){
-        let winObjects = document.querySelectorAll('.desktop_wins');
-        for (let i = winObjects.length - 1; i>=0; i--){
-            winObjects[i].style.zIndex = 5;
-        };
-    }
+Drag(TouchMoveAboutSh);
+Drag(TouchMoveFAQSh);
+Drag(TouchMoveRulesSh);
+Drag(TouchMoveScheduleSh);
+Drag(TouchMoveRegSh);
+Drag(TouchMoveAwardsSh);
+/*Ловим касание*/
+function Drag(e){
+    e.addEventListener('touchstart', function(event) {
+        if (event.targetTouches.length == 1) {
+            var touch = event.targetTouches[0];
+            touchOffsetX = touch.pageX - touch.target.offsetLeft;
+            touchOffsetY = touch.pageY - touch.target.offsetTop;
+        }
+    }, false);
+    /*Передвигаем объект*/
+    e.addEventListener('touchmove', function(event) {
+        if (event.targetTouches.length == 1) {
+            var touch = event.targetTouches[0];
+            e.style.left = touch.pageX-touchOffsetX + 'px';
+            e.style.top = touch.pageY-touchOffsetY + 'px';
+        }
+    }, false);
+}
 
-    function moveStart(e){
-        whichWin = e.target;
-        myX = e.offsetX === undefined ? e.layerX : e.offsetX;
-        myY = e.offsetY === undefined ? e.layerY : e.offsetY;
-        resetZ();
-        whichWin.style.zIndex = 10;
-    }
-    function moveDragOver(e){
-        e.preventDefault();
-    }
+Drop(TouchMoveAboutSh);
+Drop(TouchMoveFAQSh);
+Drop(TouchMoveRulesSh);
+Drop(TouchMoveScheduleSh);
+Drop(TouchMoveRegSh);
+Drop(TouchMoveAwardsSh);
+function Drop(e){
+    e.addEventListener('touchend', function(event) {
+        if (event.changedTouches.length == 1) {
+            var tarWidth = e.offsetWidth;
+            var tarHeight = e.offsetHeight;
+            var tarX = e.offsetLeft;
+            var tarY = e.offsetTop;
+            if(
+                (event.changedTouches[0].pageX > tarX) &&
+                (event.changedTouches[0].pageX < (tarX + tarWidth)) &&
+                (event.changedTouches[0].pageY > tarY) &&
+                (event.changedTouches[0].pageY < (tarY + tarHeight))){
+                /*Мы над объектом tarobj*/
+            }
+        }
+    }, false);
+}
 
-    function moveDrop(e){
-        e.preventDefault();
-        whichWin.style.left = e.pageX - myX + 'px';
-        whichWin.style.top = e.pageY - myY + 'px';
-    }
 
-    function touchStart(e){
-        e.preventDefault();
-        console.log("ssss")
-        let whichWin = e.target;
-        let touch = e.touches[0];
-        let moveOffsetX = whichWin.offsetLeft - touch.pageX;
-        let moveOffsetY = whichWin.offsetTop - touch.pageY;
-        resetZ();
-        whichWin.style.zIndex = 10;
 
-        whichWin.addEventListener('touchmove', function(){
-            let positionX = touch.pageX + moveOffsetX;
-            let positionY = touch.pageY + moveOffsetY;
-            whichWin.style.left = positionX + 'px';
-            whichWin.style.top = positionY + 'px'
-        }, false);
 
-    }
 
-    document.querySelector('body').addEventListener('dragstart', moveStart, false);
-    document.querySelector('body').addEventListener('dragover', moveDragOver, false);
-    document.querySelector('body').addEventListener('drop', moveDrop, false);
 
-    document.querySelector('body').addEventListener('touchstart', touchStart, false);
 
-};
 
-// let TouchMoveAboutSh = document.getElementById('about_sh');
-// let TouchMoveFAQSh = document.getElementById('faq_sh');
-// let TouchMoveRulesSh = document.getElementById('rules_sh');
-// let TouchMoveScheduleSh = document.getElementById('schedule_sh');
-// let TouchMoveRegSh = document.getElementById('reg_sh');
-// let TouchMoveAwardsSh = document.getElementById('awards_sh');
+
+
 // TouchShortcutElem(TouchMoveAboutSh);
 // TouchShortcutElem(TouchMoveFAQSh);
 // TouchShortcutElem(TouchMoveRulesSh);

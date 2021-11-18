@@ -738,6 +738,12 @@ ul, ol, li {
   .header .header_wrapper .menu_panel .time_and_lang .cloak {
     display: none;
   }
+
+  .lang_panel .lang_panel_wrapper .langs {
+    margin: 6px 0;
+    width: 25px;
+    height: 25px;
+  }
 }
 @media screen and (max-width: 320px) {
   .header .header_wrapper .menu_panel .time_and_lang .lang {
@@ -1053,7 +1059,7 @@ ul, ol, li {
 .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
   display: block;
   padding: 2px;
-  width: 250px;
+  width: 220px;
 }
 .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
   text-align: right;
