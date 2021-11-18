@@ -115,38 +115,38 @@ function DragWinElem(header, elem){
 
 
 
-// let MoveAboutSh = document.getElementById('about_sh');
-// let MoveFAQSh = document.getElementById('faq_sh');
-// let MoveRulesSh = document.getElementById('rules_sh');
-// let MoveScheduleSh = document.getElementById('schedule_sh');
-// let MoveRegSh = document.getElementById('reg_sh');
-// let MoveAwardsSh = document.getElementById('awards_sh');
-// DragShortcutElem(MoveAboutSh);
-// DragShortcutElem(MoveFAQSh);
-// DragShortcutElem(MoveRulesSh);
-// DragShortcutElem(MoveScheduleSh);
-// DragShortcutElem(MoveRegSh);
-// DragShortcutElem(MoveAwardsSh);
+let MoveAboutSh = document.getElementById('about_sh');
+let MoveFAQSh = document.getElementById('faq_sh');
+let MoveRulesSh = document.getElementById('rules_sh');
+let MoveScheduleSh = document.getElementById('schedule_sh');
+let MoveRegSh = document.getElementById('reg_sh');
+let MoveAwardsSh = document.getElementById('awards_sh');
+DragShortcutElem(MoveAboutSh);
+DragShortcutElem(MoveFAQSh);
+DragShortcutElem(MoveRulesSh);
+DragShortcutElem(MoveScheduleSh);
+DragShortcutElem(MoveRegSh);
+DragShortcutElem(MoveAwardsSh);
 
-// function DragShortcutElem(elem){
-//     elem.ondragstart = () => false;
-//     let rect = elem.getBoundingClientRect();
-//     let css = getComputedStyle(elem);
-//     document.body.style.overflow = 'hidden';
-//     elem.onmousedown = e => {
-//         elem.style.position = 'absolute';
-//         let saveX = e.offsetX;
-//         let saveY = e.offsetY;
+function DragShortcutElem(elem){
+    elem.ondragstart = () => false;
+    let rect = elem.getBoundingClientRect();
+    let css = getComputedStyle(elem);
+    document.body.style.overflow = 'hidden';
+    elem.onmousedown = e => {
+        elem.style.position = 'absolute';
+        let saveX = e.offsetX;
+        let saveY = e.offsetY;
 
-//         document.onmousemove = e => {
-//             elem.style.position = 'absolute';
-//             elem.style.top = e.pageY - parseInt(css.margin) - saveY + 'px';
-//             elem.style.left = e.pageX - parseInt(css.margin) - saveX + 'px';
-//         };
-//     };
+        document.onmousemove = e => {
+            elem.style.position = 'absolute';
+            elem.style.top = e.pageY - parseInt(css.margin) - saveY + 'px';
+            elem.style.left = e.pageX - parseInt(css.margin) - saveX + 'px';
+        };
+    };
 
-//     elem.onmouseup = e => {
-//         document.onmousemove = () => false;
-//     };
-// };
+    elem.onmouseup = e => {
+        document.onmousemove = () => false;
+    };
+};
 
