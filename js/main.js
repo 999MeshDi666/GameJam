@@ -39,6 +39,7 @@ let RulesIcon = document.getElementById('rules');
 let ScheduleIcon = document.getElementById('schedule');
 let RegIcon = document.getElementById('reg');
 let AwardsIcon = document.getElementById('awards');
+let SponsorIcon = document.getElementById('sponsor');
 
 let WinAbout = document.querySelector('.win_about');
 let WinFAQ = document.querySelector('.win_faq ');
@@ -72,6 +73,7 @@ WinAwards.addEventListener('click', ()=>{
     WinAwards.classList.toggle('win_hide');
     AwardsWindows.classList.toggle('desktop_win_awards_on');
 })
+
 
 // values of desktop action
 let AboutWindows = document.querySelector('.desktop_win_about');
@@ -123,6 +125,16 @@ AwardsIcon.addEventListener('click',()=>{
     WinAwards.classList.add('win_awards_on');
     WinAwards.classList.remove('win_hide');
     AwardsWindows.classList.add('desktop_win_awards_on');
+});
+let SponsorList = document.querySelector('.sponsor_prog_list');
+let ArrowBackIcon = document.getElementById('back');
+SponsorIcon.addEventListener('click',()=>{
+    SponsorList.classList.add('sponsor_prog_list_on');
+   
+});
+ArrowBackIcon.addEventListener('click', ()=>{
+    SponsorList.classList.remove('sponsor_prog_list_on');
+
 });
 
 
@@ -354,7 +366,6 @@ MaxSchedule.addEventListener('click', () => {
         ScheduleWindows.style.height = '360px';
         ScheduleWindows.style.left = '5%';
         ScheduleWindows.style.top = '20%';
-        MaxScheduleContent.style.overflow = "scroll";
         MaxScheduleContent.style.width = '328px';
         MaxScheduleContent.style.height = '274px';
         MaxScheduleHeader.id = 'move_about';
@@ -365,7 +376,6 @@ MaxSchedule.addEventListener('click', () => {
         ScheduleWindows.style.height = '100%';
         ScheduleWindows.style.left = '0px';
         ScheduleWindows.style.top = '0px';
-        MaxScheduleContent.style.overflow = "scroll";
         MaxScheduleContent.style.width = 'auto';
         MaxScheduleContent.style.height = '90%';
         MaxScheduleHeader.id = 'nomove';

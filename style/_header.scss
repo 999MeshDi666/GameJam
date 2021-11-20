@@ -212,6 +212,37 @@
             }
     
         }
+        .sponsor_prog_list{
+            z-index: 1;
+            position: fixed;
+            width: 134px;
+            left: 43px;
+            height: 322px;
+            background-color: $win;
+            display: none;
+            .prog_list_sections{
+                .sponsor_links{
+                    text-decoration: none;
+                    display: flex;
+                    .prog_list_icons{
+
+                    }
+                }
+                .back_arrow{
+                 user-select: none;
+                 margin-top: 190px;
+                    img{
+                        transform: rotate(90deg);
+                    }
+                }
+                .back_arrow:hover{
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+        }
+        .sponsor_prog_list_on{
+            display: block;
+        }
 
     }
 }
