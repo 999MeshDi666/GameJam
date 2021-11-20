@@ -140,23 +140,6 @@ AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.remove('win_hide');
     AboutWindows.classList.add('desktop_win_about_on');
 });
-AboutShortcut.addEventListener('touchstart', () => {
-    var tapped = false;
-    if (!tapped) { //if tap is not set, set up single tap
-        tapped = setTimeout(function () {
-            tapped = null;
-            //insert things you want to do when single tapped
-        }, 300);   //wait 300ms then run single click code
-    } else {    //tapped within 300ms of last tap. double tap
-        clearTimeout(tapped); //stop single tap callback
-        tapped = null;
-        WinAbout.classList.add('win_about_on');
-        WinAbout.classList.remove('win_hide');
-        AboutWindows.classList.add('desktop_win_about_on');
-        //insert things you want to do when double tapped
-    }
-    e.preventDefault();
-});
 FAQShortcut.addEventListener('dblclick', ()=>{
     WinFAQ.classList.add('win_faq_on');
     WinFAQ.classList.remove('win_hide');
@@ -306,7 +289,7 @@ MaxAbout.addEventListener('click', () => {
         AboutWindows.style.left = '0px';
         AboutWindows.style.top = '0px';
         MaxAboutContent.style.width = 'auto';
-        MaxAboutContent.style.height = '100%';
+        MaxAboutContent.style.height = '90%';
         MaxAboutHeader.id = 'nomove';
         aboutmax = true;
     }
@@ -331,7 +314,7 @@ MaxFAQ.addEventListener('click', () => {
         FAQWindows.style.left = '0px';
         FAQWindows.style.top = '0px';
         MaxFAQContent.style.width = 'auto';
-        MaxFAQContent.style.height = '100%';
+        MaxFAQContent.style.height = '90%';
         MaxFAQHeader.id = 'nomove';
         faqmax = true;
     }
@@ -356,7 +339,7 @@ MaxRules.addEventListener('click', () => {
         RulesWindows.style.left = '0px';
         RulesWindows.style.top = '0px';
         MaxRulesContent.style.width = 'auto';
-        MaxRulesContent.style.height = '100%';
+        MaxRulesContent.style.height = '90%';
         MaxRulesHeader.id = 'nomove';
         rulesmax = true;
     }
@@ -384,7 +367,7 @@ MaxSchedule.addEventListener('click', () => {
         ScheduleWindows.style.top = '0px';
         MaxScheduleContent.style.overflow = "scroll";
         MaxScheduleContent.style.width = 'auto';
-        MaxScheduleContent.style.height = '100%';
+        MaxScheduleContent.style.height = '90%';
         MaxScheduleHeader.id = 'nomove';
         schedulemax = true;
     }
@@ -409,7 +392,7 @@ MaxAwards.addEventListener('click', () => {
         AwardsWindows.style.left = '0px';
         AwardsWindows.style.top = '0px';
         MaxAwardsContent.style.width = 'auto';
-        MaxAwardsContent.style.height = '100%';
+        MaxAwardsContent.style.height = '90%';
         MaxAwardsHeader.id = 'nomove';
         awardsmax = true;
     }
