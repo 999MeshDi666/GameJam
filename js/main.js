@@ -7,10 +7,10 @@ function SetCurTime() {
     curDate = new Date();
     if(curDate.getHours() > 11){
         if(curDate.getMinutes() > 9){
-            CurTime.textContent = `${curDate.getHours()}:${curDate.getMinutes()} PM`;
+            CurTime.textContent = `${curDate.getHours()-12}:${curDate.getMinutes()} PM`;
         }
         else{
-            CurTime.textContent = `${curDate.getHours()}:0${curDate.getMinutes()} PM`;
+            CurTime.textContent = `${curDate.getHours()-12}:0${curDate.getMinutes()} PM`;
         }
     }
     else{
