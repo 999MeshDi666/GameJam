@@ -46,11 +46,11 @@ DragWin(TouchMoveWinAwards, TouchMoveHeaderAwards);
 
 function DragWin(elem, header) {
     header.addEventListener('touchstart', () => {
-        DragWinElem(elem, header);
+        MoveDragWin(elem, header);
     });
 }
 
-function DragWinElem(elem, header) {
+function MoveDragWin(elem, header) {
     function Move(event) {
         if (header.id != 'nomove') {
             var touch = event.targetTouches[0];
