@@ -140,6 +140,23 @@ AboutShortcut.addEventListener('dblclick', ()=>{
     WinAbout.classList.remove('win_hide');
     AboutWindows.classList.add('desktop_win_about_on');
 });
+AboutShortcut.addEventListener('touchstart', () => {
+    var tapped = false;
+    if (!tapped) { //if tap is not set, set up single tap
+        tapped = setTimeout(function () {
+            tapped = null;
+            //insert things you want to do when single tapped
+        }, 300);   //wait 300ms then run single click code
+    } else {    //tapped within 300ms of last tap. double tap
+        clearTimeout(tapped); //stop single tap callback
+        tapped = null;
+        WinAbout.classList.add('win_about_on');
+        WinAbout.classList.remove('win_hide');
+        AboutWindows.classList.add('desktop_win_about_on');
+        //insert things you want to do when double tapped
+    }
+    e.preventDefault();
+});
 FAQShortcut.addEventListener('dblclick', ()=>{
     WinFAQ.classList.add('win_faq_on');
     WinFAQ.classList.remove('win_hide');
@@ -275,7 +292,7 @@ let MaxAboutContent = document.getElementById('about_content');
 let MaxAboutHeader = document.getElementById('move_about');
 MaxAbout.addEventListener('click', () => {
     if (aboutmax) {
-        AboutWindows.style.width = '400px';
+        AboutWindows.style.width = '360px';
         AboutWindows.style.height = '360px';
         AboutWindows.style.left = '5%';
         AboutWindows.style.top = '5%';
@@ -300,11 +317,11 @@ let MaxFAQContent = document.getElementById('faq_content');
 let MaxFAQHeader = document.getElementById('move_faq');
 MaxFAQ.addEventListener('click', () => {
     if (faqmax) {
-        FAQWindows.style.width = '400px';
+        FAQWindows.style.width = '360px';
         FAQWindows.style.height = '360px';
         FAQWindows.style.left = '5%';
         FAQWindows.style.top = '10%';
-        MaxFAQContent.style.width = 'auto';
+        MaxFAQContent.style.width = '328px';
         MaxFAQContent.style.height = '274px';
         MaxFAQHeader.id = 'move_about';
         faqmax = false;
@@ -325,11 +342,11 @@ let MaxRulesContent = document.getElementById('rules_content');
 let MaxRulesHeader = document.getElementById('move_rules');
 MaxRules.addEventListener('click', () => {
     if (rulesmax) {
-        RulesWindows.style.width = '400px';
+        RulesWindows.style.width = '360px';
         RulesWindows.style.height = '360px';
         RulesWindows.style.left = '5%';
         RulesWindows.style.top = '15%';
-        MaxRulesContent.style.width = 'auto';
+        MaxRulesContent.style.width = '328px';
         MaxRulesContent.style.height = '274px';
         MaxRulesHeader.id = 'move_about';
         rulesmax = false;
@@ -350,12 +367,12 @@ let MaxScheduleContent = document.getElementById('schedule_content');
 let MaxScheduleHeader = document.getElementById('move_schedule');
 MaxSchedule.addEventListener('click', () => {
     if (schedulemax) {
-        ScheduleWindows.style.width = '400px';
+        ScheduleWindows.style.width = '360px';
         ScheduleWindows.style.height = '360px';
         ScheduleWindows.style.left = '5%';
         ScheduleWindows.style.top = '20%';
         MaxScheduleContent.style.overflow = "scroll";
-        MaxScheduleContent.style.width = 'auto';
+        MaxScheduleContent.style.width = '328px';
         MaxScheduleContent.style.height = '274px';
         MaxScheduleHeader.id = 'move_about';
         
@@ -378,11 +395,11 @@ let MaxAwardsContent = document.getElementById('awards_content');
 let MaxAwardsHeader = document.getElementById('move_awards');
 MaxAwards.addEventListener('click', () => {
     if (awardsmax) {
-        AwardsWindows.style.width = '400px';
+        AwardsWindows.style.width = '360px';
         AwardsWindows.style.height = '360px';
         AwardsWindows.style.left = '5%';
         AwardsWindows.style.top = '25%';
-        MaxAwardsContent.style.width = 'auto';
+        MaxAwardsContent.style.width = '328px';
         MaxAwardsContent.style.height = '274px';
         MaxAwardsHeader.id = 'move_about';
         awardsmax = false;
