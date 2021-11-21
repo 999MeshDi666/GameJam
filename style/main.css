@@ -1112,6 +1112,83 @@ ul, ol, li {
   border-color: #000 #fff #fff #000;
 }
 
+.form_info_win {
+  background-color: #bdbebd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  width: 350px;
+  height: 196px;
+  padding: 3px;
+  margin: 150px auto;
+}
+.form_info_win .form_info_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #06157f;
+  padding: 3px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+  height: 20px;
+}
+.form_info_win .form_info_header .info_icon_text {
+  font-family: "VT323", monospace;
+  color: #fff;
+  font-size: 18px;
+}
+.form_info_win .form_info_header .close_windows_info {
+  cursor: pointer;
+}
+.form_info_win .form_info_content {
+  padding: 10px;
+}
+.form_info_win .form_info_content .text_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.form_info_win .form_info_content .text_content .info_img {
+  width: 50px;
+  height: 50px;
+}
+.form_info_win .form_info_content .text_content p {
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
+}
+.form_info_win .form_info_content .submit_content {
+  margin-left: 216px;
+  margin-top: 55px;
+  width: 80px;
+  padding: 4px;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background: #c4c1c1;
+  border-color: #fff #000 #000 #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form_info_win .form_info_content .submit_content:active {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+
 .desktop_win_faq {
   top: 165px;
   left: 400px;
