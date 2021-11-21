@@ -1122,7 +1122,12 @@ ul, ol, li {
   width: 350px;
   height: 196px;
   padding: 3px;
-  margin: 150px auto;
+  position: fixed;
+  top: 130px;
+  left: 350px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }
 .form_info_win .form_info_header {
   display: -webkit-box;
