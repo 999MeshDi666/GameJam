@@ -470,7 +470,19 @@ dateFourth.addEventListener('click', ()=>{
 let Lang = document.querySelector('.lang');
 let LangPanel = document.querySelector('.lang_panel');
 
-Lang.addEventListener('click', ()=>{
-    
+Lang.addEventListener('click', () => {
     LangPanel.classList.toggle('lang_panel_on');
-})
+});
+
+//Form Info Panel
+let FormInfo = document.querySelector('.form_info_win');
+let FormInfoClose = document.querySelector('.close_windows_info');
+let FormInfoOk = document.querySelector('.submit_content');
+
+FormInfoClose.addEventListener('click', () => {
+    FormInfo.classList.remove('form_info_win_on');
+});
+
+FormInfoOk.addEventListener('click', () => {
+    FormInfo.classList.remove('form_info_win_on');
+});

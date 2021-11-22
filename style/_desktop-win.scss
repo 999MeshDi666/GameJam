@@ -193,7 +193,6 @@
 }
 
 .form_info_win{
-    
     background-color: $win;
     box-sizing: border-box;
     border-width: 2px;
@@ -208,6 +207,7 @@
     right: 0;
     bottom: 0;
     z-index: 2;
+    display: none;
    
     .form_info_header{
         display: flex;
@@ -267,6 +267,10 @@
         }
         
     }
+}
+
+.form_info_win_on {
+    display: block;
 }
 
 .desktop_win_faq{
