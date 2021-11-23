@@ -1049,6 +1049,7 @@ ul, ol, li {
   display: block;
 }
 .desktop_wins .win_content_sponsors {
+  background-color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,7 +1066,7 @@ ul, ol, li {
 }
 .desktop_wins .win_content_sponsors .win_content_icons .win_content_links {
   cursor: pointer;
-  color: #56d7e4;
+  color: #105056;
   text-decoration: none;
 }
 .desktop_wins .win_content_sponsors .win_content_icons .win_content_links .win_content_img {

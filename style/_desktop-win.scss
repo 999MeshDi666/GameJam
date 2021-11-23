@@ -114,6 +114,7 @@
         
     }
     .win_content_sponsors{
+        background-color: #f1f1f1;
         display: flex;
         flex-wrap: wrap;
         // justify-content: space-between;
@@ -125,7 +126,7 @@
             text-align: center;
             .win_content_links{
                 cursor: pointer;
-                color: #56d7e4;
+                color: #105056;
                 text-decoration: none; 
                 
                 .win_content_img{
