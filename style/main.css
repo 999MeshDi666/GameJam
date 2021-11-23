@@ -1123,9 +1123,9 @@ ul, ol, li {
   width: 350px;
   height: 196px;
   padding: 3px;
-  position: fixed;
-  top: 130px;
-  left: 350px;
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
   right: 0;
   bottom: 0;
   z-index: 2;
@@ -1196,8 +1196,8 @@ ul, ol, li {
   border-color: #000 #fff #fff #000;
 }
 
-.form_info_win_on{
-    display: block;
+.form_info_win_on {
+  display: block;
 }
 
 .desktop_win_faq {
@@ -1433,6 +1433,14 @@ ul, ol, li {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 480px) {
+  .form_info_win {
+    width: 300px;
+  }
+  .form_info_win .form_info_content .submit_content {
+    margin-left: 185px;
+  }
+}
 @media screen and (max-width: 360px) and (min-width: 320px) {
   .desktop_wins {
     top: 60px;
@@ -1492,7 +1500,7 @@ ul, ol, li {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 360px) and (min-width: 320px) {
+@media screen and (min-width: 320px) {
   .desktop_wins {
     left: 10px;
   }
