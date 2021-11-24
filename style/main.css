@@ -76,6 +76,7 @@ ul, ol, li {
   letter-spacing: -2px;
   text-align: right;
   margin-right: 10px;
+  cursor: pointer;
 }
 .loader .loader_wrapper .load_pseudo_icon:after {
   content: "\00a9";
