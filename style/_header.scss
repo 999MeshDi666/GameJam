@@ -85,6 +85,9 @@
                 }
                 .win_sponsors{
                     display: none;
+                    p{
+                        font-size: 16px;
+                    }
                 }
                 .win_social{
                     display: none;
@@ -155,6 +158,7 @@
             
         }
 
+
     }
 }
 .menu_windows{
@@ -213,6 +217,7 @@
                     }
                
                 }
+                
                 li:hover{
                     background-color: rgb(186,11,11);
                  
