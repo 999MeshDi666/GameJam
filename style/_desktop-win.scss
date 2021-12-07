@@ -113,7 +113,7 @@
         }
         
     }
-    .win_content_sponsors_social{
+    .win_content_inner_elems{
         background-color: #f1f1f1;
         display: flex;
         flex-wrap: wrap;
@@ -133,7 +133,10 @@
                     width: 30px;
                     height: 30px;
                 }
-
+                .win_content_img_main_sponsor{
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
             
@@ -337,6 +340,9 @@
     display: block;
 } 
 .desktop_win_social_on{
+    display: block;
+} 
+.desktop_win_games_on{
     display: block;
 } 
 
